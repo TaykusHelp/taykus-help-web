@@ -224,6 +224,12 @@ ICON_NAMES = {
     "briefcase": "box", "bolt": "bolt", "ban": "ban", "trash": "trash", "eye": "eye",
 }
 
+EMOJI_ICONS = {
+    "heavy_plus_sign": "plus", "plus": "plus", "gear": "gear", "scissors": "scissors",
+    "floppy_disk": "save", "arrow_down": "arrowdown", "pencil": "pen", "pencil2": "pen",
+    "wastebasket": "trash", "eye": "eye", "no_entry_sign": "ban", "zap": "bolt",
+}
+
 MARK_COLORS = {
     "$danger": "danger", "red": "danger", "$warning": "warning", "orange": "warning",
     "yellow": "yellow", "blue": "info", "$info": "info", "$primary": "info", "$tint": "info",
@@ -463,6 +469,14 @@ class Site:
 
         line = re.sub(r'<i class="fa-([\w-]+)"[^>]*>(?::[\w-]+:)?</i>', icon, line)
 
+        # Emojis escritos como :nombre: en GitBook (p. ej. :heavy_plus_sign:)
+        def shortcode(m):
+            name = m.group(2).replace("\\", "")
+            ico = EMOJI_ICONS.get(name)
+            return m.group(1) + T.inline_icon(ico) if ico else m.group(0)
+
+        line = re.sub(r'(^|[^\w/:"\']):([a-z][a-z0-9_\\+-]*):', shortcode, line)
+
         def mark(m):
             style = m.group(1)
             cm = re.search(r"(background-color|color)\s*:\s*([^;\"]+)", style)
@@ -520,6 +534,8 @@ class Site:
         out = re.sub(r'\b(src|href)="([^"]*)"', attr, out)
         out = out.replace("<figcaption></figcaption>", "")
         out = re.sub(r"<img(?![^>]*\bloading=)", '<img loading="lazy"', out)
+        # Imágenes marcadas en GitBook como "tamaño de línea" (iconos dentro del texto)
+        out = re.sub(r'<img([^>]*?)\sdata-size="line"([^>]*)>', r'<img class="tk-img-inline"\1\2>', out)
         out = re.sub(r"<table", '<div class="tk-table"><table', out)
         out = out.replace("</table>", "</table></div>")
         # GitBook: <a class="button primary" data-icon="..."> -> botón Taykus

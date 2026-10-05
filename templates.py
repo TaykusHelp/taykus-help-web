@@ -34,6 +34,8 @@ ICONS = {
     "ban": '<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/>',
     "trash": '<path d="M4 7h16M10 11v6M14 11v6M5 7l1 13h12l1-13M9 7V4h6v3"/>',
     "eye": '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    "scissors": '<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6L20 18M8.6 16.4L20 6"/>',
+    "arrowdown": '<path d="M12 5v14M6 13l6 6 6-6"/>',
     "search": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>',
     "play": '<path d="M7 4v16l13-8z" fill="currentColor" stroke="none"/>',
     "download": '<path d="M12 3v12M7 10l5 5 5-5M4 21h16"/>',
