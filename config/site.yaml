@@ -1,0 +1,34 @@
+# Ajustes del Centro de ayuda Taykus.
+# Puedes cambiar estos textos sin tocar el código: la web los recoge en la siguiente publicación.
+
+site:
+  title: Centro de ayuda Taykus
+  tagline: Guías paso a paso y vídeos para sacar el máximo partido a Taykus en tu club.
+  support_email: soporte@taykus.com
+  # Enlace del botón "Entrar en Taykus" de la cabecera. Déjalo vacío para ocultarlo.
+  app_url: ""
+
+# Descripción corta e icono de cada módulo (el nombre de la carpeta en GitBook).
+# Iconos disponibles: calendar, user, medal, team, gear, flag, cart, euro, megaphone,
+# truck, box, chart, mail, invoice, phone, monitor.
+modules:
+  calendario:      { description: "Reservas, partidos y reservas múltiples.", icon: calendar }
+  jugadores:       { description: "Fichas, tipos de jugador, bonos y niveles.", icon: user }
+  academia:        { description: "Grupos, alumnos, cuotas y preinscripciones.", icon: medal }
+  equipos:         { description: "Gestión de equipos.", icon: team }
+  configuracion:   { description: "Horarios, precios, productos, usuarios y roles.", icon: gear }
+  actividades:     { description: "Inscripciones, categorías y precios.", icon: flag }
+  tpv:             { description: "Ventas, descuentos y recargas de bonos.", icon: cart }
+  ventas:          { description: "Cajas, cuotas, facturas, deudas y Q19.", icon: euro }
+  marketing:       { description: "Códigos promocionales.", icon: megaphone }
+  pedidos:         { description: "Pedidos.", icon: truck }
+  almacen:         { title: "Almacén", description: "Entradas, salidas y peticiones de stock.", icon: box }
+  reportes:        { description: "Informes del club.", icon: chart }
+  comunicaciones:  { description: "Correo del club y plantillas de email.", icon: mail }
+  veri-factu:      { description: "Facturación electrónica.", icon: invoice }
+  app-propia:      { title: "App propia", description: "Publicar la app de tu club en Apple y Google Play.", icon: phone }
+  app-taykus:      { description: "Registro, reservas, partidos y nivel de juego.", icon: phone }
+  zona-de-clientes: { title: "Zona de clientes", description: "Registro, reservas y datos de la cuenta desde la web del club.", icon: monitor }
+
+# Módulos que se muestran en "Para tus jugadores" en lugar de en "Guías para tu club".
+players: [app-taykus, zona-de-clientes]

@@ -1,0 +1,63 @@
+# Publica el Centro de ayuda en GitHub Pages.
+# Se ejecuta sola cada hora (recoge lo nuevo de GitBook), al cambiar este repositorio
+# y cuando pulsas "Run workflow" en la pestaña Actions.
+name: Publicar centro de ayuda
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Código de la web
+        uses: actions/checkout@v4
+
+      - name: Artículos (sincronizados desde GitBook)
+        uses: actions/checkout@v4
+        with:
+          repository: TaykusHelp/taykus-help-center
+          path: contenido
+          # Si taykus-help-center es privado, guarda un token con permiso de lectura
+          # en Settings › Secrets and variables › Actions con el nombre CONTENT_TOKEN.
+          token: ${{ secrets.CONTENT_TOKEN || github.token }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Preparar
+        run: pip install -r requirements.txt
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Generar la web
+        run: python build.py --content contenido --out dist --base "${{ steps.pages.outputs.base_path }}" --site-url "${{ steps.pages.outputs.origin }}"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
