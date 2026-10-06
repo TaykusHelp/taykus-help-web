@@ -564,6 +564,13 @@ class Site:
 
         out = re.sub(r"<h([2-4])([^>]*)>([\s\S]*?)</h\1>", head, out)
         page.toc = toc
+
+        # Enlaces "mention" de GitBook: el texto es el nombre del archivo; se cambia por el título del artículo
+        def mention(m):
+            target = self.page_for_url(html.unescape(m.group(2)))
+            return f'{m.group(1)}{html.escape(target.title) if target else m.group(3)}</a>'
+
+        out = re.sub(r'(<a href="([^"]+)"[^>]*>)([^<]*?\.md)</a>', mention, out)
         return out
 
     # -- salida ---------------------------------------------------------------
