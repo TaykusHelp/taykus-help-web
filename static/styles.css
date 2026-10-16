@@ -324,7 +324,7 @@ mark.tk-mark-text.tk-mark-info { color: var(--blue); }
   .tk-side.is-open .tk-tree { display: block; }
   .tk-doc { gap: 0; }
   .tk-main { padding-top: 16px; }
-  .tk-topnav { display: none; }
+  .tk-topnav > a { display: none; }
   .tk-header-dark .tk-search { order: 3; flex-basis: 100%; max-width: none; }
 }
 @media (max-width: 560px) {
@@ -340,3 +340,11 @@ mark.tk-mark-text.tk-mark-info { color: var(--blue); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Selector de idioma (ES / EN) */
+.tk-lang { display: inline-flex; gap: 2px; padding: 3px; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
+.tk-header-dark .tk-lang { border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.06); }
+.tk-topnav .tk-lang a { font-size: 12.5px; font-weight: 600; letter-spacing: .04em; padding: 3px 9px; border-radius: 7px; color: var(--muted); }
+.tk-topnav .tk-lang a[aria-current="true"] { background: var(--blue); color: #fff !important; }
+.tk-header-dark .tk-topnav .tk-lang a:not([aria-current="true"]) { color: #C9D6EA; }
+.tk-lang-notice { margin: 18px 0 4px; }

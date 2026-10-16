@@ -3,6 +3,51 @@
   'use strict';
 
   var BASE = (document.querySelector('meta[name="tk-base"]') || {}).content || '';
+  var PREFIX = (document.querySelector('meta[name="tk-prefix"]') || {}).content || '';
+  var LANG = document.documentElement.lang === 'en' ? 'en' : 'es';
+
+  // Textos de la interfaz en cada idioma
+  var TXT = {
+    es: {
+      noResults: 'No hay resultados para «{q}». Prueba con otras palabras.',
+      seeAll: 'Ver todos los resultados ({n})',
+      hint: 'Escribe lo que necesitas: por ejemplo «festivo», «abrir caja» o «bono».',
+      one: '1 resultado', many: '{n} resultados', forQ: ' para <strong>{q}</strong>',
+      none: 'No hay resultados para <strong>{q}</strong>. Prueba con otras palabras o escríbenos.',
+      searched: '. Buscaste «{q}».',
+      partial: ' No hay artículos con todas las palabras; mostramos los más parecidos.',
+      all: 'Todos', withVideo: 'Con vídeo', video: 'Vídeo', tab: 'Pestaña {n}',
+      docTitle: 'Buscar · Centro de ayuda Taykus', videoTitle: 'Vídeo tutorial',
+      fbNo: 'Gracias. Si necesitas ayuda con esto, escríbenos y lo vemos contigo.'
+    },
+    en: {
+      noResults: 'No results for “{q}”. Try other words.',
+      seeAll: 'See all results ({n})',
+      hint: 'Type what you need: for example “holiday”, “open till” or “voucher”.',
+      one: '1 result', many: '{n} results', forQ: ' for <strong>{q}</strong>',
+      none: 'No results for <strong>{q}</strong>. Try other words or email us.',
+      searched: '. You searched for “{q}”.',
+      partial: ' No article contains all the words; showing the closest matches.',
+      all: 'All', withVideo: 'With video', video: 'Video', tab: 'Tab {n}',
+      docTitle: 'Search · Taykus Help Center', videoTitle: 'Video tutorial',
+      fbNo: 'Thanks. If you need help with this, email us and we\'ll go through it with you.'
+    }
+  }[LANG];
+  function t(key, vars) {
+    return TXT[key].replace(/\{(\w+)\}/g, function (_, k) { return vars && vars[k] != null ? vars[k] : ''; });
+  }
+
+  // Recordar el idioma elegido: quien eligió inglés vuelve a la portada en inglés
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('.tk-lang a[data-lang]');
+    if (a) { try { localStorage.setItem('tk-lang', a.getAttribute('data-lang')); } catch (err) {} }
+  });
+  try {
+    if (LANG === 'es' && !PREFIX && localStorage.getItem('tk-lang') === 'en' &&
+        (location.pathname === BASE + '/' || location.pathname === BASE) && !document.referrer.match(/\/en\//)) {
+      location.replace(BASE + '/en/' + location.search + location.hash);
+    }
+  } catch (err) {}
 
   // ---------------------------------------------------------------------
   // Texto: normalizar sin tildes conservando la posición de cada letra
@@ -19,7 +64,9 @@
   }
 
   var STOP = {};
-  ('a al ante con contra de del desde el en entre es esta este esto la las le les lo los mas me mi no o para pero por que se si sin sobre su sus te tu un una unas unos y ya como cual cuales donde quiero puedo hacer hago necesito').split(' ')
+  (LANG === 'en'
+    ? 'a an the and or of to in on at for from by with is are be it its this that these those my me i we you your can do does how what where which who why want need into as not'
+    : 'a al ante con contra de del desde el en entre es esta este esto la las le les lo los mas me mi no o para pero por que se si sin sobre su sus te tu un una unas unos y ya como cual cuales donde quiero puedo hacer hago necesito').split(' ')
     .forEach(function (w) { STOP[w] = 1; });
 
   function tokens(s) {
@@ -56,7 +103,7 @@
   var indexPromise = null;
   function loadIndex() {
     if (!indexPromise) {
-      indexPromise = fetch(BASE + '/search-index.json').then(function (r) { return r.json(); }).then(buildIndex);
+      indexPromise = fetch(BASE + PREFIX + '/search-index.json').then(function (r) { return r.json(); }).then(buildIndex);
     }
     return indexPromise;
   }
@@ -205,13 +252,13 @@
         var items = r.results.slice(0, 6);
         var html = '';
         if (!items.length) {
-          html = '<div class="tk-pop-empty">No hay resultados para «' + esc(q) + '». Prueba con otras palabras.</div>';
+          html = '<div class="tk-pop-empty">' + t('noResults', { q: esc(q) }) + '</div>';
         } else {
           items.forEach(function (it, i) {
             html += '<a class="tk-pop-item" role="option" id="opt' + i + '" href="' + esc(it.d.u) + '"><span class="tk-pop-title">' +
               highlight(it.d.t, it.hit) + '</span><span class="tk-pop-crumb">' + esc(it.d.b) + '</span></a>';
           });
-          html += '<a class="tk-pop-foot" href="' + esc(BASE + '/buscar/?q=' + encodeURIComponent(q)) + '">Ver todos los resultados (' + r.results.length + ')</a>';
+          html += '<a class="tk-pop-foot" href="' + esc(BASE + PREFIX + '/buscar/?q=' + encodeURIComponent(q)) + '">' + t('seeAll', { n: r.results.length }) + '</a>';
         }
         pop.innerHTML = html;
         pop.hidden = false;
@@ -251,7 +298,7 @@
 
     function show() {
       if (!q.trim()) {
-        info.textContent = 'Escribe lo que necesitas: por ejemplo «festivo», «abrir caja» o «bono».';
+        info.textContent = t('hint');
         filters.innerHTML = ''; box.innerHTML = '';
         return;
       }
@@ -265,30 +312,30 @@
         });
         var shown = r.corrected ? r.corrected : q;
         var msg = all.length
-          ? (all.length === 1 ? '1 resultado' : all.length + ' resultados') + ' para <strong>' + esc(shown) + '</strong>'
-          : 'No hay resultados para <strong>' + esc(q) + '</strong>. Prueba con otras palabras o escríbenos.';
-        if (r.corrected && all.length) msg += '. Buscaste «' + esc(q) + '».';
-        if (r.partial) msg += ' No hay artículos con todas las palabras; mostramos los más parecidos.';
+          ? (all.length === 1 ? t('one') : t('many', { n: all.length })) + t('forQ', { q: esc(shown) })
+          : t('none', { q: esc(q) });
+        if (r.corrected && all.length) msg += t('searched', { q: esc(q) });
+        if (r.partial) msg += t('partial');
         info.innerHTML = msg;
 
         var fhtml = '';
         if (all.length) {
-          fhtml += '<button type="button" data-f="all" aria-pressed="' + (current === 'all') + '">Todos · ' + all.length + '</button>';
+          fhtml += '<button type="button" data-f="all" aria-pressed="' + (current === 'all') + '">' + t('all') + ' · ' + all.length + '</button>';
           Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).forEach(function (m) {
             fhtml += '<button type="button" data-f="' + esc(m) + '" aria-pressed="' + (current === m) + '">' + esc(m) + ' · ' + counts[m] + '</button>';
           });
-          if (video) fhtml += '<button type="button" data-f="video" aria-pressed="' + (current === 'video') + '">Con vídeo · ' + video + '</button>';
+          if (video) fhtml += '<button type="button" data-f="video" aria-pressed="' + (current === 'video') + '">' + t('withVideo') + ' · ' + video + '</button>';
         }
         filters.innerHTML = fhtml;
 
         var html = '';
         list.slice(0, 50).forEach(function (it) {
           html += '<a class="tk-result" href="' + esc(it.d.u) + '"><span class="tk-result-crumb">' + esc(it.d.b) +
-            (it.d.v ? '<span class="tk-tag">Vídeo</span>' : '') + '</span><span class="tk-result-title">' + highlight(it.d.t, it.hit) +
+            (it.d.v ? '<span class="tk-tag">' + t('video') + '</span>' : '') + '</span><span class="tk-result-title">' + highlight(it.d.t, it.hit) +
             '</span><span class="tk-result-snip">' + highlight(snippet(it.d.x, it.hit), it.hit) + '</span></a>';
         });
         box.innerHTML = html;
-        document.title = (q ? q + ' · ' : '') + 'Buscar · Centro de ayuda Taykus';
+        document.title = (q ? q + ' · ' : '') + t('docTitle');
       });
     }
     filters.addEventListener('click', function (e) {
@@ -328,7 +375,7 @@
       panes.forEach(function (p, i) {
         var b = document.createElement('button');
         b.type = 'button';
-        b.textContent = p.getAttribute('data-title') || 'Pestaña ' + (i + 1);
+        b.textContent = p.getAttribute('data-title') || t('tab', { n: i + 1 });
         b.setAttribute('role', 'tab');
         b.id = 'tab' + n + '-' + i;
         p.setAttribute('role', 'tabpanel');
@@ -363,7 +410,7 @@
       var id = a.getAttribute('data-yt');
       var f = document.createElement('iframe');
       f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
-      f.title = 'Vídeo tutorial';
+      f.title = t('videoTitle');
       f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       f.allowFullscreen = true;
       a.replaceWith(f);
@@ -396,7 +443,7 @@
         fb.querySelector('.tk-fb-q').hidden = true;
         var t = fb.querySelector('.tk-fb-thanks');
         t.hidden = false;
-        if (b.getAttribute('data-fb') === 'no') t.textContent = 'Gracias. Si necesitas ayuda con esto, escríbenos y lo vemos contigo.';
+        if (b.getAttribute('data-fb') === 'no') t.textContent = TXT.fbNo;
         if (window.gtag) window.gtag('event', 'valoracion', { valor: b.getAttribute('data-fb'), pagina: location.pathname });
       });
     });

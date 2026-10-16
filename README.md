@@ -30,6 +30,16 @@ En `config/site.yaml`:
 - Las páginas que solo enlazan a otras se muestran como listado de guías.
 - Los enlaces entre espacios de GitBook se convierten en enlaces de la web.
 
+## Versión en inglés
+
+La web tiene un selector **ES / EN** arriba a la derecha. La versión en inglés está en `/en/`.
+
+- Los artículos se siguen escribiendo **solo en español**, en GitBook.
+- Las traducciones están en `traducciones/en/`, con la misma ruta que el artículo original.
+- Cada traducción guarda la huella del artículo en español del que sale. Si cambias un artículo en GitBook, la web en inglés muestra ese artículo en español con un aviso hasta que se actualice la traducción.
+- Para ver qué traducciones faltan: Actions › la última publicación › resumen (apartado "Traducciones al inglés").
+- Nombres de módulos y textos de portada en inglés: `config/site.yaml`, apartado `en`.
+
 ## Para técnicos
 
 Generador estático en Python sin dependencias de JavaScript.
@@ -44,3 +54,4 @@ cd dist && python -m http.server 8000
 - `templates.py`: plantillas HTML.
 - `static/`: estilos, buscador (con tolerancia a faltas) y favicon.
 - `.github/workflows/publicar.yml`: publicación en GitHub Pages.
+- `traducciones/sellar.py`: marca traducciones como al día (`python traducciones/sellar.py --content ../taykus-help-center <archivos>`) y lista las pendientes (`--pendientes en`).

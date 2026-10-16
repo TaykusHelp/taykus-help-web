@@ -32,3 +32,27 @@ modules:
 
 # Módulos que se muestran en "Para tus jugadores" en lugar de en "Guías para tu club".
 players: [app-taykus, zona-de-clientes]
+
+# Versión en inglés (/en/). Solo hace falta poner lo que cambia respecto al español.
+en:
+  site:
+    title: Taykus Help Center
+    tagline: Step-by-step guides and videos to get the most out of Taykus at your club.
+  modules:
+    calendario:      { title: "Calendar", description: "Bookings, matches and multiple bookings." }
+    jugadores:       { title: "Players", description: "Player profiles, player types, vouchers and levels." }
+    academia:        { title: "Academy", description: "Groups, students, fees and pre-registrations." }
+    equipos:         { title: "Teams", description: "Team management." }
+    configuracion:   { title: "Settings", description: "Schedules, prices, products, users and roles." }
+    actividades:     { title: "Activities", description: "Registrations, categories and prices." }
+    tpv:             { title: "POS", description: "Sales, discounts and voucher top-ups." }
+    ventas:          { title: "Sales", description: "Cash registers, fees, invoices, debts and Q19." }
+    marketing:       { title: "Marketing", description: "Promo codes." }
+    pedidos:         { title: "Orders", description: "Orders." }
+    almacen:         { title: "Warehouse", description: "Stock in, stock out and stock requests." }
+    reportes:        { title: "Reports", description: "Club reports." }
+    comunicaciones:  { title: "Communications", description: "Club email and email templates." }
+    veri-factu:      { title: "Veri*FACTU", description: "Electronic invoicing." }
+    app-propia:      { title: "Your own app", description: "Publish your club's app on Apple and Google Play." }
+    app-taykus:      { title: "Taykus App", description: "Sign-up, bookings, matches and playing level." }
+    zona-de-clientes: { title: "Customer Area", description: "Sign-up, bookings and account details from the club's website." }

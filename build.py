@@ -6,6 +6,11 @@ Uso:
 
 El contenido llega al repositorio taykus-help-center mediante Git Sync de GitBook.
 Este script lo lee tal cual (no lo modifica) y produce una web en la carpeta --out.
+
+Versión en inglés: las traducciones viven en traducciones/en/, con la misma ruta que el
+artículo original en taykus-help-center. Cada traducción guarda en "origen" la huella del
+artículo en español del que sale; si el original cambia, la web en inglés muestra el
+artículo en español con un aviso hasta que se actualice la traducción.
 """
 from __future__ import annotations
 
@@ -39,6 +44,7 @@ KNOWN_SPACE_IDS = {
 }
 
 WARNINGS: list[str] = []
+PENDING: list[tuple[str, str]] = []  # (artículo, motivo) de traducciones que faltan o están desactualizadas
 
 
 def warn(msg: str) -> None:
@@ -86,6 +92,11 @@ def split_frontmatter(text: str) -> tuple[dict, str]:
     return {}, text
 
 
+def source_hash(path: Path) -> str:
+    """Huella del artículo en español; la traducción la guarda en "origen"."""
+    return hashlib.sha1(path.read_bytes()).hexdigest()[:12]
+
+
 def youtube_id(url: str) -> tuple[str | None, bool]:
     u = urlparse(url)
     host = (u.netloc or "").lower()
@@ -124,6 +135,7 @@ class Page:
         self.videos: list[tuple[str, bool]] = []
         self.has_body = False
         self.minutes = 1
+        self.fallback = False  # versión traducida que aún muestra el texto en español
 
     @property
     def is_readme(self) -> bool:
@@ -238,16 +250,21 @@ MARK_COLORS = {
 
 
 class Site:
-    def __init__(self, content: Path, out: Path, base: str, site_url: str, config: dict):
+    def __init__(self, content: Path, out: Path, base: str, site_url: str, config: dict,
+                 lang: str = "es", translations: Path | None = None, shared: "Site | None" = None):
         self.content = content
         self.out = out
         self.base = base.rstrip("/")
         self.site_url = site_url.rstrip("/")
         self.config = config
+        self.lang = lang
+        self.prefix = T.LANGS[lang]
+        self.translations = translations
         self.modules: list[Module] = []
         self.by_src: dict[Path, Page] = {}
-        self.assets: dict[Path, str] = {}
-        self.asset_names: set[str] = set()
+        # Las imágenes y archivos se comparten entre idiomas
+        self.assets: dict[Path, str] = shared.assets if shared else {}
+        self.asset_names: set[str] = shared.asset_names if shared else set()
         md = MarkdownIt("commonmark", {"html": True, "typographer": False})
         md.enable(["table", "strikethrough"])
         self.md = md
@@ -255,7 +272,10 @@ class Site:
     # -- carga ---------------------------------------------------------------
     def load(self) -> None:
         cfg = yaml.safe_load((self.content / "gitbook-docs.yaml").read_text(encoding="utf-8"))
-        meta = self.config.get("modules", {})
+        meta = {k: dict(v or {}) for k, v in (self.config.get("modules") or {}).items()}
+        if self.lang != "es":
+            for k, v in ((self.config.get(self.lang) or {}).get("modules") or {}).items():
+                meta.setdefault(k, {}).update(v or {})
 
         def walk(nodes):
             for n in nodes:
@@ -275,6 +295,10 @@ class Site:
                 self.by_src[p.src.resolve()] = p
 
     def url(self, path: str) -> str:
+        return self.base + self.prefix + path
+
+    def root_url(self, path: str) -> str:
+        """Dirección común a todos los idiomas (imágenes, estilos)."""
         return self.base + path
 
     # -- resolución de enlaces ------------------------------------------------
@@ -371,7 +395,7 @@ class Site:
         dest = self.out / "media" / name
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(path, dest)
-        url = self.url(f"/media/{name}")
+        url = self.root_url(f"/media/{name}")
         self.assets[path] = url
         return url
 
@@ -421,7 +445,7 @@ class Site:
                 else:
                     warn(f"{page.rel}: falta el archivo adjunto {src}")
                     href = "#"
-                block(T.file_card(href, name))
+                block(T.file_card(href, name, self.lang))
             elif tag == "content-ref":
                 j = i + 1
                 text = ""
@@ -457,9 +481,9 @@ class Site:
         vid, short = youtube_id(url)
         if vid:
             page.videos.append((vid, short))
-            return T.video(vid, short)
+            return T.video(vid, short, self.lang)
         if url:
-            return T.ref_card(url, url, "Enlace externo", external=True)
+            return T.ref_card(url, url, T.tr(self.lang, "external"), external=True)
         return ""
 
     def convert_inline(self, line: str) -> str:
@@ -491,8 +515,27 @@ class Site:
         return line
 
     # -- render de una página -------------------------------------------------
-    def render_page(self, page: Page) -> None:
+    def source_text(self, page: Page) -> str:
+        """Texto del artículo en el idioma de esta web (o el español si no hay traducción al día)."""
         raw = page.src.read_text(encoding="utf-8")
+        if self.lang == "es" or not self.translations or page.parent is None:
+            return raw  # la portada de cada módulo usa el nombre y la descripción de config/site.yaml
+        rel = page.src.relative_to(self.content).as_posix()
+        tr_file = self.translations / rel
+        if not tr_file.exists():
+            PENDING.append((rel, "falta"))
+            page.fallback = True
+            return raw
+        text = tr_file.read_text(encoding="utf-8")
+        fm, _ = split_frontmatter(text)
+        if str(fm.get("origen", "")) != source_hash(page.src):
+            PENDING.append((rel, "desactualizada"))
+            page.fallback = True
+            return raw
+        return text
+
+    def render_page(self, page: Page) -> None:
+        raw = self.source_text(page)
         fm, body = split_frontmatter(raw)
         desc = str(fm.get("description") or "").strip()
         if desc and not re.match(r"^gu[ií]as? del m[oó]dulo", desc, re.I) and "developer platform" not in desc:
@@ -575,23 +618,27 @@ class Site:
 
     # -- salida ---------------------------------------------------------------
     def build(self) -> None:
-        if self.out.exists():
-            shutil.rmtree(self.out)
-        (self.out / "media").mkdir(parents=True)
+        if self.lang == "es":
+            if self.out.exists():
+                shutil.rmtree(self.out)
+            (self.out / "media").mkdir(parents=True)
         self.load()
         for m in self.modules:
             for p in m.pages():
                 self.render_page(p)
 
         static_src = ROOT / "static"
-        shutil.copytree(static_src, self.out / "static")
+        if self.lang == "es":
+            shutil.copytree(static_src, self.out / "static")
         version = hashlib.sha1(
             b"".join((static_src / f).read_bytes() for f in sorted(os.listdir(static_src)) if (static_src / f).is_file())
         ).hexdigest()[:8]
         ctx = T.Context(self, version)
 
+        out_dir = self.out / self.prefix.strip("/") if self.prefix else self.out
+
         def write(path: str, content: str) -> None:
-            dest = self.out / path.strip("/") / "index.html" if not path.endswith(".html") else self.out / path.strip("/")
+            dest = out_dir / path.strip("/") / "index.html" if not path.endswith(".html") else out_dir / path.strip("/")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(content, encoding="utf-8")
 
@@ -617,19 +664,41 @@ class Site:
                     "t": p.title, "u": self.url(p.url), "m": m.title, "s": m.slug, "b": crumbs,
                     "h": " · ".join(t for _, _, t in p.toc), "x": p.text[:8000], "v": 1 if p.videos else 0,
                 })
-        (self.out / "search-index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        (out_dir / "search-index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-        # Sitemap y robots
-        if self.site_url:
-            urls = ["/", "/videos/"] + [p.url for m in self.modules for p in m.pages()]
-            sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-            sm += [f"<url><loc>{html.escape(self.site_url + self.base + u)}</loc></url>" for u in urls]
-            sm.append("</urlset>")
-            (self.out / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
-            (self.out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {self.site_url}{self.base}/sitemap.xml\n", encoding="utf-8")
-        else:
-            (self.out / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
-        (self.out / ".nojekyll").write_text("", encoding="utf-8")
+    def page_urls(self) -> list[str]:
+        return ["/", "/videos/"] + [p.url for m in self.modules for p in m.pages()]
+
+
+def write_extras(sites: list[Site]) -> None:
+    """Sitemap (todos los idiomas), robots y .nojekyll."""
+    first = sites[0]
+    out, site_url, base = first.out, first.site_url, first.base
+    if site_url:
+        sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for s in sites:
+            sm += [f"<url><loc>{html.escape(site_url + s.url(u))}</loc></url>" for u in s.page_urls()]
+        sm.append("</urlset>")
+        (out / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
+        (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {site_url}{base}/sitemap.xml\n", encoding="utf-8")
+    else:
+        (out / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
+    (out / ".nojekyll").write_text("", encoding="utf-8")
+
+
+def pending_report() -> str:
+    """Resumen de traducciones pendientes (se ve en GitHub, en la publicación)."""
+    if not PENDING:
+        return "## Traducciones al inglés\n\nTodas las traducciones están al día.\n"
+    falta = [r for r, k in PENDING if k == "falta"]
+    viejas = [r for r, k in PENDING if k == "desactualizada"]
+    out = ["## Traducciones al inglés pendientes", "",
+           "Estos artículos se ven en español dentro de la web en inglés hasta que se traduzcan.", ""]
+    if viejas:
+        out += [f"**Cambiados en español desde la última traducción ({len(viejas)}):**", ""] + [f"- `{r}`" for r in viejas] + [""]
+    if falta:
+        out += [f"**Sin traducir ({len(falta)}):**", ""] + [f"- `{r}`" for r in falta] + [""]
+    return "\n".join(out)
 
 
 def main() -> int:
@@ -641,11 +710,27 @@ def main() -> int:
     args = ap.parse_args()
 
     config = yaml.safe_load((ROOT / "config" / "site.yaml").read_text(encoding="utf-8"))
-    site = Site(Path(args.content).resolve(), Path(args.out).resolve(), args.base, args.site_url, config)
+    content, out = Path(args.content).resolve(), Path(args.out).resolve()
+    site = Site(content, out, args.base, args.site_url, config)
     site.build()
+    sites = [site]
+    n_warn = len(WARNINGS)
+    tr_root = ROOT / "traducciones"
+    for lang in [lg for lg in T.LANGS if lg != "es"]:
+        other = Site(content, out, args.base, args.site_url, config, lang=lang, translations=tr_root / lang, shared=site)
+        other.build()
+        sites.append(other)
+    del WARNINGS[n_warn:]  # los avisos de enlaces ya salen en la versión en español
     n_art = sum(len(m.articles()) for m in site.modules)
     n_vid = sum(1 for m in site.modules for p in m.pages() if p.videos)
+    write_extras(sites)
     print(f"Web generada en {args.out}: {len(site.modules)} módulos, {n_art} artículos, {n_vid} con vídeo, {len(site.assets)} archivos.")
+    report = pending_report()
+    pend_files = len({r for r, _ in PENDING})
+    print(f"Inglés: {pend_files} artículos pendientes de traducir o actualizar." if PENDING else "Inglés: todas las traducciones están al día.")
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as fh:
+            fh.write(report)
     if WARNINGS:
         print(f"\n{len(WARNINGS)} avisos:")
         for w in WARNINGS:
