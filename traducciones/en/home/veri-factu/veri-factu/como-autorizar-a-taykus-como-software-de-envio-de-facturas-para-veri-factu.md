@@ -1,6 +1,6 @@
 ---
 icon: check
-origen: 9917cecf0ab0
+origen: c56e5f91cf72
 ---
 # How to authorise Taykus as invoice submission software for Veri\*FACTU
 
@@ -11,7 +11,7 @@ Authorising Taykus with the Spanish Tax Agency (Agencia Tributaria) is a mandato
 ### Go to the Tax Agency's online portal (Sede Electrónica)
 
 * Click the following link to open it.\
-  [https://sede.agenciatributaria.gob.es/Sede/procedimientoini/ZP01.shtml](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/ZP01.shtml)
+  <a href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/ZP01.shtml" class="button primary">Go to the Tax Agency's online portal</a>
 {% endstep %}
 
 {% step %}

@@ -1,6 +1,6 @@
 ---
 icon: money-bill-transfer
-origen: cb40d73c78f6
+origen: d631f92b5ea3
 ---
 # How do I request the transfer?
 
@@ -48,6 +48,6 @@ There are four tabs in **Payments**:
 * **Already sent:** payments that have already been transferred.
 * **Incomplete:** transfers that couldn't be made because details are missing.
 
-To download the receipt for the transfer, see:
+To download the receipt for the transfer, see this article:
 
-[como-descargar-la-auto-factura.md](como-descargar-la-auto-factura.md "mention")
+<a href="como-descargar-la-auto-factura.md" class="button primary">How do I download the self-billing invoice?</a>

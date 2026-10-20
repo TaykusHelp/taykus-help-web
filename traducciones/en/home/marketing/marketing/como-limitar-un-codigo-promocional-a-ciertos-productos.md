@@ -1,6 +1,6 @@
 ---
 icon: filter
-origen: 20605966a292
+origen: 6930a6316a4b
 ---
 # How to limit a promo code to certain products
 
@@ -17,7 +17,9 @@ Follow these steps:
 
     <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-> **Important:** The promo code must already exist before you can limit it. If you haven't created it yet, see [How to create a promo code](como-hacer-un-codigo-promocional.md).
+> **Important:** The promo code must already exist before you can limit it. If you haven't created it yet, see this article:
+>
+> <a href="como-hacer-un-codigo-promocional.md" class="button primary">How to create a promo code</a>
 {% endstep %}
 
 {% step %}

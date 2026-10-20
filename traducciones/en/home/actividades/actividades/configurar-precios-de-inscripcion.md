@@ -1,6 +1,6 @@
 ---
 icon: square-dollar
-origen: ef333b965c38
+origen: dcd12f92e45d
 ---
 # Set up registration prices
 
@@ -39,11 +39,11 @@ When an activity lets people register for **more than one category**, you need t
 To do this, the following must already exist:
 
 * The **categories created** in the activity.\
-  _&#x54;o find out how, follow this link:_\
-  [como-crear-categorias.md](como-crear-categorias.md "mention")
+  To find out how, see this article:\
+  <a href="como-crear-categorias.md" class="button primary">How to create categories</a>
 * The **Item products** with the corresponding prices.\
-  To find out how to create them, click the following link:\
-  [How to create an Item product](https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo "mention")
+  To find out how to create them, see this article:\
+  <a href="https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo" class="button primary">How to create an Item product</a>
 
 Once they exist, from this section you can link each price to its registration option.
 {% endstep %}

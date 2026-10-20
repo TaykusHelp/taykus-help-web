@@ -1,14 +1,14 @@
 ---
 icon: lightbulb-dollar
-origen: 62d5755e3cc6
+origen: 1f7b1f5f655c
 ---
 # How to create or add an automatic extra
 
 An **automatic extra** is a supplement that is added to the booking price automatically under certain conditions. For example, charging separately for lights from a certain time or on certain dates.
 
-> **Before you start:** the extra must exist as a Service product. If you haven't created it yet, see:
+> **Before you start:** the extra must exist as a Service product. If you haven't created it yet, see this article:
 >
-> [como-crear-un-producto-tipo-servicio.md](../../ventas/productos/como-crear-un-producto-tipo-servicio.md "mention")
+> <a href="../../ventas/productos/como-crear-un-producto-tipo-servicio.md" class="button primary">How to create a Service product</a>
 
 Follow these steps:
 

@@ -1,7 +1,6 @@
 ---
-origen: e4c25c0a9b3c
+origen: 0391a1689351
 ---
-
 # How to create a match
 
 With matches, the club can open places on a court for players to sign up. It's a simple way to fill free slots in the calendar.
@@ -60,4 +59,6 @@ Follow these steps:
 {% endstep %}
 {% endstepper %}
 
-> Until the match is full, it's placed on a virtual court called **Matches**. We explain this in [How matches work in the calendar](como-funcionan-los-partidos-en-el-calendario.md).
+> Until the match is full, it's placed on a virtual court called **Matches**. To find out more, see this article:
+>
+> <a href="como-funcionan-los-partidos-en-el-calendario.md" class="button primary">How matches work in the calendar</a>

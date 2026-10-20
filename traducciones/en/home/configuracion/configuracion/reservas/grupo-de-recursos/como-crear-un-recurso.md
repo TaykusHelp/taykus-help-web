@@ -1,6 +1,6 @@
 ---
 icon: tennis-ball
-origen: 1a2a33c91ad0
+origen: 0e5d3f307582
 ---
 # How to create a resource
 
@@ -76,4 +76,4 @@ These are the required fields:
 
 > **Important:** the court won't appear in the calendar yet. First you need to give it a schedule:
 
-[como-crear-un-horario.md](../horarios/como-crear-un-horario.md "mention")
+<a href="../horarios/como-crear-un-horario.md" class="button primary">How to create a schedule</a>

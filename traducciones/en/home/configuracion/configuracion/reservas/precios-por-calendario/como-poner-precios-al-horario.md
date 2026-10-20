@@ -1,14 +1,14 @@
 ---
 icon: display-chart-up-circle-dollar
-origen: bdfec025f0e1
+origen: d2d1d0d733e4
 ---
 # How to set prices for the schedule
 
 In **Calendar prices** you decide the price of each booking according to the day and time. For example, you can charge differently at peak and off-peak times. Each time slot uses a **Service** product, which sets the price.
 
-> **Important:** here you only change **prices**. Court opening and availability don't change. For that, see:
+> **Important:** here you only change **prices**. Court opening and availability don't change. For that, see this article:
 >
-> [como-crear-un-horario.md](../horarios/como-crear-un-horario.md "mention")
+> <a href="../horarios/como-crear-un-horario.md" class="button primary">How to create a schedule</a>
 
 Follow these steps:
 

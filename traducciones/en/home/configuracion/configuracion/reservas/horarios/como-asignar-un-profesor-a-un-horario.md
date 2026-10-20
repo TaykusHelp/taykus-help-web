@@ -1,12 +1,12 @@
 ---
 icon: circle-user-clock
-origen: 7bd32579bf31
+origen: 62c01ad14b11
 ---
 # How to assign a coach to a schedule
 
-For a coach to be bookable, they need to be in a schedule, just like courts. Before assigning them, the coach must be created as a resource. If you haven't done that yet, read this article first:
+For a coach to be bookable, they need to be in a schedule, just like courts. Before assigning them, the coach must be created as a resource. If you haven't done that yet, see this article first:
 
-[como-anadir-a-un-profesor-nuevo.md](../grupo-de-recursos/como-anadir-a-un-profesor-nuevo.md "mention")
+<a href="../grupo-de-recursos/como-anadir-a-un-profesor-nuevo.md" class="button primary">How to add a new coach</a>
 
 Follow these steps:
 

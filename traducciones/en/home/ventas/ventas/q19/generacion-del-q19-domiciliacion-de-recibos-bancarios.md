@@ -1,6 +1,6 @@
 ---
 icon: money-bill-transfer
-origen: 7c1bb276cf94
+origen: c05da1cc333b
 ---
 # Generating the Q19 (direct debit of bank receipts)
 
@@ -20,9 +20,9 @@ Before generating a Q19, check that the following details have been created in:
 
 * **Settings > Sales > Companies**
 
-To find out how, you can read the following article:
+To find out how, see this article:
 
-* [antes-de-empezar-a-remesar.md](antes-de-empezar-a-remesar.md "mention")
+<a href="antes-de-empezar-a-remesar.md" class="button primary">Before you start creating remittances</a>
 
 {% stepper %}
 {% step %}

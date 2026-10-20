@@ -1,6 +1,6 @@
 ---
 icon: user-plus
-origen: d0d300f93927
+origen: d0d2d1ce5443
 ---
 # How to add a new coach
 
@@ -8,7 +8,9 @@ origen: d0d300f93927
 
 Coaches are usually created during the initial setup. If you need to add a new one, follow these steps.
 
-> **Important: creating the coach isn't enough.** After creating them here, **they won't appear in the calendar** until you assign them a schedule. It's the step people forget most: as soon as you finish this article, carry on with [How to assign a coach to a schedule](../horarios/como-asignar-un-profesor-a-un-horario.md).
+> **Important: creating the coach isn't enough.** After creating them here, **they won't appear in the calendar** until you assign them a schedule. It's the step people forget most. As soon as you finish, see this article:
+>
+> <a href="../horarios/como-asignar-un-profesor-a-un-horario.md" class="button primary">How to assign a coach to a schedule</a>
 
 Follow these steps:
 
@@ -74,4 +76,4 @@ Follow these steps:
 
 > **Don't forget:** the coach **doesn't appear in the calendar** yet. Now you need to assign them a schedule:
 
-<a href="../horarios/como-asignar-un-profesor-a-un-horario.md" class="button primary">How to assign a schedule to a coach</a>
+<a href="../horarios/como-asignar-un-profesor-a-un-horario.md" class="button primary">How to assign a coach to a schedule</a>

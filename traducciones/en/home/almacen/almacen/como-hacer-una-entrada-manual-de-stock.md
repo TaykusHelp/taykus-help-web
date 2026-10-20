@@ -1,6 +1,6 @@
 ---
 icon: basket-shopping-plus
-origen: e210c60440ff
+origen: 4a46cff7f11a
 ---
 # How to add stock manually
 
@@ -11,8 +11,8 @@ The first option is to go to the list of stock requests, open the\
 Stock in block and add the new quantities for each item. This method\
 is ideal for updating several products at once, quickly and easily.
 
-To find out how, read the following article:\
-[como-crear-una-peticion-de-stock.md](como-crear-una-peticion-de-stock.md "mention")
+To find out how, see this article:\
+<a href="como-crear-una-peticion-de-stock.md" class="button primary">How to create a stock request</a>
 
 However, if you only need to add stock to a single item, the best\
 option is the second one, designed specifically for individual stock\

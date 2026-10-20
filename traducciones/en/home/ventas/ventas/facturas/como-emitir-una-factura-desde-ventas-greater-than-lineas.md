@@ -1,6 +1,6 @@
 ---
 icon: memo-circle-check
-origen: 70faa82164d7
+origen: 1efed076b137
 ---
 # How to issue an invoice from Sales > Lines
 
@@ -21,10 +21,11 @@ Before issuing the invoice, check that the following details have been created i
 * **Settings > Sales > Companies**
 * **Settings > Sales > Customer companies**
 
-To find out how, you can read the following articles:
+To find out how, see these articles:
 
-* [How to set up your company details](https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/empresas/como-configurar-los-datos-de-empresa "mention")
-* [How to create customer companies in the system](https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/empresas-clientes/como-crear-empresas-cliente-en-el-sistema "mention")
+<a href="https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/empresas/como-configurar-los-datos-de-empresa" class="button primary">How to set up your company details</a>
+
+<a href="https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/empresas-clientes/como-crear-empresas-cliente-en-el-sistema" class="button primary">How to create customer companies in the system</a>
 
 {% stepper %}
 {% step %}

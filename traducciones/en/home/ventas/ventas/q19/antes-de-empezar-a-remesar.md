@@ -1,6 +1,6 @@
 ---
 icon: file-check
-origen: 16b34e3505ab
+origen: c673b305d0fa
 ---
 # Before you start creating remittances
 
@@ -40,6 +40,6 @@ Remember to check in particular that the bank and tax details are filled in corr
 
 With these checks done, you can go on to generate the Q19 with more confidence.
 
-To find out how, click the following link:
+To find out how, see this article:
 
-[generacion-del-q19-domiciliacion-de-recibos-bancarios.md](generacion-del-q19-domiciliacion-de-recibos-bancarios.md "mention")
+<a href="generacion-del-q19-domiciliacion-de-recibos-bancarios.md" class="button primary">Generating the Q19 (direct debit of bank receipts)</a>

@@ -1,7 +1,6 @@
 ---
-origen: ff117b88f91a
+origen: b9dfaad36bf8
 ---
-
 # How to top up a voucher from the POS
 
 Topping up a wallet voucher from the POS lets you add balance immediately so the customer can use it for future purchases or bookings. The process is automatically recorded in the system and makes prepayments easier to manage.&#x20;
@@ -39,8 +38,8 @@ Here's how to top up a voucher:
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-* If you need to make a specific change for this customer, you can **Customise the top-up**; to find out how, click the following link:\
-  [como-hacer-una-recarga-personalizada-de-un-bono-monedero-desde-el-tpv.md](como-hacer-una-recarga-personalizada-de-un-bono-monedero-desde-el-tpv.md "mention")<br>
+* If you need to make a specific change for this customer, you can **Customise the top-up**; to find out how, see this article:\
+  <a href="como-hacer-una-recarga-personalizada-de-un-bono-monedero-desde-el-tpv.md" class="button primary">How to make a customised wallet voucher top-up from the POS</a><br>
 {% endstep %}
 
 {% step %}

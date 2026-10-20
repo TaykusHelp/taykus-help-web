@@ -1,6 +1,6 @@
 ---
 icon: user
-origen: 8eb26f505e31
+origen: ed418c1632e3
 ---
 # How to create a user
 
@@ -31,7 +31,9 @@ Follow these steps:
     * **Email:** the email they'll use to log in to Taykus.
     * **Password:** their login password.
     * **Preferred language:** the language they'll see the program in.
-    * **Role:** the permissions they'll have. To find out how to create or edit a role, see [como-crear-editar-o-borra-un-rol.md](../roles/como-crear-editar-o-borra-un-rol.md "mention").
+    * **Role:** the permissions they'll have. To find out how to create or edit a role, see this article:
+
+      <a href="../roles/como-crear-editar-o-borra-un-rol.md" class="button primary">How to create, edit or delete a role</a>
     * **Home page:** the screen they'll see when they log in.
 * Click **Save**.
 {% endstep %}

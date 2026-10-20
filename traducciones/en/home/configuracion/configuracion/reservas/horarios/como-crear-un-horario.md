@@ -1,6 +1,6 @@
 ---
 icon: clock-three
-origen: 15104b307bfc
+origen: c76a56afd4b8
 ---
 # How to create a schedule
 
@@ -83,5 +83,7 @@ Here you'll set up two things:
 ## If something doesn't work
 
 * **The court doesn't appear in the calendar:** check that it's been added in **Opening hours** (step 4). Creating the schedule without adding the court isn't enough.
-* **I've extended the schedule and it won't let me book the new hours:** also extend the time slot in [calendar prices](../precios-por-calendario/como-poner-precios-al-horario.md). The schedule and the prices must cover the same hours.
+* **I've extended the schedule and it won't let me book the new hours:** also extend the time slot in calendar prices. The schedule and the prices must cover the same hours. To do this, see this article:
+
+  <a href="../precios-por-calendario/como-poner-precios-al-horario.md" class="button primary">How to set prices for the schedule</a>
 * **It won't let me save the duration:** the minimum and maximum duration must be multiples of the interval. With a 30-minute interval you can enter 60 or 90, but not 45.

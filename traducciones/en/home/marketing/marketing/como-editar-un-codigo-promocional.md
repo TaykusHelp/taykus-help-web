@@ -1,6 +1,6 @@
 ---
 icon: pencil
-origen: 7fa45ea2b9e5
+origen: 7c7503f4c479
 ---
 # How to edit a promo code
 
@@ -48,4 +48,6 @@ In this article we explain how to edit a promo code step by step.
 
 Editing a promo code lets you adapt active campaigns without creating new promotions. Reviewing their settings regularly helps you keep control of your discounts and avoid mistakes when they are applied.
 
-If you want the discount to apply only to some products, see [How to limit a promo code to certain products](como-limitar-un-codigo-promocional-a-ciertos-productos.md).
+If you want the discount to apply only to some products, see this article:
+
+<a href="como-limitar-un-codigo-promocional-a-ciertos-productos.md" class="button primary">How to limit a promo code to certain products</a>

@@ -1,6 +1,6 @@
 ---
 icon: calendar-xmark
-origen: a90c35d483f7
+origen: e3e4be145713
 ---
 # How to close a day
 
@@ -8,7 +8,9 @@ You can close the club for a whole day so that no bookings can be made on any co
 
 To do this, you use a schedule called **Closed**, with a higher priority than the others, to which you add the closing dates.
 
-> If you only want to close **one court** on a specific day, you can do it directly from the calendar: [How to close a court](https://app.gitbook.com/s/hSQoRJmdDmzxYVh7vpFW/calendario/calendario/como-cerrar-una-pista).
+> If you only want to close **one court** on a specific day, you can do it directly from the calendar. To find out how, see this article:
+>
+> <a href="https://app.gitbook.com/s/hSQoRJmdDmzxYVh7vpFW/calendario/calendario/como-cerrar-una-pista" class="button primary">How to close a court</a>
 
 Follow these steps:
 

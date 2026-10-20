@@ -1,6 +1,6 @@
 ---
 icon: flag-pennant
-origen: 3b03015e2696
+origen: 4f3e2bd2870e
 ---
 # How to create an activity
 
@@ -34,7 +34,8 @@ In this article we show you how to set them up.
 * **Description:** Space to add extra information.
 * **Sport:** a drop-down opens where you select the sport.
 * **Product:** Select a previously created product **in the ITEM category.** This is the price that will be assigned to this activity.
-  * _To create Item products, see the following article:_ [How to create an Item product](https://taykus-help-center.gitbook.io/taykushelpcenter/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo)
+  * To create Item products, see this article:\
+    <a href="https://taykus-help-center.gitbook.io/taykushelpcenter/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo" class="button primary">How to create an Item product</a>
 * **Comments:** space to add an internal note.
 * **Participants:** Sets the number of people who can fill in the form.
 * **Start:** Start date of the course/school/academy.

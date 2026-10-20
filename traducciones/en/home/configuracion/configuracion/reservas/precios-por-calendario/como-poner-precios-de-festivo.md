@@ -1,14 +1,14 @@
 ---
 icon: party-horn
-origen: cfa14304ee8d
+origen: 17c42901de25
 ---
 # How to set holiday prices
 
 You can charge a different price on public holidays, for example if there's more demand on those days. Prices for the other days don't change.
 
-> **Important:** here you only change **prices**. Court opening and availability don't change. For that, see:
+> **Important:** here you only change **prices**. Court opening and availability don't change. For that, see this article:
 >
-> [como-poner-horario-de-festivo.md](../horarios/como-poner-horario-de-festivo.md "mention")
+> <a href="../horarios/como-poner-horario-de-festivo.md" class="button primary">How to set a holiday schedule</a>
 
 Follow these steps:
 

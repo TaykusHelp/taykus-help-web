@@ -3,7 +3,7 @@ icon: percent
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/3skVJGiWTwyjsaSOv8cH/
-origen: b3966502ec31
+origen: a1cba045aaa9
 ---
 # How to create a promo code
 
@@ -59,4 +59,6 @@ Promo codes let you apply discounts quickly and in a controlled way to bookings,
 
 Creating and checking a promo code correctly ensures that discounts are applied without errors and avoids problems at the till or with online bookings. We always recommend testing the code before sharing it with customers to make sure it works as expected.
 
-If you want the discount to apply only to some products, see [How to limit a promo code to certain products](como-limitar-un-codigo-promocional-a-ciertos-productos.md).
+If you want the discount to apply only to some products, see this article:
+
+<a href="como-limitar-un-codigo-promocional-a-ciertos-productos.md" class="button primary">How to limit a promo code to certain products</a>
