@@ -45,6 +45,7 @@ Actualizado: 20 oct 2026
 - Acceso a configuración: "Clica en el icono ⚙ de la esquina superior derecha y entra en Configuración".
 - Avisos como cita "> **Importante:**". No tocar imágenes ni vídeos (salvo capturas nuevas que mande Valeria).
 - Revisión de Valeria antes de publicar: página de antes/después con las dudas numeradas; ella responde por número en el chat.
+- Comprobar la web publicada: si Claude no puede abrirla, no se queda esperando; avisa a Valeria y lo comprueba ella.
 
 ## Pendiente
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
