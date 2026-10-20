@@ -26,6 +26,7 @@ Actualizado: 20 oct 2026
 - Artículos antiguos pasados a pasos (5 oct): cerrar una pista, Display, crear jugador, recargar bono, correo masivo, tipos de jugador.
 - Redacción revisada y validada por Valeria: Calendario (16 artículos) y Configuración (46 artículos), 6 oct.
 - Códigos promocionales (Marketing), 16 oct: "Cómo hacer" actualizado al formulario nuevo, "Cómo editar" con captura nueva, y artículo nuevo "Cómo limitar un código promocional a ciertos productos".
+- Errata corregida (20 oct): Apple "Cómo crear una cuenta de desarrollador" decía "Google" en el D-U-N-S; ahora dice "Apple". Traducción al inglés resellada.
 
 ## Datos confirmados por Valeria (para no volver a preguntar)
 - Prioridad de horarios y precios por calendario: gana el número más alto. Entre semana el más bajo, fin de semana mayor, festivo/cerrado el más alto (100).
@@ -48,8 +49,8 @@ Actualizado: 20 oct 2026
 ## Pendiente
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
 - Confirmar con el panel en inglés los nombres de botones y menús de la traducción.
-- Erratas en español: Apple "Cómo crear una cuenta de desarrollador" dice "Google" en el D-U-N-S; "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja".
-- Borrar las ramas `mejora-configuracion`, `mejora-codigos-promocionales` (help-center) e `ingles` (web) en GitHub.
+- Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja".
+- Borrar las ramas `mejora-configuracion`, `mejora-codigos-promocionales`, `mejora-errata-apple` (help-center) e `ingles` (web) en GitHub.
 - Dominio propio (ayuda.taykus.com): registro DNS por quien gestione el dominio.
 - Unas 11 imágenes siguen alojadas en GitBook (pegadas como enlace); conviene resubirlas en GitBook.
 - "¿Te ha sido útil?" aún no guarda las respuestas.
