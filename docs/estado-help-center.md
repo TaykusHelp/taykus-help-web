@@ -27,6 +27,7 @@ Actualizado: 20 oct 2026
 - Redacción revisada y validada por Valeria: Calendario (16 artículos) y Configuración (46 artículos), 6 oct.
 - Códigos promocionales (Marketing), 16 oct: "Cómo hacer" actualizado al formulario nuevo, "Cómo editar" con captura nueva, y artículo nuevo "Cómo limitar un código promocional a ciertos productos".
 - Errata corregida (20 oct): Apple "Cómo crear una cuenta de desarrollador" decía "Google" en el D-U-N-S; ahora dice "Apple". Traducción al inglés resellada.
+- Enlaces entre artículos pasados a botón (20 oct): 25 enlaces en 23 artículos, con el título real del artículo. Veri*FACTU con botón "Ir a la sede de la Agencia Tributaria". En "Cómo añadir a un profesor nuevo", botón también en el aviso inicial y botón final con el título real. Mismo cambio en las traducciones al inglés, reselladas. Las tarjetas de las portadas de sección no se tocaron.
 
 ## Datos confirmados por Valeria (para no volver a preguntar)
 - Prioridad de horarios y precios por calendario: gana el número más alto. Entre semana el más bajo, fin de semana mayor, festivo/cerrado el más alto (100).
@@ -44,14 +45,15 @@ Actualizado: 20 oct 2026
 - Tú/imperativo ("Clica", "Selecciona"), menú lateral izquierdo, botones en negrita.
 - Acceso a configuración: "Clica en el icono ⚙ de la esquina superior derecha y entra en Configuración".
 - Avisos como cita "> **Importante:**". No tocar imágenes ni vídeos (salvo capturas nuevas que mande Valeria).
+- Enlaces a otros artículos: siempre como botón `<a href="ruta.md" class="button primary">Título real del artículo</a>`, sin icono. Si el enlace va en mitad de una frase (también en listas y avisos), la frase termina con "consulta este artículo:" y el botón va debajo. Nada de "léase/véase el siguiente artículo" ni "haz clic en el siguiente enlace". Las tarjetas de las portadas de sección no se tocan.
 - Revisión de Valeria antes de publicar: página de antes/después con las dudas numeradas; ella responde por número en el chat.
 - Comprobar la web publicada: si Claude no puede abrirla, no se queda esperando; avisa a Valeria y lo comprueba ella.
 
 ## Pendiente
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
 - Confirmar con el panel en inglés los nombres de botones y menús de la traducción.
-- Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja".
-- Borrar las ramas `mejora-configuracion`, `mejora-codigos-promocionales`, `mejora-errata-apple` (help-center) e `ingles` (web) en GitHub.
+- Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja"; "Cómo crear categorias" (Actividades) no lleva tilde en el título.
+- Borrar las ramas `mejora-configuracion`, `mejora-codigos-promocionales`, `mejora-errata-apple`, `mejora-enlaces-botones` (help-center) e `ingles`, `mejora-enlaces-botones` (web) en GitHub.
 - Dominio propio (ayuda.taykus.com): registro DNS por quien gestione el dominio.
 - Unas 11 imágenes siguen alojadas en GitBook (pegadas como enlace); conviene resubirlas en GitBook.
 - "¿Te ha sido útil?" aún no guarda las respuestas.
