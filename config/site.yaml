@@ -13,7 +13,7 @@ site:
 # truck, box, chart, mail, invoice, phone, monitor.
 modules:
   calendario:      { description: "Reservas, partidos y reservas múltiples.", icon: calendar }
-  jugadores:       { description: "Fichas, tipos de jugador, bonos y niveles.", icon: user }
+  jugadores:       { description: "Fichas, tipos de jugador, clientes responsables, bonos y niveles.", icon: user }
   academia:        { description: "Grupos, alumnos, cuotas y preinscripciones.", icon: medal }
   equipos:         { description: "Gestión de equipos.", icon: team }
   configuracion:   { description: "Horarios, precios, productos, usuarios y roles.", icon: gear }
@@ -40,7 +40,7 @@ en:
     tagline: Step-by-step guides and videos to get the most out of Taykus at your club.
   modules:
     calendario:      { title: "Calendar", description: "Bookings, matches and multiple bookings." }
-    jugadores:       { title: "Players", description: "Player profiles, player types, vouchers and levels." }
+    jugadores:       { title: "Players", description: "Player profiles, player types, responsible customers, vouchers and levels." }
     academia:        { title: "Academy", description: "Groups, students, fees and pre-registrations." }
     equipos:         { title: "Teams", description: "Team management." }
     configuracion:   { title: "Settings", description: "Schedules, prices, products, users and roles." }
