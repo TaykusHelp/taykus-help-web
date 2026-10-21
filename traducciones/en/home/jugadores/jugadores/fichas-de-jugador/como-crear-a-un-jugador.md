@@ -1,7 +1,6 @@
 ---
-origen: 3adef980b296
+origen: 4f18a597251f
 ---
-
 # How to create a player
 
 Having your players properly registered lets you check their information, history and contact details, and avoids duplicates in the club's database.
@@ -16,7 +15,7 @@ You can create a new player in two ways: from **Players** or from the **Calendar
 
 * Click **Players** in the left-hand menu.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -49,7 +48,7 @@ You can create a new player in two ways: from **Players** or from the **Calendar
 * Select the **Player** field.
 * Click **Create new**.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 > If you already have players created, the **Create new** option appears at the bottom of the drop-down list of players.
 {% endstep %}
@@ -59,7 +58,7 @@ You can create a new player in two ways: from **Players** or from the **Calendar
 
 Either option takes you to this profile:
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 The profile has lots of fields in case you want to keep complete information about the player, but not all of them are needed.
 

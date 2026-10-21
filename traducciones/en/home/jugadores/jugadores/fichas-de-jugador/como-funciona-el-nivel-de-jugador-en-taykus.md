@@ -1,7 +1,6 @@
 ---
 origen: c3fd5eb8ad79
 ---
-
 # How player level works in Taykus
 
 Player level ranks users according to their skill in the sport, such as padel or tennis. This way, matches can be organised more evenly and players can find opponents or partners of a similar level.

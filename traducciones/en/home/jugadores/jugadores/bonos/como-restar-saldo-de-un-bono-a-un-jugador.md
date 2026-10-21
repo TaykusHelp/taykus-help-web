@@ -1,7 +1,6 @@
 ---
-origen: fe19d884341d
+origen: 67c77c4f33eb
 ---
-
 # How to deduct balance from a player's voucher
 
 Managing players' vouchers is one of the main things the program will be used for. In this article we explain how to manually deduct balance from a voucher already assigned to a player and the steps to follow.
@@ -19,7 +18,7 @@ Follow these steps:
 * Open the left-hand menu.
 *   Click **Players**.<br>
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 * Find the player whose voucher balance you want to reduce.
 * Click their ID to open the profile.
 {% endstep %}
@@ -29,12 +28,12 @@ Follow these steps:
 
 *   In the player profile, go to the **Vouchers** tab.<br>
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 * In the **active vouchers** section, find the voucher you want to adjust.
 * Click the voucher's ID to open its details.
 *   Once inside, go to the **Transactions** tab.<br>
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -42,7 +41,7 @@ Follow these steps:
 
 *   In **Transactions**, click the **+** button to add a new transaction.<br>
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 * In the pop-up window:
   * Leave the **Balance** field blank.
   * In the **Amount** field, enter the amount you want to deduct from the voucher as a **negative** number.
@@ -64,7 +63,7 @@ Once the transaction has been saved:
   * and the resulting **new balance**.
 * If the adjustment has been made correctly, the voucher balance is updated automatically.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

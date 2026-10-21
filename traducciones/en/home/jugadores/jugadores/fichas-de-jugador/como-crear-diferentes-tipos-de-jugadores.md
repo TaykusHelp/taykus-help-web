@@ -1,5 +1,5 @@
 ---
-origen: 1e65bc52af8a
+origen: 3e2576574134
 ---
 # How to create different player types
 
@@ -14,7 +14,7 @@ Follow these steps:
 * Click **Players** in the left-hand menu.
 * Select **Player types**, just below.
 
-<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 * This block shows all the player types you've already created.
 {% endstep %}
@@ -25,7 +25,7 @@ Follow these steps:
 * Click <i class="fa-plus">:plus:</i>.
 * Enter the name of the new category.
 
-<div align="left"><figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure></div>
 
 * Save with <i class="fa-floppy-disk">:floppy-disk:</i>.
 {% endstep %}
