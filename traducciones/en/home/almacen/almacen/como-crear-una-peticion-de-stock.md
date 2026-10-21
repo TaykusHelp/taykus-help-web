@@ -1,6 +1,6 @@
 ---
 icon: basket-shopping
-origen: a1225b0619cd
+origen: e68d6518025b
 ---
 # How to create a stock request
 

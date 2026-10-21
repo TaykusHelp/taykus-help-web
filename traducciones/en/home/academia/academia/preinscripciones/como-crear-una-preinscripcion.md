@@ -1,7 +1,6 @@
 ---
-origen: fdbfcc6c9ede
+origen: f0e4e2ce8a2a
 ---
-
 # How to create a pre-registration
 
 Pre-registrations let you collect interest from new students before assigning them to a group or coach, so you can manage demand in an organised way. This module helps the club plan places, times and levels in advance, avoiding overcrowding and keeping the information structured from the start. With this first step, it's easier to review requests and confirm registrations quickly and in a controlled way.
@@ -36,12 +35,12 @@ In this article we show you how to set them up.
       * _To create Item products, see the following article:_\
         <a href="https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo" class="button primary" data-icon="box">How to create an Item product</a>
     * **Comments:** space to add an internal note.
-    * **Participants:** Sets the number of people who can fill in the form.
+    * **Participants:** maximum number of people who can sign up.
     * **Start:** Start date of the course/school/academy.
     * **End:** End date of the course/school/academy.
     * **Registration from:** Date registration opens.
     * **Registration until:** Date registration closes.
-    * **Maximum Number of Participants:** Sets the maximum number of people who can take part.
+    * **Maximum Number of Participants:** works the same as **Participants**.
     * **Online:** This box only makes the course visible on the website. Nothing else. It doesn't open registration or change how it's managed.
     * **Online registration:** Lets users access the pre-registration from the website. Without this ticked, the course is only shown and doesn't accept registrations.
 * Click Save to keep your changes.

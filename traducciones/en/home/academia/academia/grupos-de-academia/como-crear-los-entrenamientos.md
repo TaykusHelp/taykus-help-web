@@ -1,10 +1,10 @@
 ---
 icon: medal
-origen: 2d9c59787127
+origen: 4bda58c095ad
 ---
 # How to create the training sessions
 
-**Training sessions** are the course's weekly sessions: the day, time and court where each group trains; you can also select the coach. When you create them, you can **link the bookings to the academy group**, so that all attendance and places are linked to the course instead of being separate bookings.
+**Training sessions** are the course's weekly sessions: the day, time and court where each group trains and, if you want, the coach. When you create them, you can **link the bookings to the academy group**, so that all attendance and places are linked to the course instead of being separate bookings.
 
 If you're going to use **prices per day**, you must create them **before** adding the training sessions. Only then will the system correctly assign which days each student can choose and which price applies. Once that's done, you can set up the training sessions and get the group ready.
 

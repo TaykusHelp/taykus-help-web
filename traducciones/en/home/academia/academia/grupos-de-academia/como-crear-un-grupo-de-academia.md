@@ -1,6 +1,6 @@
 ---
 icon: medal
-origen: a9dc4825c82b
+origen: 302d766a4216
 ---
 # How to create an Academy group
 

@@ -1,6 +1,6 @@
 ---
 icon: money-bill-transfer
-origen: c05da1cc333b
+origen: fdf667ab9773
 ---
 # Generating the Q19 (direct debit of bank receipts)
 
@@ -81,7 +81,7 @@ Once the filters are applied, select the lines you want to include and press **S
 {% step %}
 ### Check for errors
 
-When you select the lines in the previous step, an **Error** warning may appear; select **OK** and check those errors.
+When you select the lines, an **Error** warning may appear. If it does, click **OK** and check the errors as explained below.
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 

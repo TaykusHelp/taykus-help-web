@@ -1,7 +1,6 @@
 ---
-origen: 39a3c5bdd376
+origen: 8594016bd1d5
 ---
-
 # How to sell an open product
 
 Having a POS tool that lets you sell products that aren't registered in the system is very useful, especially for occasional products that won't be available regularly.&#x20;

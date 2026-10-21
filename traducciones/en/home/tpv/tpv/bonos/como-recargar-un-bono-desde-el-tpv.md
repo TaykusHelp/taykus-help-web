@@ -1,11 +1,11 @@
 ---
-origen: b9dfaad36bf8
+origen: bd1ad40e6f40
 ---
 # How to top up a voucher from the POS
 
 Topping up a wallet voucher from the POS lets you add balance immediately so the customer can use it for future purchases or bookings. The process is automatically recorded in the system and makes prepayments easier to manage.&#x20;
 
-Here's how to top up a voucher:
+Below are the steps to follow:
 
 {% stepper %}
 {% step %}

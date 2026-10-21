@@ -1,7 +1,6 @@
 ---
-origen: 40d2a0e87f2c
+origen: 6725984daafd
 ---
-
 # Cash registers
 
 {% tabs %}
@@ -11,10 +10,6 @@ origen: 40d2a0e87f2c
 The **Cash registers** section lets you keep track of the income recorded at the club, check the transactions made and review the summary of the different payment methods.
 
 From this section you can also **open a cash register**, entering the details needed to start recording transactions correctly during the day.
-
-### Explainer video
-
-
 
 In this article we'll see how to go to **Sales > Cash registers** and how to open the cash register step by step.
 
@@ -64,10 +59,6 @@ From this same screen you can check the summary of payment methods, the income c
 A cash count lets you check the money in the cash register at a specific moment, without closing the day.
 
 This option is useful for checking whether the actual cash matches the amount the system calculates there should be according to the transactions recorded. This way, the club can spot any differences, review the status of the cash register and keep a record of the count before carrying on.
-
-### Explainer video
-
-
 
 {% stepper %}
 {% step %}
@@ -130,10 +121,6 @@ This way, the club can see the real status of the cash register at that moment, 
 
 Cash in and cash out let you record manual cash register transactions that aren't linked to sales, such as topping up the float or small payments. Each operation is reflected in the closing and the reports, ensuring control and traceability.
 
-### Explainer video
-
-
-
 Here's how to do it step by step:
 
 {% stepper %}
@@ -173,10 +160,6 @@ Before saving, we recommend checking that the amount and the comment are correct
 Closing the cash register ends the working day and records the cash available at the end of the day.
 
 In this process you can enter how much money is left in the cash register, check any differences and add notes if needed. This figure is important, as it's used as the reference for the next opening.
-
-### Explainer video
-
-
 
 In this article we'll see how to close the cash register from **Sales > Cash registers** and what information you need to fill in before confirming the closing.
 

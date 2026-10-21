@@ -1,10 +1,10 @@
 ---
 icon: basket-shopping-minus
-origen: 6dc08280864e
+origen: 24d526cff73d
 ---
 # How to remove stock
 
-In this module you can easily remove products from the inventory. Just select the item, enter how many units you want to remove and the reason (such as breakage, a return or a counting error).
+In this module you can easily remove products from the inventory. You do it from **Manual Entry**: choose the product and enter, as a negative number, how many units you want to remove.
 
 This helps keep your stock up to date and avoids inventory errors.
 
@@ -19,7 +19,7 @@ To do this, just follow these simple steps:
 {% endstep %}
 
 {% step %}
-### Add an entry
+### Remove the quantity
 
 * In the top left corner, select **Add Entry**.
 *   The following form opens, which you need to fill in as follows:<br>

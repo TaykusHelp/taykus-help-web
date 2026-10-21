@@ -1,7 +1,6 @@
 ---
-origen: 25effd5f504c
+origen: f95831405038
 ---
-
 # General email settings
 
 In the **General email settings** section you can view and set the technical details of the account used to send the club's automatic emails.
@@ -27,3 +26,7 @@ The available fields include:
 * **Sender name**
 
 These details depend on the email provider the club uses.
+
+To find out how to get to this screen, see this article:
+
+<a href="acceso-a-la-configuracion-de-las-comunicaciones.md" class="button primary">Access communications settings</a>

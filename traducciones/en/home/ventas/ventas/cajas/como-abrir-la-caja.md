@@ -1,16 +1,11 @@
 ---
-origen: 81c1d619d0e3
+origen: d2e7aaeadcf0
 ---
-
 # How to open the cash register
 
 The **Cash registers** section lets you keep track of the income recorded at the club, check the transactions made and review the summary of the different payment methods.
 
 From this section you can also **open a cash register**, entering the details needed to start recording transactions correctly during the day.
-
-### Explainer video
-
-
 
 In this article we'll see how to go to **Sales > Cash registers** and how to open the cash register step by step.
 

@@ -1,7 +1,6 @@
 ---
-origen: f3554c19ae1d
+origen: 194249d6985f
 ---
-
 # How to resume a parked sale
 
 Resuming a parked sale lets you pick up a paused transaction without losing the information already entered. This is useful for continuing the payment when a customer comes back or when a transaction at the till has been interrupted. Here's how to resume a parked sale step by step.

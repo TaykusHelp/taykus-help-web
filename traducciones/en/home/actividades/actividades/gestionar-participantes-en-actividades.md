@@ -1,6 +1,6 @@
 ---
 icon: user-doctor
-origen: 8edb13f2d929
+origen: ba38184a60f9
 ---
 # Manage activity participants
 

@@ -1,14 +1,9 @@
 ---
-origen: 8c6b5b153eef
+origen: 4bd99c720cce
 ---
-
 # How to record a cash in or cash out
 
 Cash in and cash out let you record manual cash register transactions that aren't linked to sales, such as topping up the float or small payments. Each operation is reflected in the closing and the reports, ensuring control and traceability.
-
-### Explainer video
-
-
 
 Here's how to do it step by step:
 
