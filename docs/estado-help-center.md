@@ -9,6 +9,7 @@ Actualizado: 21 oct 2026
 - Web publicada: https://taykushelp.github.io/taykus-help-web/ (GitHub Pages, repos públicos). Se publica cada hora, al cambiar el repo de la web y al pulsar Actions › Publicar centro de ayuda › Run workflow.
 - Textos de portada, correo de soporte, descripciones e iconos de módulos: `config/site.yaml` (apartado `en` para inglés).
 - Chat de claude.ai (desde 20 oct): instalado el "Claude Github MCP Connector" en la cuenta TaykusHelp, así que se puede leer y guardar texto en los dos repositorios. No puede subir imágenes (Valeria las sube en GitHub con "Add file › Upload files" en la rama), ni borrar ramas, ni lanzar la publicación de la web. Desde Claude Code sí se puede todo.
+- Publicar desde el chat: Claude crea la rama y guarda; Valeria crea la petición en GitHub (Compare & pull request › Create pull request, porque el formulario del chat no le aparece) y Claude la pasa a main. Primero artículos, después web.
 
 ## Versión en inglés (publicada 16 oct)
 - Selector ES / EN en la cabecera (también en móvil). Inglés en /en/ con las mismas direcciones que en español. La web recuerda si el visitante eligió inglés.
@@ -21,7 +22,7 @@ Actualizado: 21 oct 2026
 - Manual de identidad Taykus: azul #055AE2, celeste #18BBEA, azul noche #011733, degradado Taykus. Poppins para textos, Montserrat solo en el logotipo.
 
 ## Hecho
-- 17 módulos, 162 artículos, 27 con vídeo, ~390 imágenes importadas.
+- 17 módulos, 163 artículos, 27 con vídeo, ~390 imágenes importadas.
 - Pasos numerados, pestañas (se ocultan las vacías), vídeos que cargan al pulsar, imágenes ampliables, índice del artículo, relacionados, "¿Te ha sido útil?".
 - Buscador con tolerancia a faltas, fragmento resaltado y filtros por módulo y "con vídeo". En inglés tiene su propio índice.
 - Artículos antiguos pasados a pasos (5 oct): cerrar una pista, Display, crear jugador, recargar bono, correo masivo, tipos de jugador.
@@ -30,6 +31,7 @@ Actualizado: 21 oct 2026
 - Errata corregida (20 oct): Apple "Cómo crear una cuenta de desarrollador" decía "Google" en el D-U-N-S; ahora dice "Apple". Traducción al inglés resellada.
 - Enlaces entre artículos pasados a botón (20 oct): 25 enlaces en 23 artículos, con el título real del artículo. Veri*FACTU con botón "Ir a la sede de la Agencia Tributaria". En "Cómo añadir a un profesor nuevo", botón también en el aviso inicial y botón final con el título real. Mismo cambio en las traducciones al inglés, reselladas. Las tarjetas de las portadas de sección no se tocaron.
 - Cliente responsable (21 oct): 3 artículos nuevos: "Cómo asignar un cliente responsable a un jugador" y "Cómo ver los clientes asociados a un jugador" (Jugadores) y "Cómo cambiar entre tu cuenta y la de tus asociados en la zona de clientes" (Zona de clientes). Jugadores reorganizado en grupos: Fichas de jugador (crear, tipos, nivel, cliente responsable, asociados) y Bonos (recargar, transferir, restar); "Cómo enviar un correo masivo" queda suelto al final. Portada del módulo con la tarjeta de nivel, que faltaba. Cambian las direcciones web de los artículos movidos. Traducciones movidas y reselladas. En la captura de "Crear Nuevo" se difuminó la lista de clientes reales.
+- Cliente responsable dividido (21 oct): "Cómo asignar…" queda solo con los pasos (y un aviso en Guardar sobre el correo y el teléfono) y el artículo nuevo "Qué cambia cuando un jugador tiene cliente responsable" recoge correo y teléfono, cobros en el TPV, zona de clientes y cómo quitar la relación. Criterio: separar el "cómo se hace" del "qué implica" cuando las dudas llegan en momentos distintos.
 
 ## Datos confirmados por Valeria (para no volver a preguntar)
 - Prioridad de horarios y precios por calendario: gana el número más alto. Entre semana el más bajo, fin de semana mayor, festivo/cerrado el más alto (100).
@@ -62,7 +64,7 @@ Actualizado: 21 oct 2026
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
 - Confirmar con el panel en inglés los nombres de botones y menús de la traducción.
 - Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja"; "Cómo crear categorias" (Actividades) no lleva tilde en el título.
-- Borrar las ramas `mejora-configuracion`, `mejora-codigos-promocionales`, `mejora-errata-apple`, `mejora-enlaces-botones`, `prueba-acceso`, `mejora-cliente-responsable` (help-center) e `ingles`, `mejora-enlaces-botones`, `prueba-acceso`, `mejora-cliente-responsable` (web) en GitHub.
+- Borrar la rama `mejora-cliente-responsable-dividir` en los dos repositorios (las anteriores ya se borraron el 21 oct).
 - Dominio propio (ayuda.taykus.com): registro DNS por quien gestione el dominio.
 - Unas 11 imágenes siguen alojadas en GitBook (pegadas como enlace); conviene resubirlas en GitBook.
 - "¿Te ha sido útil?" aún no guarda las respuestas.
