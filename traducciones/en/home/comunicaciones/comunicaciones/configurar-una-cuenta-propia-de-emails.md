@@ -1,7 +1,6 @@
 ---
-origen: fc5cb11dd979
+origen: 0200b17727ed
 ---
-
 # Set up your own email account
 
 To avoid relying on a shared account, we recommend that the club sets up its own email sending account.
@@ -33,3 +32,7 @@ These fields determine which address and name the player sees when they receive 
 We recommend making these details easy for players to recognise, for example by using the club's name or a company email address.
 
 This way, players can easily tell that the email is an official communication from the club.
+
+To find out how to get to this screen, see this article:
+
+<a href="acceso-a-la-configuracion-de-las-comunicaciones.md" class="button primary">Access communications settings</a>

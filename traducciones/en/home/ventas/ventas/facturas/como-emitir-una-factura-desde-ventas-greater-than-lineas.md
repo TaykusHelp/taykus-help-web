@@ -1,6 +1,6 @@
 ---
 icon: memo-circle-check
-origen: 1efed076b137
+origen: 9c44bf455616
 ---
 # How to issue an invoice from Sales > Lines
 

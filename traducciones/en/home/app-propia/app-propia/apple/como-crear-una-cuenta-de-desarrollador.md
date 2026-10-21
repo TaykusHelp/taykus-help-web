@@ -1,6 +1,6 @@
 ---
 icon: apple
-origen: 3417cbab0edd
+origen: 2ac7e3efd777
 ---
 # How to create a developer account
 
@@ -11,13 +11,13 @@ Below we explain how to create and register the account.
 
 {% stepper %}
 {% step %}
-Go to the Apple Developer portal
+### Go to the Apple Developer portal
 
 *   The first step is to go to the official Apple Developer portal using the following link:\
     <a href="https://developer.apple.com/" class="button primary">Go to Apple Developer</a><br>
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
-*   If you don't have an account yet, you will need to create a new one.
+*   Sign in with your Apple account. If you don't have one yet, create it.
 
     > **Important:** the Apple account must be created with personal information, not directly with the company's details. Later, when enrolling in the Apple Developer Program, you will be asked for the organisation's legal information.
 {% endstep %}
@@ -60,8 +60,8 @@ Go to the Apple Developer portal
 * If the company or entity doesn't have this number yet, you'll need to request it before continuing with the account setup by clicking the following button:\
   <a href="https://cloud.email.informa.es/numero-duns" class="button primary">Request a D-U-N-S number</a>
 * There are two options:
-  * **Priority request:** you get the number    &#x20;immediately for a fee of €9 + VAT.
-  * **Free request:** there is no cost, but the number    &#x20;takes 10 to 14 days to be issued.
+  * **Priority request:** you get the number immediately for a fee of €9 + VAT.
+  * **Free request:** there is no cost, but the number takes 10 to 14 days to be issued.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -129,7 +129,7 @@ Go to the Apple Developer portal
 * From there you need to:
   1. Review and sign Apple's legal agreement.
   2. Pay the annual Apple Developer Program membership.
-* According to the documentation, the membership costs **USD 99 per year**.
+* The membership costs **USD 99 per year**.
 * Once this step is complete, the account is registered in the Apple Developer Program.<br>
 {% endstep %}
 {% endstepper %}

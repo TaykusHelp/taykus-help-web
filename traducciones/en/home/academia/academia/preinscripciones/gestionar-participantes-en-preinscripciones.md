@@ -1,7 +1,6 @@
 ---
-origen: 528210b9b88d
+origen: e6a8b1f9ca8a
 ---
-
 # Manage pre-registration participants
 
 The **Participants** section lets you see and manage everyone registered in a pre-registration. From here you can review the information for each registration, add manual notes or export the full list of participants.

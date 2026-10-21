@@ -1,7 +1,6 @@
 ---
-origen: 0579faf7cc00
+origen: d8c642614dcf
 ---
-
 # How to open the cash register from the POS
 
 Opening the cash register from the POS lets you record the starting amount for the day and keep proper control of cash movements. Doing this at the start of the day helps avoid discrepancies and keeps cash tracking organised. In this article we show you how to do it step by step.
@@ -29,14 +28,13 @@ Opening the cash register from the POS lets you record the starting amount for t
 *   Select **Transactions.**<br>
 
     <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
-* If you don't want to open it with any cash recorded in the system, leave it blank.
-* Click OK to open the cash register.
+* Click **Open**.
 {% endstep %}
 
 {% step %}
 ### Enter the opening float
 
-* A window opens where you enter the starting cash you want to open the cash register with.\
+* A window opens where you enter the cash you start the day with.\
   ![](<../../.gitbook/assets/image (18).png>)
 * If you don't want to record any starting cash, leave the field blank.
 {% endstep %}

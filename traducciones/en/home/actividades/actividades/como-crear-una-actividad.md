@@ -1,6 +1,6 @@
 ---
 icon: flag-pennant
-origen: 4f3e2bd2870e
+origen: 7987055746f4
 ---
 # How to create an activity
 
@@ -14,7 +14,7 @@ In this article we show you how to set them up.
 {% step %}
 #### Go to Activities
 
-*   In the drop-down, select **Activities.**<br>
+*   Go to the left-hand menu and select **Activities.**<br>
 
     <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -37,12 +37,12 @@ In this article we show you how to set them up.
   * To create Item products, see this article:\
     <a href="https://taykus-help-center.gitbook.io/taykushelpcenter/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo" class="button primary">How to create an Item product</a>
 * **Comments:** space to add an internal note.
-* **Participants:** Sets the number of people who can fill in the form.
-* **Start:** Start date of the course/school/academy.
-* **End:** End date of the course/school/academy.
+* **Participants:** maximum number of people who can sign up.
+* **Start:** Start date of the activity.
+* **End:** End date of the activity.
 * **Registration from:** Date registration opens.
 * **Registration until:** Date registration closes.
-* **Maximum Number of Participants:** Sets the maximum number of people who can take part.
+* **Maximum Number of Participants:** works the same as **Participants**.
 * **Online:** This box only makes the activity visible on the website. Nothing else. It doesn't open registration or change how it's managed.
 * **Online registration:** Lets users sign up for the activity from the website. Without this ticked, the activity is only shown and doesn't accept registrations.
 * Click Save to keep your changes.
@@ -59,7 +59,7 @@ The following tabs appear at the top:
 
 * **Activity:** Lets you review or change the general information of the activity.
 * **Participants:** Here you can see and manage the registration requests made by players.
-* **Categories:** Lets you organise the activity into categories or levels.
+* **Categories:** Lets you organise participants into categories or levels.
 * **Registration Prices:** Sets the prices for registering or booking a place.
 * **Customise Registration:** Lets you set up the fields that users will fill in on the registration form.
 * **Communications:** Where you set up the messages or notifications related to the activity.

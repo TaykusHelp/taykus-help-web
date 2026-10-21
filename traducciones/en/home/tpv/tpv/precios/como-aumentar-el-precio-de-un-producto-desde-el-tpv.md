@@ -1,7 +1,6 @@
 ---
-origen: a9476609d815
+origen: 1188dd8bf11c
 ---
-
 # How to increase the price of a product from the POS
 
 The POS only lets you change a product's price downwards. If you need to increase the amount of a one-off sale, you can do it by adding an open product with the difference.
@@ -45,7 +44,7 @@ Here's how to increase the amount of a ticket step by step:
 
     <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 * The following window pops up for you to fill in.
-*
+
 
     <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 

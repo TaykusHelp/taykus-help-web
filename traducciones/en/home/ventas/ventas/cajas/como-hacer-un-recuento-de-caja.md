@@ -1,16 +1,11 @@
 ---
-origen: 35c24bc746ce
+origen: c0d1fbf2b717
 ---
-
 # How to do a cash count
 
 A cash count lets you check the money in the cash register at a specific moment, without closing the day.
 
 This option is useful for checking whether the actual cash matches the amount the system calculates there should be according to the transactions recorded. This way, the club can spot any differences, review the status of the cash register and keep a record of the count before carrying on.
-
-### Explainer video
-
-
 
 {% stepper %}
 {% step %}

@@ -1,6 +1,6 @@
 ---
 icon: file-check
-origen: c673b305d0fa
+origen: beb346012d5d
 ---
 # Before you start creating remittances
 
@@ -11,7 +11,7 @@ These steps make sure the tax details are set up correctly so the file can be ge
 {% step %}
 ### Go to company settings
 
-* Go to the settings menu in the top right corner.
+* Click the ⚙ icon in the top right corner and go to **Settings**.
 * Click **Sales**.
 *   Select the **Companies** tab.<br>
 
@@ -29,7 +29,7 @@ These steps make sure the tax details are set up correctly so the file can be ge
 * Fill in the company's tax details. The only required field is the email
   * **IMPORTANT NOTE:** don't change the Invoice Number Format.
 * Fill in the direct debit section with the account IBAN, the tax ID (CIF/VAT) and the bank issuer prefix and creditor bank prefix.
-  * <mark style="background-color:$warning;">**IMPORTANT NOTE:**</mark> <mark style="background-color:$warning;"></mark><mark style="background-color:$warning;">the bank issuer prefix and creditor bank prefix are two details provided by the bank, also called the suffix; it's usually a 3-digit number, generally 000 or 001.</mark>
+  * <mark style="background-color:$warning;">**IMPORTANT NOTE:**</mark> <mark style="background-color:$warning;">your bank gives you the bank issuer prefix and the creditor bank prefix (sometimes it calls it the «suffix»). It's usually a 3-digit number, normally 000 or 001.</mark>
 * Click Save to finish.
 {% endstep %}
 {% endstepper %}

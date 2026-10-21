@@ -1,16 +1,11 @@
 ---
-origen: 6221f1468ec7
+origen: 2714c0f25ef6
 ---
-
 # How to close the cash register
 
 Closing the cash register ends the working day and records the cash available at the end of the day.
 
 In this process you can enter how much money is left in the cash register, check any differences and add notes if needed. This figure is important, as it's used as the reference for the next opening.
-
-### Explainer video
-
-
 
 In this article we'll see how to close the cash register from **Sales > Cash registers** and what information you need to fill in before confirming the closing.
 

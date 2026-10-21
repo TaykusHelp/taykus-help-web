@@ -1,7 +1,6 @@
 ---
-origen: 3c4a5922efe0
+origen: 92f8797b3d32
 ---
-
 # Access communications settings
 
 In the **Communications** section you can manage the settings for the messages and emails sent from Taykus.
@@ -12,8 +11,8 @@ In this article we show you how to open this section to review or change its opt
 {% step %}
 ### Go to Communications
 
-* Go to the settings menu in the top right corner.
-*   Click Communications<br>
+* Click the ⚙ icon in the top right corner and go to **Settings**.
+*   Click **Communications**<br>
 
     <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}

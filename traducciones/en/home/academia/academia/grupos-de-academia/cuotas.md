@@ -1,6 +1,6 @@
 ---
 icon: medal
-origen: e213cea8929b
+origen: 65e16435646b
 ---
 # Fees
 
@@ -27,6 +27,6 @@ To open it and work with it, follow these steps:
 {% endstep %}
 {% endstepper %}
 
-To learn how to manage fees, follow this link
+To find out how to manage them, see this article:
 
-<a href="https://app.gitbook.com/s/QFNRYl4MHLCMNIVqCXJJ/ventas/cuotas" class="button primary" data-icon="credit-card">Fees</a>
+<a href="../../../ventas/ventas/cuotas/como-ver-las-cuotas.md" class="button primary">How to view fees</a>

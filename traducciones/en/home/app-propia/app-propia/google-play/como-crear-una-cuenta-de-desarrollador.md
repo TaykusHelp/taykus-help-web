@@ -1,6 +1,6 @@
 ---
 icon: google-play
-origen: 10689a37875d
+origen: 9ab1c8178e9a
 ---
 # How to create a developer account
 
@@ -34,7 +34,7 @@ It's important to use details that are up to date and checked regularly, as Goog
 
 * Go to the following link:\
   <a href="https://play.google.com/console/u/0/signup." class="button primary">Go to Google Play Console</a>
-*   Once there, sign in with a    &#x20;Gmail account that belongs to the company or to one of the    &#x20;club's directors.<br>
+*   Once there, sign in with a Gmail account that belongs to the company or to one of the club's directors.<br>
 
     <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -67,8 +67,8 @@ It's important to use details that are up to date and checked regularly, as Goog
 * If the company or entity doesn't have this number yet, you'll need to request it before continuing with the account setup by clicking the following button:\
   <a href="https://cloud.email.informa.es/numero-duns" class="button primary">Request a D-U-N-S number</a>
 * There are two options:
-  * **Priority request:** you get the number    &#x20;immediately for a fee of €9 + VAT.
-  * **Free request:** there is no cost, but the number    &#x20;takes 10 to 14 days to be issued.
+  * **Priority request:** you get the number immediately for a fee of €9 + VAT.
+  * **Free request:** there is no cost, but the number takes 10 to 14 days to be issued.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
