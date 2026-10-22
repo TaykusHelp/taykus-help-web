@@ -1,6 +1,6 @@
 ---
 icon: calendar-xmark
-origen: e3e4be145713
+origen: 05b9eadb2fab
 ---
 # How to close a day
 
@@ -61,3 +61,7 @@ If you already have a **Closed** schedule, skip this step.
 * Click <i class="fa-floppy-disk" style="color:green;">:floppy-disk:</i> to save.
 {% endstep %}
 {% endstepper %}
+
+If you want to close for several days in a row, don't add start and end dates to this schedule: create a separate one. To find out how, see this article:
+
+<a href="como-cerrar-el-club-entre-dos-fechas.md" class="button primary">How to close the club between two dates</a>
