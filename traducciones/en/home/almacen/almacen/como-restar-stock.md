@@ -1,6 +1,6 @@
 ---
 icon: basket-shopping-minus
-origen: 24d526cff73d
+origen: 7b06be498798
 ---
 # How to remove stock
 
@@ -24,7 +24,7 @@ To do this, just follow these simple steps:
 * In the top left corner, select **Add Entry**.
 *   The following form opens, which you need to fill in as follows:<br>
 
-    <div align="left"><figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../.gitbook/assets/Captura de pantalla 2026-10-22 123351.png" alt=""><figcaption></figcaption></figure></div>
 
     * **Qty:** The quantity you want to remove, entered as a **NEGATIVE** number by adding a minus sign in front.
     * **Search Product:** When you select it, a list of all the products with stock control opens.
