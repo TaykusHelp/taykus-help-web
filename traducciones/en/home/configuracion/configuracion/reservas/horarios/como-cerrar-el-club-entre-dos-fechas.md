@@ -1,6 +1,6 @@
 ---
 icon: calendar-xmark
-origen: b3df26379849
+origen: c53fad57017e
 ---
 # How to close the club between two dates
 
@@ -28,7 +28,9 @@ Below are the steps to follow:
 {% step %}
 ### Create the closing schedule
 
-> **Important:** don't use the **Closed** schedule you use for single days. If you give it start and end dates, the days you have under **Exceptions** stop working outside those dates. Always create a separate schedule for longer closures.
+> **Important:** don't use the **Closed** schedule you use for single days. If you give it start and end dates, the days you have under **Exceptions** stop working outside those dates. Always create a separate schedule for longer closures. To find out how to create a schedule, see this article:
+>
+> <a href="como-crear-un-horario.md" class="button primary">How to create a schedule</a>
 
 * Click :heavy\_plus\_sign:.
 * This window opens:
