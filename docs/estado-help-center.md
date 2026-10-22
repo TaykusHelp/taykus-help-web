@@ -22,7 +22,7 @@ Actualizado: 22 oct 2026
 - Manual de identidad Taykus: azul #055AE2, celeste #18BBEA, azul noche #011733, degradado Taykus. Poppins para textos, Montserrat solo en el logotipo.
 
 ## Hecho
-- 17 módulos, 167 artículos, 27 con vídeo, ~390 imágenes importadas.
+- 17 módulos, 168 artículos, 27 con vídeo, ~390 imágenes importadas.
 - Pasos numerados, pestañas (se ocultan las vacías), vídeos que cargan al pulsar, imágenes ampliables, índice del artículo, relacionados, "¿Te ha sido útil?".
 - Buscador con tolerancia a faltas, fragmento resaltado y filtros por módulo y "con vídeo". En inglés tiene su propio índice.
 - Artículos antiguos pasados a pasos (5 oct): cerrar una pista, Display, crear jugador, recargar bono, correo masivo, tipos de jugador.
@@ -35,6 +35,7 @@ Actualizado: 22 oct 2026
 - Revisión de claridad (21 oct): leídos como club todos los módulos sin revisar (todos menos Calendario y Configuración). 31 artículos corregidos: recuento de caja (decía que cerraba la caja), abrir caja desde el TPV (orden de pasos, falta "Abrir"), crear actividad (textos copiados de Academia), restar stock (no hay campo motivo), Comunicaciones (cómo llegar a cada pantalla), Q19 (aviso de error y prefijo del banco), "Participantes" y "Número máximo de participantes" (sirven para lo mismo), "Dónde ver el estado de envío de los correos" completado, títulos "Vídeo explicativo" sin vídeo quitados en Cajas, y erratas.
 - Cuotas (21 oct): escritos los 5 artículos vacíos y 2 nuevos ("Cómo ver las cuotas" y "Cómo restablecer una cuota"). "Cómo modificar precio a una couta" pasa a "Cómo modificar el precio de una cuota" y "Cómo cambiar día de vencimiento" a "Cómo cambiar el día de vencimiento de una cuota". Academia › Cuotas enlaza a "Cómo ver las cuotas". "Cómo crear un producto tipo Cuota" actualizado al formulario nuevo (membresías, impagos, emisión automática; ya no hay Marca ni Venta en TPV).
 - Aviso de reservas (22 oct): artículo nuevo "Cómo recibir un email cuando alguien reserva o cancela" (Configuración › Reservas › Grupo de recursos), a petición de un club, y otro aparte para profesores: "Cómo avisar por email a un profesor cuando tiene una reserva".
+- Cerrar entre dos fechas (22 oct): artículo nuevo "Cómo cerrar el club entre dos fechas" (Configuración › Reservas › Horarios), con un horario aparte. "Cómo cerrar un día" enlaza a él.
 
 ## Datos confirmados por Valeria (para no volver a preguntar)
 - Prioridad de horarios y precios por calendario: gana el número más alto. Entre semana el más bajo, fin de semana mayor, festivo/cerrado el más alto (100).
@@ -56,6 +57,7 @@ Actualizado: 22 oct 2026
 - Cuotas: emitir = línea de venta pendiente que el cliente ve en su zona de clientes. Pagar lleva al TPV y emite las no emitidas. Omitir = no se cobra ni se remesa (queda en gris). Restablecer = deshace la emisión y quita la línea pendiente. Colores: azul sin emitir, naranja emitida, verde pagada, gris omitida.
 - Producto tipo Cuota: emisión automática en el apartado Cuotas Automáticas (también hay un check por jugador en la lista de jugadores de la cuota). Tipo Cliente Membresía / Baja Membresía = tipo de cliente al suscribirse / al terminar (como la cuota de un gimnasio). Días Cortesía Impago = días tras un impago antes de dar de baja la membresía. Cancelar con Impago = cancela la cuota y su origen (actividad, grupo de escuela…). Tipo de impuestos se elige siempre en el desplegable. El apartado Visibilidad sale vacío.
 - Aviso de reservas: campo "Email Notificación Reserva" de cada pista (Configuración › Reservas › Id del deporte › Recursos). Pista por pista, un solo correo por pista. Llega con cualquier reserva (club, web o app) y al cancelar; los jugadores no pueden modificar sus reservas. No hay otro tipo de aviso, solo correo. Desde el listado se escribe en la columna y se guarda con Enter; desde la ficha, con Guardar. Profesores: mismo campo y mismo camino (grupo Profesores); el profesor va relacionado con la pista, así que si los dos tienen correo avisa a los dos. Clases con profesor: desde el club; por web solo si el club lo activa (casi nadie); por app no. Avisa con cualquier tipo de reserva del recurso.
+- Cerrar entre dos fechas: horario aparte (no el "Cerrado" de días sueltos: si se le ponen fechas, sus Excepciones dejan de valer fuera de ellas; probado por Valeria). Prioridad 100, Inicio, Fin, todos los días, sin horas de apertura. Fin = día siguiente al último a las 00:00. Cierra todo el club. Vuelve solo al horario normal. Las reservas ya hechas se cancelan a mano.
 - Actividades y preinscripciones: "Participantes" y "Número máximo de participantes" sirven para lo mismo. Restar stock no tiene campo de motivo. No hay vídeos de Cajas. "Calendario de alumnos" se llama así en el programa.
 
 ## Criterios de redacción (acordados)
@@ -75,7 +77,7 @@ Actualizado: 22 oct 2026
 - Erratas en español: "Cómo crear categorias" (Actividades) no lleva tilde en el título.
 - Artículos vacíos por escribir con Valeria: Ventas › Pagos, Bonos y Deudas; Configuración › Campos personalizados y Registro.
 - Incompletos: Configuración › Zona de Jugadores (5 de 6 pestañas vacías: Principal, Detalles, Testimonios, Nuestro Equipo, Patrocinadores); pestaña "Ventas" vacía en las portadas de Academia y Preinscripciones; pestañas "Cuotas" y "Ventas" de crear actividad y crear preinscripción sin explicar.
-- Borrar las ramas `mejora-cliente-responsable-dividir`, `mejora-claridad-cuotas` y `mejora-aviso-reservas` en los dos repositorios.
+- Borrar las ramas `mejora-cliente-responsable-dividir`, `mejora-claridad-cuotas`, `mejora-aviso-reservas` y `mejora-cerrar-fechas` en los dos repositorios.
 - Dominio propio (ayuda.taykus.com): registro DNS por quien gestione el dominio.
 - Unas 11 imágenes siguen alojadas en GitBook (pegadas como enlace); conviene resubirlas en GitBook.
 - "¿Te ha sido útil?" aún no guarda las respuestas.
