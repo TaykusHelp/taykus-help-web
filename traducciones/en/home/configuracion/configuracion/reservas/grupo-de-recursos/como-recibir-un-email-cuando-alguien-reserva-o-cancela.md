@@ -1,8 +1,7 @@
 ---
 icon: envelope
-origen: cb32c8147853
+origen: 3bb416d099ea
 ---
-
 # How to get an email when someone books or cancels
 
 If you want the club to receive an email every time a court is booked or a booking is cancelled, you need to enter that email in the court's **Booking Notification Email** field. The notice arrives with any booking: the ones the club makes and the ones customers make from the website or the app.
@@ -56,6 +55,6 @@ You can do it in two ways:
 
 From then on, you'll receive an email every time a booking is made or cancelled on that court.
 
-> Coaches also have the **Booking notification email** field in their profile, to receive notices about their bookings. To find out how, see this article:
+> Coaches can also receive a notice about their bookings in their own email. To find out how, see this article:
 >
-> <a href="como-anadir-a-un-profesor-nuevo.md" class="button primary">How to add a new coach</a>
+> <a href="como-avisar-por-email-a-un-profesor-cuando-tiene-una-reserva.md" class="button primary">How to email a coach when they have a booking</a>
