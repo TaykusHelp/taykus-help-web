@@ -1,5 +1,5 @@
 ---
-origen: df3d58044c90
+origen: 8165ba79325a
 ---
 # Payments
 
@@ -10,7 +10,7 @@ From this screen you can:
 * **Find a payment** using the filter on each column.
 * **View the sale** by clicking the number in the **Sale** column. From there you can also issue an invoice.
 * **Cancel a payment:** tick its box and click **Cancel**. A confirmation window opens. To be able to make the refund, you need to have a cash register open; if you have more than one, switch to the right one.
-* **See refunds:** they're highlighted in red in the list.
+* **See refunds:** when a payment is cancelled, two coloured lines appear: in light pink, the refund (with a negative amount), and in darker pink, the cancelled payment.
 * **Download the list** with the download button.
 
 <figure><img src="../.gitbook/assets/pagos-anular-confirmar.png" alt=""><figcaption></figcaption></figure>
