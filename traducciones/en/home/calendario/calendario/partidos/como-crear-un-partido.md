@@ -1,6 +1,7 @@
 ---
-origen: 0391a1689351
+origen: 11ee0acf80f0
 ---
+
 # How to create a match
 
 With matches, the club can open places on a court for players to sign up. It's a simple way to fill free slots in the calendar.
@@ -34,11 +35,12 @@ Follow these steps:
     <figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
     * **Minimum and maximum level:** the level allowed in the match. It's optional: if you leave it empty, the level is set by the first player who signs up.
+    * **Modifies Levels:** it's ticked by default, which makes the match **competitive** (the result changes the players' level). Untick it if you want it to be **friendly** (the result doesn't change the level).
     * **Gender:** clicking it opens a drop-down with these options:
       * **Open:** anyone can sign up.
       * **Male:** only people identified as male can sign up.
       * **Female:** only people identified as female can sign up.
-      * **Mixed:** two people identified as male and two identified as female can sign up.
+      * **Mixed:** 2 men and 2 women. If you want another combination, choose **Open**.
 {% endstep %}
 
 {% step %}
@@ -62,3 +64,8 @@ Follow these steps:
 > Until the match is full, it's placed on a virtual court called **Matches**. To find out more, see this article:
 >
 > <a href="como-funcionan-los-partidos-en-el-calendario.md" class="button primary">How matches work in the calendar</a>
+
+To find out more, see:
+
+* [Match types: competitive, friendly and gender](tipos-de-partido.md)
+* [How to change the level of a match](como-cambiar-el-nivel-de-un-partido.md)
