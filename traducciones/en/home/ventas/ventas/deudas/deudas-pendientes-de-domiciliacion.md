@@ -1,5 +1,5 @@
 ---
-origen: 69e366da79c5
+origen: 6a527e391def
 ---
 # Debts pending direct debit
 
@@ -30,6 +30,8 @@ Tick the box to the left of the debts you want and click the button you need:
 {% endstepper %}
 
 > **Important:** the direct debit email isn't a debt reminder, it's a notice of the upcoming bank charge. If you want to chase a pending payment, use the **Pending Payment** tab and the **Send Debts Email** button.
+
+If you want to move a debt from **Pending Payment** to this tab, or back, see [How to move a debt from Pending Payment to Pending Direct Debit (and back)](como-pasar-una-deuda-a-pendiente-domiciliacion.md).
 
 To include these debts in a remittance, see [Generating the Q19 (direct debit of bank receipts)](../q19/generacion-del-q19-domiciliacion-de-recibos-bancarios.md).
 

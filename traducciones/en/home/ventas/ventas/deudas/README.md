@@ -1,5 +1,5 @@
 ---
-origen: cc53dc1ae01e
+origen: 55966f06d1a5
 ---
 # Debts
 
@@ -17,5 +17,6 @@ From this screen you can:
 * [Collect a debt](como-cobrar-una-deuda.md) by opening it in the POS.
 * [Send a debts email](como-enviar-un-email-de-deudas.md) to customers.
 * [Cancel a debt](como-anular-una-deuda.md).
+* [Move a debt from Pending Payment to Pending Direct Debit](como-pasar-una-deuda-a-pendiente-domiciliacion.md), or back.
 
 The articles explain the **Pending Payment** tab. **Pending Direct Debit** works the same way.
