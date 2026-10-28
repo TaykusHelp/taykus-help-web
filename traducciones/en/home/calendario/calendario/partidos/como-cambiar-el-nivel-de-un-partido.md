@@ -1,7 +1,6 @@
 ---
-origen: f1484b78e15a
+origen: f2a5d08701db
 ---
-
 # How to change the level of a match
 
 Once a match has been created, the club can change the minimum and maximum level of the players who can join. Players can't change it from the app or the customer area.
@@ -16,7 +15,7 @@ Follow these steps:
 * Click the match.
 *   In the menu on the right, click **Details**.
 
-    > 📷 **SCREENSHOT 1 pending:** calendar with the match selected and the Details button.
+    <figure><img src="../../.gitbook/assets/partido-detalles.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -26,7 +25,7 @@ Follow these steps:
 * Scroll down to **Restrictions**.
 *   Change the **Minimum Level** and **Maximum Level**.
 
-    > 📷 **SCREENSHOT 2 pending:** General tab with the Restrictions block.
+    <figure><img src="../../.gitbook/assets/partido-restricciones-nivel.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

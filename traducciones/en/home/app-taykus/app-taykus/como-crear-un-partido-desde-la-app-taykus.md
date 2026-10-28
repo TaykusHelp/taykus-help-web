@@ -1,7 +1,6 @@
 ---
-origen: d72c65f878e3
+origen: 4bee4f40fd0e
 ---
-
 # How to create a match from the Taykus app
 
 As well as making bookings, the Taykus app lets players create matches so that other users can join and complete the group.
@@ -21,13 +20,13 @@ Follow these steps:
 * Choose the day in the **Date** bar.
 *   Select the time you want to play.
 
-    > 📷 **SCREENSHOT 3 pending:** app, row of days and times.
+    <figure><img src="../.gitbook/assets/app-partido-fecha-hora.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 ### Gender, match type and level
 
-> 📷 **SCREENSHOT 4 pending:** app, Gender, Match type and level, and Price and duration.
+<figure><img src="../.gitbook/assets/app-partido-tipo-nivel-precio.png" alt=""><figcaption></figcaption></figure>
 
 * **Gender:** you see **Open**, **Mixed** and your own gender (**Male** or **Female**).
 * **Match type:** **Competitive** (the result changes your level) or **Friendly** (it doesn't).

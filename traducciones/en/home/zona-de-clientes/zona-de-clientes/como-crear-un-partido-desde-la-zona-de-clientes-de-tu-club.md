@@ -1,7 +1,6 @@
 ---
-origen: 118940a2ac92
+origen: b27a4ff625b5
 ---
-
 # How to create a match from your club's customer area
 
 From your club's customer area you can create a match so that other players can join and complete the group, without using the app.
@@ -14,7 +13,7 @@ Follow these steps:
 
 *   In the top menu of the club's website, click **Bookings**.
 
-    > 📷 **SCREENSHOT 5 pending:** club website, top menu with Bookings.
+    <figure><img src="../.gitbook/assets/zona-clientes-menu-reservas.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -22,7 +21,7 @@ Follow these steps:
 
 *   Under **Booking Types**, find **Match** and click **Book**.
 
-    > 📷 **SCREENSHOT 6 pending:** Booking Types with the Match card.
+    <figure><img src="../.gitbook/assets/zona-clientes-tipos-reserva-partido.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -31,7 +30,7 @@ Follow these steps:
 * Click **Create your Match**.
 *   Choose the day and time.
 
-    > 📷 **SCREENSHOT 7 pending:** Create your Match button and row of days.
+    <figure><img src="../.gitbook/assets/zona-clientes-crea-tu-partido.png" alt=""><figcaption></figcaption></figure>
 
 > **Important:** if you don't click **Create your Match** and move between days, you'll see matches already created that you can join.
 {% endstep %}
@@ -39,7 +38,7 @@ Follow these steps:
 {% step %}
 ### Match details
 
-> 📷 **SCREENSHOT 8 pending:** Create match window.
+<figure><img src="../.gitbook/assets/zona-clientes-crear-partido-ventana.png" alt=""><figcaption></figcaption></figure>
 
 * **Gender:** you see **Open**, **Mixed** and your own gender (**Male** or **Female**).
 * **Match type:** **Competitive** (the result changes your level) or **Friendly** (it doesn't).
@@ -54,7 +53,7 @@ Follow these steps:
 * Under **Shared Payment** you'll see what you pay: only your share.
 *   Click **Add to cart** and complete the payment.
 
-    > 📷 **SCREENSHOT 9 pending:** match summary with Shared Payment and Add to cart.
+    <figure><img src="../.gitbook/assets/zona-clientes-partido-pago.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
