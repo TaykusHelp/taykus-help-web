@@ -1,5 +1,5 @@
 ---
-origen: ec90a3607e14
+origen: f6376473eeba
 ---
 # How to create a template
 
@@ -58,6 +58,8 @@ Below are the steps to follow:
 {% endstepper %}
 
 ## Use the template when sending an email
+
+The full steps for sending an email to several players are in [How to send a bulk email to customers](../../jugadores/jugadores/como-enviar-un-correo-masivo-a-clientes.md). In short:
 
 * Go to the left-hand menu, select **Players** and tick the players you want to send the email to.
 * Click the envelope icon and choose **Email**.

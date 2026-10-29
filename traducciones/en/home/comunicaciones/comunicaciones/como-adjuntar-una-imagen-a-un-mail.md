@@ -1,5 +1,5 @@
 ---
-origen: de93bf7c3ee8
+origen: bf22b1e58366
 ---
 # How to add an image to an email
 
@@ -34,7 +34,7 @@ Below are the steps to follow:
 {% step %}
 ### Select the recipients
 
-*   Go to the left-hand menu, select **Players** and tick the players you want to send the email to. You can use the filters in each column.<br>
+*   Go to the left-hand menu, select **Players** and tick the players you want to send the email to. You can use the filters in each column. For more detail, see [How to send a bulk email to customers](../../jugadores/jugadores/como-enviar-un-correo-masivo-a-clientes.md).<br>
 
     <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 *   Click the envelope icon and choose **Email**.<br>

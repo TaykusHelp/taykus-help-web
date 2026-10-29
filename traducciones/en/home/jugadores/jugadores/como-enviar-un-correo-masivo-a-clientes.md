@@ -1,18 +1,17 @@
 ---
-origen: 0510bbce19f9
+origen: 0872e24c83eb
 ---
-
 # How to send a bulk email to customers
 
-From the list of players you can filter your customers and send them all the same email at once. It's one of the most useful tools for sharing club news, notices or promotions.
+From the list of players you can filter your customers and send them all the same email at once. It's very useful for sharing club news, notices or promotions.
 
-Follow these steps:
+Below are the steps to follow:
 
 {% stepper %}
 {% step %}
 ### Go to Players
 
-* Go to the left-hand menu and click <i class="fa-user" style="color:purple;">:user:</i> **Players**.
+* Go to the left-hand menu and select **Players**.
 
 <figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -20,46 +19,48 @@ Follow these steps:
 {% step %}
 ### Filter the players
 
-* Apply the filters you want in the columns to select the players you want to write to.
+* Use the filters in each column to keep only the players you want to write to.
 
 <div align="left"><figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure></div>
 
-> This step is optional. If you want to write to all players, you can skip it and go to the next one.
+> This step is optional. If you want to write to all players, skip it.
 {% endstep %}
 
 {% step %}
 ### Select the recipients
 
-* Click **ID** to select all the rows in the list.
+* Tick the box next to **Id**, in the list header. All the players in the list are selected.
 
-![](<../.gitbook/assets/image (96).png>)
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 ### Open the email window
 
-* With your selection made, click the envelope icon and select **Email**.
+* Click the envelope icon and choose **Email**.
 
-![](<../.gitbook/assets/image (97).png>)
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 ### Write the email
 
-* A window opens with the following options:
+The **Send Message** window opens:
 
 <div align="left"><figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure></div>
 
-* **Recipients:** includes everyone you selected in the previous steps.
-* **Template:** if you've already created a template for this message in Taykus, you can select it here.
-* **Subject:** required field. The topic of the message.
-* **Select replacement to insert:** lets you personalise the message for each recipient. For example, if you choose **Name**, the command **\[\[Customer.Name]]** is inserted and is automatically replaced with each player's name when they receive the email.
-* **Message body:** write or edit the message you want to send. You can also copy and paste text from another document.
+* **Recipient:** all the players you selected appear here.
+* **Template:** if you have a template for this message, choose it here and the subject and text are filled in automatically. To find out how to create one, see [How to create a template](../../comunicaciones/comunicaciones/como-crear-una-plantilla.md).
+* **Subject:** required field.
+* **Select replacement to insert:** lets you personalise the message. For example, if you choose **Name**, `[[Customer.Name]]` is added, and it's replaced with each player's name when they receive the email.
+* **Message body:** write the text. You can also paste it from another document or add images. To find out how, see [How to add an image to an email](../../comunicaciones/comunicaciones/como-adjuntar-una-imagen-a-un-mail.md).
 {% endstep %}
 
 {% step %}
 ### Send
 
-* Select **OK** to send the email.
+* Click **OK** to send the email.
 {% endstep %}
 {% endstepper %}
+
+To check whether the emails have gone out, see [Where to see the delivery status of emails](../../comunicaciones/comunicaciones/donde-ver-el-estado-de-envio-de-los-correos.md).
