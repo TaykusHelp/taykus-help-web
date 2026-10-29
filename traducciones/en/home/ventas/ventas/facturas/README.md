@@ -1,5 +1,5 @@
 ---
-origen: b46455380a1c
+origen: 5453f24a7f08
 ---
 # Invoices
 
@@ -11,3 +11,5 @@ You can issue the invoice for a sale from several **Sales** lists. In every case
 * **Sales › Debts:** as in Lines, click the **ID**.
 
 > **Important:** you can't issue invoices from the POS.
+
+When you save it, the invoice is sent automatically to the customer. To send it again or download it, see [How to resend or download an invoice](como-reenviar-o-descargar-una-factura.md).

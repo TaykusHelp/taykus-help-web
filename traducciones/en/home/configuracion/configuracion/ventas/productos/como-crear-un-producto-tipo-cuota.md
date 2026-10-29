@@ -1,5 +1,5 @@
 ---
-origen: 68042359469f
+origen: 2663c13483eb
 ---
 # How to create a Fee product
 
@@ -53,7 +53,7 @@ Below are the steps to follow:
 
 * **Frequency:** choose from the drop-down how often the fee is charged.
 * **Prorate first:** tick it so that, when someone signs up mid-period, the first charge is proportional.
-* **Registration:** to add an enrolment or registration fee.
+* **Registration:** to charge an enrolment or registration fee. Choose an **Item**-type product (create it first if you don't have one). See [How to create an Item-type product](como-crear-un-producto-tipo-articulo.md).
 * **Membership Customer Type:** when they subscribe to the fee, the customer automatically gets this customer type.
 * **Membership Cancellation Customer Type:** when the fee ends, the customer automatically gets this customer type.
 * **Bank billing:** tick it if the fee is paid by direct debit.

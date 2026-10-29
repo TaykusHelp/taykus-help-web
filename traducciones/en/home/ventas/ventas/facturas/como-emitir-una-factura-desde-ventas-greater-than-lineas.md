@@ -1,6 +1,6 @@
 ---
 icon: memo-circle-check
-origen: 9c44bf455616
+origen: 74eb1cd58788
 ---
 # How to issue an invoice from Sales > Lines
 
@@ -99,4 +99,4 @@ If the invoice is for a company:
 {% endstep %}
 {% endstepper %}
 
-Once all the steps above are complete and the billing details have been checked, the invoice is issued correctly in the system. Always remember to check that both the issuer's and the customer's details are correct before saving, to avoid invoicing errors.
+When you save it, the invoice is sent automatically to the customer. If you need to send it again or download it, see [How to resend or download an invoice](como-reenviar-o-descargar-una-factura.md).

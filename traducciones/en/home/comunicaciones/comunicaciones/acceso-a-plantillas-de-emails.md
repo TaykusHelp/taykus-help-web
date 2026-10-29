@@ -1,20 +1,21 @@
 ---
-origen: 9f317ba7c289
+origen: 3a7e80548ea8
 ---
-
 # Access email templates
 
-In the **Email templates** section you can view and manage the different email templates Taykus uses for the club's automatic communications.
+**Email Templates** holds the templates for the automatic emails Taykus sends to the club's customers.
 
-In this article we show you how to open this section to review or change the available templates.
+Below are the steps to follow:
 
 {% stepper %}
 {% step %}
 ### Go to templates
 
-* Go to the left-hand menu and select **Communications.**
-*   In the drop-down, choose **Email templates.**<br>
+* Go to the left-hand menu and select **Communications**.
+*   In the drop-down, choose **Email Templates**.<br>
 
     <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
+
+To find out what's on this screen, see [Email templates](plantillas-de-emails.md).

@@ -1,5 +1,5 @@
 ---
-origen: 4bee4f40fd0e
+origen: 7dec08395888
 ---
 # How to create a match from the Taykus app
 
@@ -15,10 +15,22 @@ Follow these steps:
 
 {% stepper %}
 {% step %}
-### Date and time
+### Choose the club, date and time
 
-* Choose the day in the **Date** bar.
-*   Select the time you want to play.
+* Go to the **Matches** tab.
+* Choose the sport, the date and the time, and type your club's name in the search box.
+*   Click **Create match**.
+
+    <figure><img src="../.gitbook/assets/app-partido-crear.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Check the date and time
+
+*   The club's page opens, in **Play › Matches**, with the date and time you chose.
+
+    <figure><img src="../.gitbook/assets/app-partido-pagina-club.png" alt=""><figcaption></figcaption></figure>
+*   If you've made a mistake, change them here: the day in the **Date** bar and the time in the list of times.
 
     <figure><img src="../.gitbook/assets/app-partido-fecha-hora.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}

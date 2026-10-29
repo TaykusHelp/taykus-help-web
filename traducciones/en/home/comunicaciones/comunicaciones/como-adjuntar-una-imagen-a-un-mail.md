@@ -1,26 +1,23 @@
 ---
-origen: c128309fbc6b
+origen: de93bf7c3ee8
 ---
-
 # How to add an image to an email
 
 You can include images in the emails sent from Taykus to personalise your communications and make them more visual.
 
-To insert an image, it must already be hosted on a web page, as the editor adds it using its URL. In this article we show you how to upload it to the club's gallery and add it to the email.
+To insert an image, it first has to be published online, because the editor adds it using its address (URL). The easiest way is to upload it to the club's gallery and copy its address from there.
 
 ### Explainer video
 
 {% embed url="https://youtu.be/NGbdNmuGzqo" %}
 
-Here's how to do it step by step:
+Below are the steps to follow:
 
 {% stepper %}
 {% step %}
 ### Upload the image to the club's gallery
 
-To insert an image in an email, it must be hosted at a public URL.
-
-To do this, you can use the gallery in the club's Customer Area. If you need to check how to upload an image to the gallery, click the following button:
+* Upload the image to the gallery of the club's Customer Area. To find out how, see this article:
 
 <a href="https://app.gitbook.com/s/V0h7jTfpeuZY1RmPEtNK/configuracion/zona-de-jugadores#galeria" class="button primary">How to upload an image to the gallery</a>
 {% endstep %}
@@ -28,19 +25,19 @@ To do this, you can use the gallery in the club's Customer Area. If you need to 
 {% step %}
 ### Copy the image address
 
-* Go to your website and find the image in the gallery at the bottom of the page.
+* Go to your club's website and find the image in the gallery, at the bottom of the page.
 * Right-click it and select **Copy image address**.
 
-> It's important to copy the image address, not just the image itself.
+> **Important:** copy the image address, not the image itself.
 {% endstep %}
 
 {% step %}
 ### Select the recipients
 
-*   Go to the **Players** section and select the players you want to send the message to, applying any filters you need.<br>
+*   Go to the left-hand menu, select **Players** and tick the players you want to send the email to. You can use the filters in each column.<br>
 
     <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-*   Then click **the envelope icon** and select Email.<br>
+*   Click the envelope icon and choose **Email**.<br>
 
     <div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
@@ -48,7 +45,7 @@ To do this, you can use the gallery in the club's Customer Area. If you need to 
 {% step %}
 ### Insert the image in the email
 
-* Fill in the subject and the content of the message.
+* Write the subject and the text of the email.
 *   Place the cursor where you want the image to appear and click the **Insert image** icon in the toolbar.<br>
 
     <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
@@ -58,4 +55,4 @@ To do this, you can use the gallery in the club's Customer Area. If you need to 
 {% endstep %}
 {% endstepper %}
 
-Once it's inserted, check that the image displays correctly and finish the rest of the message. To finish, press **OK** and the email will be sent to the selected players.
+Check that the image looks right and finish the message. To send it, click **OK**: the email will be sent to the selected players.
