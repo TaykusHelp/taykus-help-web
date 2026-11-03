@@ -1,7 +1,6 @@
 ---
-origen: 184a5ca63b4d
+origen: 4fd1d274613b
 ---
-
 # How to cancel a debt
 
 If a debt isn't going to be collected, you can cancel it from **Sales › Debts** so it no longer shows as pending.
@@ -42,3 +41,5 @@ Below are the steps to follow:
 * Click **OK** to cancel it, or **Close** if you don't want to cancel it.
 {% endstep %}
 {% endstepper %}
+
+> **Important:** if cancelling means refunding a cash or card payment, you need to have a cash register open. If it's a refund of an online payment, you don't. To open a cash register, see [How to open the cash register](../cajas/como-abrir-la-caja.md).

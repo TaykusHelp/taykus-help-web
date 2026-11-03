@@ -1,9 +1,11 @@
 ---
-origen: fc8f3ad7d553
+origen: 4e9accc5577b
 ---
 # Fees
 
 In **Sales › Fees** you manage fees: charges that repeat periodically, for example the monthly fee of an academy group. Until a fee is issued, you can change its price, its due date or skip it.
+
+First of all, the fee has to be created as a product. See [How to create a Fee-type product](../../../configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-cuota.md).
 
 From this section you can:
 

@@ -1,7 +1,6 @@
 ---
-origen: 2d12827d7d14
+origen: f76b44d4896d
 ---
-
 # Match types: competitive, friendly and gender
 
 When you create a match, you choose whether it's competitive or friendly, which gender it's for and the players' level. This way each player knows what kind of match it is and whether they can join. Matches can be created by the club from the panel, or by players from the Taykus app and the customer area.
@@ -34,4 +33,4 @@ The **minimum and maximum level** sets which players can join.
 * **From the app or the customer area:** the slider starts with a range around the player's level, and they can move it freely.
 * **After the match is created:** only the club can change the range, from the panel. The player can't change it from the app or the customer area. See [How to change the level of a match](como-cambiar-el-nivel-de-un-partido.md).
 
-To find out how the level is calculated, see the article **How player level works in Taykus**, in the Players module.
+To find out how the level is calculated, see [How player level works in Taykus](../../../jugadores/jugadores/fichas-de-jugador/como-funciona-el-nivel-de-jugador-en-taykus.md).

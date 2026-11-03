@@ -1,6 +1,6 @@
 ---
 icon: dollar-sign
-origen: 29b2f53df17a
+origen: 71dc66944be9
 ---
 # How to pay a fee
 
@@ -25,7 +25,7 @@ Below are the steps to follow:
 {% step %}
 ### Select the fee
 
-* Tick the circle of the month's fee you want to change, in the player's row.
+* Tick the circle of the month's fee you want to pay, in the player's row.
 * You can select several at once: the circle next to a player's name selects all their fees, and the circle next to a month selects every player's fee for that month. The action applies to all the ones you select.
 *   Click **Actions**, at the top left.
 
