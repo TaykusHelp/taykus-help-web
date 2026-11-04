@@ -16,7 +16,14 @@ modules:
   jugadores:       { description: "Fichas, tipos de jugador, clientes responsables, bonos y niveles.", icon: user }
   academia:        { description: "Grupos, alumnos, cuotas y preinscripciones.", icon: medal }
   equipos:         { description: "Gestión de equipos.", icon: team }
-  configuracion:   { description: "Horarios, precios, productos, usuarios y roles.", icon: gear }
+  configuracion:
+    description: "Horarios, precios, productos, usuarios y roles."
+    icon: gear
+    # Cada página suelta (Zona de Jugadores, Registro…) sale como sección propia, como en el panel.
+    loose_sections: true
+    # Bloque que sale el primero en la portada de Configuración.
+    first_group: "Primeros pasos"
+    first_pages: [configuracion/guia-de-inicio-rapido.md, configuracion/listados/README.md]
   actividades:     { description: "Inscripciones, categorías y precios.", icon: flag }
   tpv:             { description: "Ventas, descuentos y recargas de bonos.", icon: cart }
   ventas:          { description: "Cajas, cuotas, facturas, deudas y Q19.", icon: euro }
@@ -43,7 +50,7 @@ en:
     jugadores:       { title: "Players", description: "Player profiles, player types, responsible customers, vouchers and levels." }
     academia:        { title: "Academy", description: "Groups, students, fees and pre-registrations." }
     equipos:         { title: "Teams", description: "Team management." }
-    configuracion:   { title: "Settings", description: "Schedules, prices, products, users and roles." }
+    configuracion:   { title: "Settings", description: "Schedules, prices, products, users and roles.", first_group: "Getting started" }
     actividades:     { title: "Activities", description: "Registrations, categories and prices." }
     tpv:             { title: "POS", description: "Sales, discounts and voucher top-ups." }
     ventas:          { title: "Sales", description: "Cash registers, fees, invoices, debts and Q19." }

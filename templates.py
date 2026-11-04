@@ -435,21 +435,41 @@ def video_card(ctx: Context, p) -> str:
 def module_page(ctx: Context, m) -> str:
     groups = []
     loose = []
+    cfg = ctx.site.config
+    meta = dict((cfg.get("modules") or {}).get(m.slug) or {})
+    if ctx.lang != "es":
+        meta.update(((cfg.get(ctx.lang) or {}).get("modules") or {}).get(m.slug) or {})
+    # Bloque inicial opcional (config/site.yaml: first_group y first_pages).
+    first_pages = set(meta.get("first_pages") or [])
+    # Si loose_sections es true, cada artículo suelto tiene su propio bloque con su título.
+    own_sections = bool(meta.get("loose_sections"))
 
     def flush():
         if loose:
             groups.append((ctx.t("guides"), None, list(loose)))
             loose.clear()
 
+    def with_children(c):
+        items = [c] if c.kind == "article" else []
+        return items + [x for x in c.walk() if x is not c and x.kind == "article"]
+
+    first_items = []
     for c in m.root.children:
+        if c.rel in first_pages:
+            first_items += with_children(c)
+            continue
         if c.children:
             flush()
-            items = [c] if c.kind == "article" else []
-            items += [x for x in c.walk() if x is not c and x.kind == "article"]
-            groups.append((c.title, c, items))
+            groups.append((c.title, c, with_children(c)))
         elif c.kind == "article":
-            loose.append(c)
+            if own_sections:
+                flush()
+                groups.append((c.title, None, [c]))
+            else:
+                loose.append(c)
     flush()
+    if first_items:
+        groups.insert(0, (meta.get("first_group") or ctx.t("guides"), None, first_items))
     if groups:
         blocks = "".join(
             f'<section class="tk-group"><h2>{E(t) if not g or g.kind != "section" else f"<a href={chr(34)}{ctx.url(g.url)}{chr(34)}>{E(t)}</a>"}</h2>'
