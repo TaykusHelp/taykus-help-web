@@ -1,5 +1,5 @@
 ---
-origen: 2663c13483eb
+origen: d81b4ae3af17
 ---
 # How to create a Fee product
 
@@ -58,15 +58,15 @@ Below are the steps to follow:
 * **Membership Cancellation Customer Type:** when the fee ends, the customer automatically gets this customer type.
 * **Bank billing:** tick it if the fee is paid by direct debit.
 
-> **Memberships:** with the two customer type fields, a fee works like a gym membership. While the customer has it, they're the type you choose (for example, **Member**) and enjoy its benefits, such as special prices. When the fee ends, they move to the cancellation type you've set.
+> **Memberships:** with the two customer type fields, a fee works like a gym membership. While the customer has it, they're the type you choose (for example, **Member**) and enjoy its benefits, such as special prices. When they leave, they move to the cancellation type you've set. See [What a membership is and how it works](../../../../ventas/ventas/cuotas/que-es-una-membresia-y-como-funciona.md).
 {% endstep %}
 
 {% step %}
 ### Automatic fees
 
-* **Non-payment Grace Days:** number of days to wait after a non-payment before cancelling the membership.
-* **Automatic Issue:** tick it so the fees are issued by themselves, without having to do it by hand from the fees calendar.
-* **Cancel on Non-payment:** if a non-payment occurs, cancels the fee and what it came from (for example, the registration for an activity or a school group).
+* **Non-payment Grace Days:** days to wait, from the due date, before cancelling the fee for non-payment.
+* **Automatic Issue:** tick it so the fees are issued by themselves the day after their due date, without having to do it by hand. See [How to automate fee issuing](../../../../ventas/ventas/cuotas/como-automatizar-la-emision-de-cuotas.md).
+* **Cancel on Non-payment:** if the fee isn't paid within the grace days, it stops being issued and, if it's a membership, the customer moves to the cancellation type. See [How to automate cancellation for non-payment](../../../../ventas/ventas/cuotas/como-automatizar-la-cancelacion-por-impago.md).
 
 > Drop-downs only show five options. If you can't see the one you're looking for, start typing its name.
 {% endstep %}
