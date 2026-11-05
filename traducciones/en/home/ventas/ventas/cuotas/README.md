@@ -1,5 +1,5 @@
 ---
-origen: 4e9accc5577b
+origen: 583468cb6fb2
 ---
 # Fees
 
@@ -17,3 +17,8 @@ From this section you can:
 * [Change a fee's price](como-modificar-el-precio-de-una-cuota.md).
 * [Change a fee's due date](como-cambiar-el-dia-de-vencimiento-de-una-cuota.md).
 * [Turn on automatic card payment](como-activar-el-cobro-automatico-con-tarjeta.md).
+* [Automate fee issuing](como-automatizar-la-emision-de-cuotas.md).
+* [Automate cancellation for non-payment](como-automatizar-la-cancelacion-por-impago.md).
+* [Remove a customer from a fee](como-dar-de-baja-a-un-cliente-de-una-cuota.md).
+
+If the fee changes the customer type (for example, from Non-member to Member), it's a membership. See [What a membership is and how it works](que-es-una-membresia-y-como-funciona.md).

@@ -1,12 +1,12 @@
 ---
 icon: arrow-right-to-bracket
-origen: cb6ea5caaea8
+origen: 0a892880cce9
 ---
 # How to issue a fee
 
 When you issue a fee, the system records the debt: a sales line pending payment is created, and the customer sees it in their Customer Area, under their pending sales, so they can pay it.
 
-> **Important:** if the fee has automatic issuing turned on, it's issued by itself and you don't need to do it by hand. You turn it on in the fee's form, in Settings, with the **Automatic Issue** checkbox, or for each player, with the checkbox in the fee's list of players. To find out how to create the fee, see this article:
+> **Important:** if the fee has automatic issuing turned on, it's issued by itself and you don't need to do it by hand. To find out how to turn it on, see [How to automate fee issuing](como-automatizar-la-emision-de-cuotas.md). To find out how to create the fee, see this article:
 >
 > <a href="../../../configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-cuota.md" class="button primary">How to create a Fee product</a>
 
