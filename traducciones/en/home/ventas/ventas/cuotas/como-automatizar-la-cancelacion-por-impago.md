@@ -1,5 +1,5 @@
 ---
-origen: eaf969b4aab0
+origen: d16af3650c7f
 ---
 # How to automate cancellation for non-payment
 
@@ -30,7 +30,7 @@ Below are the steps to follow:
 
 *   In the **Automatic Fees** block, fill in these fields:
 
-    <figure><img src="../../.gitbook/assets/cuotas-automaticas-campos.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/cuotas-cancelar-impago.png" alt=""><figcaption></figcaption></figure>
 
     * **Non-payment Grace Days:** the days to wait, from the fee's due date, before cancelling it.
     * **Cancel on Non-payment:** tick it so the fee is cancelled when those days pass without payment.

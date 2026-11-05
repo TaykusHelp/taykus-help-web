@@ -1,5 +1,5 @@
 ---
-origen: 4b5f68364868
+origen: cfbd15adbd85
 ---
 # How to automate fee issuing
 
@@ -26,7 +26,7 @@ Below are the steps to follow:
 
 *   In the **Automatic Fees** block, tick **Automatic Issue**.
 
-    <figure><img src="../../.gitbook/assets/cuotas-automaticas-campos.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/cuotas-emision-automatica.png" alt=""><figcaption></figcaption></figure>
 * Click **Save**.
 {% endstep %}
 {% endstepper %}
