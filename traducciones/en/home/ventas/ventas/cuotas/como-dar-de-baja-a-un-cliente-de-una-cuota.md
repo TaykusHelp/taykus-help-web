@@ -1,5 +1,5 @@
 ---
-origen: 2cff78f70ca2
+origen: 5d18a814a62d
 ---
 # How to remove a customer from a fee
 
@@ -22,7 +22,7 @@ Below are the steps to follow:
 
 *   Find the player in the list.
 
-    <figure><img src="../../.gitbook/assets/cuotas-cobro-tarjeta-listado.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/cuotas-baja-jugadores.png" alt=""><figcaption></figcaption></figure>
 * Edit their **End** date and set the day you want them to leave.
 {% endstep %}
 {% endstepper %}
