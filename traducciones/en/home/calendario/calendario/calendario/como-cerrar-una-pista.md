@@ -1,7 +1,6 @@
 ---
-origen: 78446f9092a4
+origen: 4b46c6e6114a
 ---
-
 # How to close a court
 
 Closing a court blocks it for a whole day so that no bookings can be made on it. This is especially useful on public holidays, for internal club events, maintenance or any other operational reason.
@@ -38,3 +37,5 @@ Follow these steps:
 {% endstepper %}
 
 > **Important:** the closure only applies to the selected court. If you need to close more courts on the same day, repeat the process for each of them.
+
+To open it again, see [How to open a court](como-abrir-una-pista.md).
