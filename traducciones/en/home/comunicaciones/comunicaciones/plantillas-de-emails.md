@@ -1,5 +1,5 @@
 ---
-origen: 64cceb365760
+origen: c2775403aa0b
 ---
 # Email templates
 
@@ -11,7 +11,7 @@ These templates correspond to different automatic emails, such as confirmations,
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-To edit a template, click its **Id**.
+To edit a template, click its **Id**. See [How to edit a template](como-editar-una-plantilla.md).
 
 Words in double square brackets, such as `[[CustomerName]]`, are automatically replaced with each customer's details when the email is sent. For example, `[[CustomerName]]` is replaced with the customer's name.
 

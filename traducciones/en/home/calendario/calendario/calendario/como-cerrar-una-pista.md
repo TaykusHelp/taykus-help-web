@@ -1,5 +1,5 @@
 ---
-origen: 4b46c6e6114a
+origen: 8e89347f01d7
 ---
 # How to close a court
 
@@ -38,4 +38,4 @@ Follow these steps:
 
 > **Important:** the closure only applies to the selected court. If you need to close more courts on the same day, repeat the process for each of them.
 
-To open it again, see [How to open a court](como-abrir-una-pista.md).
+To open it again, see [How to open a court](como-abrir-una-pista.md). If you only want to close it for a few hours, see [How to close a court for a few hours](como-cerrar-una-pista-unas-horas.md).
