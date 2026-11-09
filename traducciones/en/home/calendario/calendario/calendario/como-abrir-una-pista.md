@@ -1,5 +1,5 @@
 ---
-origen: d2549f2f096e
+origen: 7f2da44c3bdb
 ---
 # How to open a court
 
@@ -43,6 +43,8 @@ Below are the steps to follow:
 
 * Click **Restore Default**.
 * The court gets its normal schedule back and appears in the calendar again.
+
+> **Important:** **Restore Default** applies to every day in the period. If the day before or the day after had a special schedule, they also go back to their normal schedule. Check them afterwards and, if needed, set their schedule again.
 {% endstep %}
 {% endstepper %}
 
