@@ -1,5 +1,5 @@
 ---
-origen: f6376473eeba
+origen: 98230b40070d
 ---
 # How to create a template
 
@@ -16,7 +16,9 @@ Below are the steps to follow:
 ### Go to Email Templates
 
 * Go to the left-hand menu and select **Communications**.
-* In the drop-down, choose **Email Templates**.
+*   In the drop-down, choose **Email Templates**.
+
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

@@ -1,5 +1,5 @@
 ---
-origen: b5c1c01b5e8c
+origen: e2ddd803a16d
 ---
 # Where to see the delivery status of emails
 
@@ -12,7 +12,9 @@ Below are the steps to follow:
 ### Go to the sent emails
 
 * Go to the left-hand menu and select **Communications**.
-* In the drop-down, choose **Emails**. You'll see the list of emails sent by the system.
+*   In the drop-down, choose **Emails**. You'll see the list of emails sent by the system.
+
+    <figure><img src="../.gitbook/assets/reenviar-acceso-emails.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
