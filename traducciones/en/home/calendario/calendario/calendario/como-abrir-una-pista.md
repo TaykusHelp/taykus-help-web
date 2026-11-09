@@ -1,5 +1,5 @@
 ---
-origen: e8e5e7839778
+origen: d2549f2f096e
 ---
 # How to open a court
 
@@ -13,8 +13,12 @@ Below are the steps to follow:
 {% step %}
 ### Go to Calendar
 
-* Go to the left-hand menu and select **Calendar**.
-* Go to the day before the day the court is closed.
+*   Go to the left-hand menu and select **Calendar**.
+
+    <figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+*   Go to the day before the day the court is closed. You can choose the day in the calendar at the top.
+
+    <figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

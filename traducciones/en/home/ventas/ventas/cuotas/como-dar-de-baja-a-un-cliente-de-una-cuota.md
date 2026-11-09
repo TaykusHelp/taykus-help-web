@@ -1,5 +1,5 @@
 ---
-origen: 5d18a814a62d
+origen: 34c4d0952163
 ---
 # How to remove a customer from a fee
 
@@ -12,7 +12,9 @@ Below are the steps to follow:
 ### Go to the fee
 
 * Go to the left-hand menu and select **Sales**.
-* In the drop-down, choose **Fees**.
+*   In the drop-down, choose **Fees**.
+
+    <figure><img src="../../.gitbook/assets/cuotas-listado.png" alt=""><figcaption></figcaption></figure>
 * Click the fee's **Id**.
 * Go to the **Players** tab.
 {% endstep %}
