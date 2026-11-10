@@ -1,5 +1,5 @@
 ---
-origen: d5fb159f3bc1
+origen: 69ea8a3e02aa
 ---
 # How to cancel a sale from Lines
 
@@ -44,5 +44,7 @@ Below are the steps to follow:
 Once cancelled, you'll see two coloured lines in the list: in light pink, the refund (with a negative amount), and in darker pink, the cancelled sale.
 
 > **Important:** if cancelling means refunding a cash or card payment, you need to have a cash register open. If it's a refund of an online payment, you don't. To open a cash register, see [How to open the cash register](../cajas/como-abrir-la-caja.md).
+
+You can also cancel a sale from the player's profile. See [How to cancel a sale from the player's profile](../../../jugadores/jugadores/fichas-de-jugador/como-anular-una-venta-desde-la-ficha-del-jugador.md).
 
 If what you want to cancel is a voucher top-up, see [How to cancel a voucher top-up](como-anular-una-recarga-de-bono.md).
