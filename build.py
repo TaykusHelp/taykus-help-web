@@ -526,14 +526,25 @@ class Site:
         if not tr_file.exists():
             PENDING.append((self.lang, rel, "falta"))
             page.fallback = True
-            return raw
+            return self.translated_title(rel, raw)
         text = tr_file.read_text(encoding="utf-8")
         fm, _ = split_frontmatter(text)
         if str(fm.get("origen", "")) != source_hash(page.src):
             PENDING.append((self.lang, rel, "desactualizada"))
             page.fallback = True
-            return raw
+            return self.translated_title(rel, raw)
         return text
+
+    def translated_title(self, rel: str, raw: str) -> str:
+        """Artículo aún sin traducir: si hay título traducido en titulos.yaml, se usa ese
+        (menús, portada y buscador quedan en el idioma) y el texto sigue en español."""
+        if not hasattr(self, "_titles"):
+            f = self.translations / "titulos.yaml" if self.translations else None
+            self._titles = (yaml.safe_load(f.read_text(encoding="utf-8")) or {}) if f and f.exists() else {}
+        title = self._titles.get(rel)
+        if not title:
+            return raw
+        return re.sub(r"^#\s+.+$", lambda m: "# " + str(title), raw, count=1, flags=re.M)
 
     def render_page(self, page: Page) -> None:
         raw = self.source_text(page)

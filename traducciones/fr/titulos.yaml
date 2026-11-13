@@ -1,0 +1,210 @@
+# Títulos traducidos de los artículos que aún no tienen traducción completa.
+# Se usan en menús, portada y buscador; el texto del artículo sigue en español con un aviso.
+# Cuando un artículo se traduce entero, su título de aquí deja de usarse.
+home/academia/academia/alumnos-activos.md: Élèves actifs
+home/academia/academia/alumnos-de-baja.md: Élèves inactifs
+home/academia/academia/calendario-de-alumnos.md: Calendrier des élèves
+home/academia/academia/calendario-de-profesores.md: Calendrier des professeurs
+home/academia/academia/disponibilidad-de-grupos.md: Disponibilité des groupes
+home/academia/academia/grupos-de-academia/README.md: Groupes de l'Académie
+home/academia/academia/grupos-de-academia/clase-abierta.md: Cours ouvert
+home/academia/academia/grupos-de-academia/como-anadir-alumnos.md: Comment ajouter des élèves
+home/academia/academia/grupos-de-academia/como-crear-los-entrenamientos.md: Comment créer les entraînements
+home/academia/academia/grupos-de-academia/como-crear-un-grupo-de-academia.md: Comment créer un groupe de l'Académie
+home/academia/academia/grupos-de-academia/cuotas.md: Cotisations
+home/academia/academia/grupos-de-academia/inscripciones-online.md: Inscriptions en ligne
+home/academia/academia/grupos-de-academia/precios-por-dias.md: Prix par jour
+home/academia/academia/preinscripciones/README.md: Préinscriptions
+home/academia/academia/preinscripciones/como-crear-categorias.md: Comment créer des catégories
+home/academia/academia/preinscripciones/como-crear-una-preinscripcion.md: Comment créer une préinscription
+home/academia/academia/preinscripciones/gestionar-comunicaciones-de-la-preinscripcion.md: Gérer les communications de la préinscription
+home/academia/academia/preinscripciones/gestionar-participantes-en-preinscripciones.md: Gérer les participants aux préinscriptions
+home/academia/academia/preinscripciones/personalizar-formulario-de-inscripcion.md: Personnaliser le formulaire d'inscription
+home/academia/academia/taykus-coach/README.md: Taykus Coach
+home/academia/academia/taykus-coach/como-entrar-en-taykus-coach.md: Comment se connecter à Taykus Coach
+home/academia/academia/taykus-coach/como-ver-tus-clases-en-taykus-coach.md: Comment voir vos cours dans Taykus Coach
+home/actividades/actividades/como-crear-categorias.md: Comment créer des catégories
+home/actividades/actividades/como-crear-una-actividad.md: Comment créer une activité
+home/actividades/actividades/configurar-precios-de-inscripcion.md: Configurer les tarifs d'inscription
+home/actividades/actividades/gestionar-comunicaciones-de-la-actividad.md: Gérer les communications de l'activité
+home/actividades/actividades/gestionar-participantes-en-actividades.md: Gérer les participants aux activités
+home/actividades/actividades/personalizar-formulario-de-inscripcion.md: Personnaliser le formulaire d'inscription
+home/almacen/almacen/como-crear-una-peticion-de-stock.md: Comment créer une demande de stock
+home/almacen/almacen/como-hacer-una-entrada-manual-de-stock.md: Comment faire une entrée manuelle de stock
+home/almacen/almacen/como-restar-stock.md: Comment retirer du stock
+home/app-propia/app-propia/apple/README.md: Apple
+home/app-propia/app-propia/apple/como-crear-una-cuenta-de-desarrollador.md: Comment créer un compte développeur
+home/app-propia/app-propia/apple/como-invitar-a-taykus-a-tu-cuenta-de-app-store-connect.md: Comment inviter Taykus sur votre compte App Store Connect
+home/app-propia/app-propia/google-play/README.md: Google Play
+home/app-propia/app-propia/google-play/como-crear-una-cuenta-de-desarrollador.md: Comment créer un compte développeur
+home/app-propia/app-propia/google-play/como-invitar-a-taykus-a-tu-cuenta-de-google-play-console.md: Comment inviter Taykus sur votre Google Play Console
+home/app-taykus/app-taykus/como-crear-un-partido-desde-la-app-taykus.md: Comment créer un match depuis l'app Taykus
+home/app-taykus/app-taykus/como-funciona-el-nivel-de-jugador-en-taykus.md: Comment fonctionne le niveau de joueur dans Taykus
+home/app-taykus/app-taykus/como-hacer-una-reserva-en-la-app-de-taykus.md: Comment faire une réservation dans l'app Taykus
+home/app-taykus/app-taykus/como-nivelarse-en-la-app-de-taykus.md: Comment obtenir son niveau dans l'app Taykus
+home/app-taykus/app-taykus/como-registrarse-en-la-app-de-taykus.md: Comment s'inscrire dans l'app Taykus
+home/app-taykus/app-taykus/como-ver-la-informacion-de-tu-perfil-en-la-app-de-taykus.md: Comment voir les informations de votre profil dans l'app Taykus
+home/comunicaciones/comunicaciones/acceso-a-la-configuracion-de-las-comunicaciones.md: Accès aux paramètres des communications
+home/comunicaciones/comunicaciones/acceso-a-plantillas-de-emails.md: Accès aux modèles d'e-mails
+home/comunicaciones/comunicaciones/como-adjuntar-una-imagen-a-un-mail.md: Comment joindre une image à un e-mail
+home/comunicaciones/comunicaciones/como-configurar-la-cuenta-de-correo-del-club.md: Comment configurer le compte e-mail du club
+home/comunicaciones/comunicaciones/como-crear-una-plantilla.md: Comment créer un modèle
+home/comunicaciones/comunicaciones/como-editar-una-plantilla.md: Comment modifier un modèle
+home/comunicaciones/comunicaciones/como-reenviar-un-mail.md: Comment renvoyer un e-mail
+home/comunicaciones/comunicaciones/donde-ver-el-estado-de-envio-de-los-correos.md: Où voir le statut d'envoi des e-mails
+home/comunicaciones/comunicaciones/plantillas-de-emails.md: Modèles d'e-mails
+home/comunicaciones/comunicaciones/uso-de-la-cuenta-de-correo-taykus.md: Utilisation du compte e-mail Taykus
+home/configuracion/configuracion/academia/README.md: 🏅 Académie
+home/configuracion/configuracion/academia/como-especificar-que-usuarios-son-entrenadores.md: Comment indiquer quels utilisateurs sont entraîneurs
+home/configuracion/configuracion/campos-personalizados.md: 🗒️ Champs personnalisés
+home/configuracion/configuracion/configuracion/README.md: ⚙️ Paramètres
+home/configuracion/configuracion/configuracion/como-acceder-al-menu-de-configuracion.md: Comment accéder au menu des paramètres
+home/configuracion/configuracion/configuracion/como-importar-productos-de-forma-masiva.md: Comment importer des produits en masse
+home/configuracion/configuracion/configuracion/configuracion.md: Paramètres
+home/configuracion/configuracion/guia-de-inicio-rapido.md: Guide de démarrage rapide
+home/configuracion/configuracion/listados/README.md: Listes
+home/configuracion/configuracion/listados/como-exportar-un-listado.md: Comment exporter une liste
+home/configuracion/configuracion/listados/como-filtrar-entre-dos-fechas.md: Comment filtrer entre deux dates
+home/configuracion/configuracion/listados/como-guardar-un-listado-como-favorito.md: Comment enregistrer une liste en favori
+home/configuracion/configuracion/listados/como-mover-columnas.md: Comment déplacer des colonnes
+home/configuracion/configuracion/listados/como-ocultar-o-mostrar-columnas.md: Comment masquer ou afficher des colonnes
+home/configuracion/configuracion/registro.md: 🪪 Inscription
+home/configuracion/configuracion/reservas/README.md: 🕒 Réservations
+home/configuracion/configuracion/reservas/extras-automaticos/README.md: Suppléments automatiques
+home/configuracion/configuracion/reservas/extras-automaticos/como-crear-o-anadir-un-extra-automatico.md: Comment créer ou ajouter un supplément automatique
+home/configuracion/configuracion/reservas/grupo-de-recursos/README.md: Groupe de ressources
+home/configuracion/configuracion/reservas/grupo-de-recursos/como-anadir-a-un-profesor-nuevo.md: Comment ajouter un nouveau professeur
+home/configuracion/configuracion/reservas/grupo-de-recursos/como-avisar-por-email-a-un-profesor-cuando-tiene-una-reserva.md: Comment prévenir un professeur par e-mail quand il a une réservation
+home/configuracion/configuracion/reservas/grupo-de-recursos/como-crear-un-recurso.md: Comment créer une ressource
+home/configuracion/configuracion/reservas/grupo-de-recursos/como-recibir-un-email-cuando-alguien-reserva-o-cancela.md: Comment recevoir un e-mail quand quelqu'un réserve ou annule
+home/configuracion/configuracion/reservas/horarios/README.md: Horaires
+home/configuracion/configuracion/reservas/horarios/como-asignar-un-profesor-a-un-horario.md: Comment attribuer un professeur à un horaire
+home/configuracion/configuracion/reservas/horarios/como-cerrar-el-club-entre-dos-fechas.md: Comment fermer le club entre deux dates
+home/configuracion/configuracion/reservas/horarios/como-cerrar-un-dia.md: Comment fermer une journée
+home/configuracion/configuracion/reservas/horarios/como-crear-un-horario.md: Comment créer un horaire
+home/configuracion/configuracion/reservas/horarios/como-editar-un-horario-por-dias.md: Comment modifier un horaire par jours
+home/configuracion/configuracion/reservas/horarios/como-editar-un-horario-por-horas.md: Comment modifier un horaire par heures
+home/configuracion/configuracion/reservas/horarios/como-poner-horario-de-festivo.md: Comment définir l'horaire des jours fériés
+home/configuracion/configuracion/reservas/precios-por-calendario/README.md: Tarifs par calendrier
+home/configuracion/configuracion/reservas/precios-por-calendario/como-modificar-los-precios.md: Comment modifier les prix
+home/configuracion/configuracion/reservas/precios-por-calendario/como-poner-precios-al-horario.md: Comment définir les prix de l'horaire
+home/configuracion/configuracion/reservas/precios-por-calendario/como-poner-precios-de-festivo.md: Comment définir les prix des jours fériés
+home/configuracion/configuracion/reservas/razones-de-cancelaciones/README.md: Raisons de l'annulation
+home/configuracion/configuracion/reservas/razones-de-cancelaciones/como-crear-o-especificar-un-motivo-de-cancelacion.md: Comment créer ou indiquer un motif d'annulation
+home/configuracion/configuracion/reservas/recordatorios-de-reserva/README.md: Rappels de réservation
+home/configuracion/configuracion/reservas/recordatorios-de-reserva/como-crear-un-recordatorio-de-reserva.md: Comment créer un rappel de réservation
+home/configuracion/configuracion/reservas/tipos-de-reserva/README.md: Types de réservation
+home/configuracion/configuracion/reservas/tipos-de-reserva/como-crear-un-tipo-de-reserva.md: Comment créer un type de réservation
+home/configuracion/configuracion/roles/README.md: 🔒 Rôles
+home/configuracion/configuracion/roles/como-crear-editar-o-borra-un-rol.md: Comment créer, modifier ou supprimer un rôle
+home/configuracion/configuracion/taykus-marketplace/README.md: 📱 Taykus MarketPlace
+home/configuracion/configuracion/taykus-marketplace/como-descargar-la-auto-factura.md: Comment télécharger l'autofacture ?
+home/configuracion/configuracion/taykus-marketplace/como-solicitar-la-transferencia.md: Comment demander le virement ?
+home/configuracion/configuracion/usuarios/README.md: 👤 Utilisateurs
+home/configuracion/configuracion/usuarios/como-crear-un-usuario.md: Comment créer un utilisateur
+home/configuracion/configuracion/ventas/README.md: 💲 Ventes
+home/configuracion/configuracion/ventas/bonos/README.md: Bons
+home/configuracion/configuracion/ventas/bonos/como-crear-un-bono-de-horas.md: Comment créer un bon d'heures
+home/configuracion/configuracion/ventas/bonos/como-crear-un-bono-monedero.md: Comment créer un bon monétaire
+home/configuracion/configuracion/ventas/bonos/como-crear-un-bono-sesiones.md: Comment créer un bon de séances
+home/configuracion/configuracion/ventas/cajas.md: Caisses
+home/configuracion/configuracion/ventas/como-crear-o-modificar-un-impuesto.md: Comment créer ou modifier une taxe
+home/configuracion/configuracion/ventas/como-crear-o-modificar-un-pie-del-ticket.md: Comment créer ou modifier le pied du ticket
+home/configuracion/configuracion/ventas/como-crear-o-modificar-una-marca.md: Comment créer ou modifier une marque
+home/configuracion/configuracion/ventas/como-crear-un-tipo-de-producto.md: Comment créer un type de produit
+home/configuracion/configuracion/ventas/empresas/README.md: Entreprises
+home/configuracion/configuracion/ventas/empresas/como-configurar-los-datos-de-empresa.md: Comment configurer les données de l'entreprise
+home/configuracion/configuracion/ventas/empresas/como-editar-los-datos-de-la-empresa.md: Comment modifier les données de l'entreprise
+home/configuracion/configuracion/ventas/empresas-clientes/README.md: Sociétés clientes
+home/configuracion/configuracion/ventas/empresas-clientes/como-crear-empresas-cliente-en-el-sistema.md: Comment créer des sociétés clientes dans le système
+home/configuracion/configuracion/ventas/empresas-clientes/como-editar-los-datos-de-una-empresa-cliente.md: Comment modifier les données d'une société cliente
+home/configuracion/configuracion/ventas/personalizacion-de-precios/README.md: Personnalisation des prix
+home/configuracion/configuracion/ventas/personalizacion-de-precios/personalizar-precio-a-un-jugador-en-concreto.md: Personnaliser le prix pour un joueur précis
+home/configuracion/configuracion/ventas/personalizacion-de-precios/personalizar-precio-de-reservas-por-minutos-de-juego.md: Personnaliser le prix des réservations selon les minutes de jeu
+home/configuracion/configuracion/ventas/personalizacion-de-precios/personalizar-precio-de-reservas-por-numero-de-participantes.md: Personnaliser le prix des réservations selon le nombre de participants
+home/configuracion/configuracion/ventas/personalizacion-de-precios/personalizar-precios-por-tipo-de-jugador.md: Personnaliser les prix par type de joueur
+home/configuracion/configuracion/ventas/productos/README.md: Produits
+home/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-articulo.md: Comment créer un produit de type Article
+home/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-cuota.md: Comment créer un produit de type Cotisation
+home/configuracion/configuracion/ventas/productos/como-crear-un-producto-tipo-servicio.md: Comment créer un produit de type Service
+home/configuracion/configuracion/ventas/productos/como-modificar-el-precio-de-un-producto-de-tipo-articulo.md: Comment modifier le prix d'un produit de type article
+home/configuracion/configuracion/zona-de-jugadores.md: Zone client
+home/jugadores/jugadores/bonos/README.md: Bons
+home/jugadores/jugadores/bonos/como-recargar-un-bono.md: Comment recharger un bon
+home/jugadores/jugadores/bonos/como-restar-saldo-de-un-bono-a-un-jugador.md: Comment déduire du solde d'un bon d'un joueur
+home/jugadores/jugadores/bonos/como-transferir-saldo-de-bonos-entre-clientes.md: Comment transférer le solde de bons entre clients
+home/jugadores/jugadores/como-enviar-un-correo-masivo-a-clientes.md: Comment envoyer un e-mail groupé aux clients
+home/jugadores/jugadores/fichas-de-jugador/README.md: Fiches joueur
+home/jugadores/jugadores/fichas-de-jugador/como-anular-una-venta-desde-la-ficha-del-jugador.md: Comment annuler une vente depuis la fiche du joueur
+home/jugadores/jugadores/fichas-de-jugador/como-asignar-un-cliente-responsable-a-un-jugador.md: Comment attribuer un client responsable à un joueur
+home/jugadores/jugadores/fichas-de-jugador/como-crear-a-un-jugador.md: Comment créer un joueur
+home/jugadores/jugadores/fichas-de-jugador/como-crear-diferentes-tipos-de-jugadores.md: Comment créer différents types de joueurs
+home/jugadores/jugadores/fichas-de-jugador/como-funciona-el-nivel-de-jugador-en-taykus.md: Comment fonctionne le niveau de joueur dans Taykus
+home/jugadores/jugadores/fichas-de-jugador/como-ver-los-clientes-asociados-a-un-jugador.md: Comment voir les clients associés à un joueur
+home/jugadores/jugadores/fichas-de-jugador/que-cambia-cuando-un-jugador-tiene-cliente-responsable.md: Ce qui change quand un joueur a un client responsable
+home/marketing/marketing/como-editar-un-codigo-promocional.md: Comment modifier un code promo
+home/marketing/marketing/como-hacer-un-codigo-promocional.md: Comment créer un code promo
+home/marketing/marketing/como-limitar-un-codigo-promocional-a-ciertos-productos.md: Comment limiter un code promo à certains produits
+home/tpv/tpv/bonos/README.md: Bons
+home/tpv/tpv/bonos/como-hacer-una-recarga-a-precio-0eur-desde-el-tpv.md: Comment faire une recharge à 0 € depuis le point de vente
+home/tpv/tpv/bonos/como-hacer-una-recarga-personalizada-de-un-bono-monedero-desde-el-tpv.md: Comment faire une recharge personnalisée d'un bon monétaire depuis le point de vente
+home/tpv/tpv/bonos/como-recargar-un-bono-desde-el-tpv.md: Comment recharger un bon depuis le point de vente
+home/tpv/tpv/precios/README.md: Prix
+home/tpv/tpv/precios/como-aplicar-un-descuento-en-eur.md: Comment appliquer une remise en €
+home/tpv/tpv/precios/como-aplicar-un-descuento-en.md: Comment appliquer une remise en %
+home/tpv/tpv/precios/como-aumentar-el-precio-de-un-producto-desde-el-tpv.md: Comment augmenter le prix d'un produit depuis le point de vente
+home/tpv/tpv/precios/como-cambiar-a-la-baja-el-precio-de-un-producto-desde-el-tpv.md: Comment baisser le prix d'un produit depuis le point de vente
+home/tpv/tpv/ventas/README.md: Ventes
+home/tpv/tpv/ventas/como-abrir-la-caja-desde-el-tpv.md: Comment ouvrir la caisse depuis le point de vente
+home/tpv/tpv/ventas/como-anular-una-venta-desde-el-tpv.md: Comment annuler une vente depuis le point de vente
+home/tpv/tpv/ventas/como-aparcar-una-venta.md: Comment mettre une vente en attente
+home/tpv/tpv/ventas/como-cambiar-de-usuario-a-traves-del-tpv.md: Comment changer d'utilisateur depuis le point de vente
+home/tpv/tpv/ventas/como-enviar-un-ticket-desde-el-tpv.md: Comment envoyer un ticket depuis le point de vente
+home/tpv/tpv/ventas/como-hacer-una-venta.md: Comment faire une vente
+home/tpv/tpv/ventas/como-recuperar-una-venta-aparcada.md: Comment récupérer une vente en attente
+home/tpv/tpv/ventas/como-vender-un-producto-abierto.md: Comment vendre un produit ouvert
+home/ventas/ventas/bonos.md: Paiements avec des bons
+home/ventas/ventas/cajas/README.md: Caisses
+home/ventas/ventas/cajas/como-abrir-la-caja.md: Comment ouvrir la caisse
+home/ventas/ventas/cajas/como-cerrar-la-caja.md: Comment fermer la caisse
+home/ventas/ventas/cajas/como-consultar-y-exportar-el-resumen-de-caja.md: Comment consulter et exporter le résumé de caisse
+home/ventas/ventas/cajas/como-hacer-un-recuento-de-caja.md: Comment faire un comptage de caisse
+home/ventas/ventas/cajas/como-hacer-una-entrada-o-retirada-de-efectivo.md: Comment faire une entrée ou un retrait d'espèces
+home/ventas/ventas/cuotas/README.md: Cotisations
+home/ventas/ventas/cuotas/como-activar-el-cobro-automatico-con-tarjeta.md: Comment activer le prélèvement automatique par carte
+home/ventas/ventas/cuotas/como-automatizar-la-cancelacion-por-impago.md: Comment automatiser l'annulation pour impayé
+home/ventas/ventas/cuotas/como-automatizar-la-emision-de-cuotas.md: Comment automatiser l'émission des cotisations
+home/ventas/ventas/cuotas/como-cambiar-el-dia-de-vencimiento-de-una-cuota.md: Comment changer le jour d'échéance d'une cotisation
+home/ventas/ventas/cuotas/como-dar-de-baja-a-un-cliente-de-una-cuota.md: Comment désinscrire un client d'une cotisation
+home/ventas/ventas/cuotas/como-emitir-una-cuota.md: Comment émettre une cotisation
+home/ventas/ventas/cuotas/como-modificar-el-precio-de-una-cuota.md: Comment modifier le prix d'une cotisation
+home/ventas/ventas/cuotas/como-omitir-una-cuota.md: Comment ignorer une cotisation
+home/ventas/ventas/cuotas/como-pagar-una-cuota.md: Comment payer une cotisation
+home/ventas/ventas/cuotas/como-restablecer-una-cuota.md: Comment rétablir une cotisation
+home/ventas/ventas/cuotas/como-ver-las-cuotas.md: Comment voir les cotisations
+home/ventas/ventas/cuotas/que-es-una-membresia-y-como-funciona.md: Qu'est-ce qu'un abonnement et comment fonctionne-t-il
+home/ventas/ventas/deudas/README.md: Dettes
+home/ventas/ventas/deudas/como-anular-una-deuda.md: Comment annuler une dette
+home/ventas/ventas/deudas/como-cobrar-una-deuda.md: Comment encaisser une dette
+home/ventas/ventas/deudas/como-enviar-un-email-de-deudas.md: Comment envoyer un e-mail de dettes
+home/ventas/ventas/deudas/como-pasar-una-deuda-a-pendiente-domiciliacion.md: Comment passer une dette de En attente de paiement à En attente de prélèvement (et inversement)
+home/ventas/ventas/deudas/deudas-pendientes-de-domiciliacion.md: Dettes en attente de prélèvement
+home/ventas/ventas/domiciliaciones-tarjeta.md: Comment faire un prélèvement par carte
+home/ventas/ventas/facturas/README.md: Factures
+home/ventas/ventas/facturas/como-emitir-una-factura-desde-ventas-greater-than-lineas.md: Comment émettre une facture depuis Ventes > Lignes
+home/ventas/ventas/facturas/como-emitir-una-factura-desde-ventas-pagos.md: Comment émettre une facture depuis Ventes > Paiements
+home/ventas/ventas/facturas/como-reenviar-o-descargar-una-factura.md: Comment renvoyer ou télécharger une facture
+home/ventas/ventas/lineas/README.md: Lignes
+home/ventas/ventas/lineas/como-anular-una-recarga-de-bono.md: Comment annuler une recharge de bon
+home/ventas/ventas/lineas/como-anular-una-venta-desde-lineas.md: Comment annuler une vente depuis Lignes
+home/ventas/ventas/lineas/como-cobrar-una-venta-desde-lineas.md: Comment encaisser une vente depuis Lignes
+home/ventas/ventas/pagos.md: Paiements
+home/ventas/ventas/q19/README.md: Q19
+home/ventas/ventas/q19/antes-de-empezar-a-remesar.md: Avant de commencer les remises
+home/ventas/ventas/q19/generacion-del-q19-domiciliacion-de-recibos-bancarios.md: Génération du Q19 (prélèvement des reçus bancaires)
+home/veri-factu/veri-factu/como-autorizar-a-taykus-como-software-de-envio-de-facturas-para-veri-factu.md: Comment autoriser Taykus comme logiciel d'envoi des factures pour Veri\*FACTU
+home/zona-de-clientes/zona-de-clientes/como-cambiar-entre-tu-cuenta-y-la-de-tus-asociados-en-la-zona-de-clientes.md: Comment passer de votre compte à celui de vos associés dans la zone client
+home/zona-de-clientes/zona-de-clientes/como-crear-un-partido-desde-la-zona-de-clientes-de-tu-club.md: Comment créer un match depuis la zone client de votre club
+home/zona-de-clientes/zona-de-clientes/como-hacer-una-reserva-desde-la-zona-de-clientes-de-tu-club.md: Comment faire une réservation depuis la zone client de votre club
+home/zona-de-clientes/zona-de-clientes/como-registrarse-en-la-zona-de-clientes-de-tu-club.md: Comment s'inscrire dans la Zone client de votre club
+home/zona-de-clientes/zona-de-clientes/como-ver-la-informacion-de-tu-cuenta-en-la-zona-de-clientes-de-tu-club.md: Comment voir les informations de votre compte dans la zone client de votre club

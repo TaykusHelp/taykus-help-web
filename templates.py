@@ -147,7 +147,7 @@ STR = {
         "nf_p": "Forse l'articolo è stato spostato. Prova a cercarlo:", "nf_back": "Torna alla home",
         "play_aria": "Riproduci il video tutorial", "video_label": "Video tutorial", "download": "Scarica il file",
         "external": "Link esterno",
-        "fallback": "Questo articolo non è ancora disponibile in italiano, quindi lo mostriamo in spagnolo.",
+        "fallback": "Il testo di questo articolo non è ancora disponibile in italiano, quindi lo mostriamo in spagnolo.",
         "filter_aria": "Filtra i risultati", "screens": "Le schermate mostrano il pannello in spagnolo.",
     },
     "fr": {
@@ -175,7 +175,7 @@ STR = {
         "nf_p": "L'article a peut-être changé de place. Essayez de le rechercher :", "nf_back": "Retour à l'accueil",
         "play_aria": "Lire le tutoriel vidéo", "video_label": "Tutoriel vidéo", "download": "Télécharger le fichier",
         "external": "Lien externe",
-        "fallback": "Cet article n'est pas encore disponible en français : nous affichons la version en espagnol.",
+        "fallback": "Le texte de cet article n'est pas encore disponible en français : nous l'affichons en espagnol.",
         "filter_aria": "Filtrer les résultats", "screens": "Les captures d'écran montrent le panneau en espagnol.",
     },
 }
