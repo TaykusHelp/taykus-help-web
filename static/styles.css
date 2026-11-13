@@ -341,10 +341,21 @@ mark.tk-mark-text.tk-mark-info { color: var(--blue); }
   * { transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* Selector de idioma (ES / EN) */
-.tk-lang { display: inline-flex; gap: 2px; padding: 3px; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
-.tk-header-dark .tk-lang { border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.06); }
-.tk-topnav .tk-lang a { font-size: 12.5px; font-weight: 600; letter-spacing: .04em; padding: 3px 9px; border-radius: 7px; color: var(--muted); }
-.tk-topnav .tk-lang a[aria-current="true"] { background: var(--blue); color: #fff !important; }
-.tk-header-dark .tk-topnav .tk-lang a:not([aria-current="true"]) { color: #C9D6EA; }
+/* Selector de idioma: desplegable con 🌐 y nombres completos */
+.tk-lang { position: relative; font-size: 13.5px; }
+.tk-lang summary { list-style: none; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; padding: 5px 10px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: #3B4A5E; font-weight: 500; user-select: none; }
+.tk-lang summary::-webkit-details-marker { display: none; }
+.tk-lang summary:hover { border-color: var(--blue); }
+.tk-lang summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.tk-header-dark .tk-lang summary { border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #C9D6EA; }
+.tk-header-dark .tk-lang summary:hover { border-color: rgba(255,255,255,.45); color: #fff; }
+.tk-lang-chev { transform: rotate(90deg); transition: transform .15s; }
+.tk-lang[open] .tk-lang-chev { transform: rotate(-90deg); }
+.tk-lang-menu { position: absolute; right: 0; top: calc(100% + 6px); min-width: 160px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 16px 40px rgba(1,23,51,.18); padding: 6px; z-index: 60; display: flex; flex-direction: column; }
+.tk-topnav .tk-lang-menu a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--ink) !important; font-weight: 500; }
+.tk-topnav .tk-lang-menu a:hover { background: var(--tint); }
+.tk-topnav .tk-lang-menu a[aria-current="true"] { color: var(--blue) !important; font-weight: 600; background: var(--tint-2); }
+@media (max-width: 900px) { .tk-topnav .tk-lang { display: block; } }
 .tk-lang-notice { margin: 18px 0 4px; }
+.tk-screens-note { display: flex; align-items: center; gap: 8px; margin: 14px 0 4px; font-size: 13.5px; color: var(--muted); }
+.tk-screens-note svg { flex: none; color: var(--blue); }

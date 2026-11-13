@@ -4,7 +4,8 @@
 
   var BASE = (document.querySelector('meta[name="tk-base"]') || {}).content || '';
   var PREFIX = (document.querySelector('meta[name="tk-prefix"]') || {}).content || '';
-  var LANG = document.documentElement.lang === 'en' ? 'en' : 'es';
+  var LANGS = ['es', 'en', 'it', 'fr'];
+  var LANG = LANGS.indexOf(document.documentElement.lang) !== -1 ? document.documentElement.lang : 'es';
 
   // Textos de la interfaz en cada idioma
   var TXT = {
@@ -31,21 +32,52 @@
       all: 'All', withVideo: 'With video', video: 'Video', tab: 'Tab {n}',
       docTitle: 'Search · Taykus Help Center', videoTitle: 'Video tutorial',
       fbNo: 'Thanks. If you need help with this, email us and we\'ll go through it with you.'
+    },
+    it: {
+      noResults: 'Nessun risultato per «{q}». Prova con altre parole.',
+      seeAll: 'Vedi tutti i risultati ({n})',
+      hint: 'Scrivi ciò che ti serve: per esempio «festivo», «aprire cassa» o «voucher».',
+      one: '1 risultato', many: '{n} risultati', forQ: ' per <strong>{q}</strong>',
+      none: 'Nessun risultato per <strong>{q}</strong>. Prova con altre parole o scrivici.',
+      searched: '. Hai cercato «{q}».',
+      partial: ' Nessun articolo contiene tutte le parole; mostriamo i più simili.',
+      all: 'Tutti', withVideo: 'Con video', video: 'Video', tab: 'Scheda {n}',
+      docTitle: 'Cerca · Centro assistenza Taykus', videoTitle: 'Video tutorial',
+      fbNo: 'Grazie. Se hai bisogno di aiuto su questo, scrivici e lo vediamo insieme.'
+    },
+    fr: {
+      noResults: 'Aucun résultat pour « {q} ». Essayez avec d\'autres mots.',
+      seeAll: 'Voir tous les résultats ({n})',
+      hint: 'Écrivez ce dont vous avez besoin : par exemple « jour férié », « ouvrir la caisse » ou « bon ».',
+      one: '1 résultat', many: '{n} résultats', forQ: ' pour <strong>{q}</strong>',
+      none: 'Aucun résultat pour <strong>{q}</strong>. Essayez avec d\'autres mots ou écrivez-nous.',
+      searched: '. Vous avez cherché « {q} ».',
+      partial: ' Aucun article ne contient tous les mots ; voici les plus proches.',
+      all: 'Tous', withVideo: 'Avec vidéo', video: 'Vidéo', tab: 'Onglet {n}',
+      docTitle: 'Rechercher · Centre d\'aide Taykus', videoTitle: 'Tutoriel vidéo',
+      fbNo: 'Merci. Si vous avez besoin d\'aide à ce sujet, écrivez-nous et nous verrons cela ensemble.'
     }
   }[LANG];
   function t(key, vars) {
     return TXT[key].replace(/\{(\w+)\}/g, function (_, k) { return vars && vars[k] != null ? vars[k] : ''; });
   }
 
-  // Recordar el idioma elegido: quien eligió inglés vuelve a la portada en inglés
+  // Recordar el idioma elegido: quien eligió otro idioma vuelve a la portada en ese idioma
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('.tk-lang a[data-lang]');
     if (a) { try { localStorage.setItem('tk-lang', a.getAttribute('data-lang')); } catch (err) {} }
+    // Cerrar el desplegable de idioma al pulsar fuera
+    document.querySelectorAll('.tk-lang[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') document.querySelectorAll('.tk-lang[open]').forEach(function (d) { d.removeAttribute('open'); });
   });
   try {
-    if (LANG === 'es' && !PREFIX && localStorage.getItem('tk-lang') === 'en' &&
-        (location.pathname === BASE + '/' || location.pathname === BASE) && !document.referrer.match(/\/en\//)) {
-      location.replace(BASE + '/en/' + location.search + location.hash);
+    var saved = localStorage.getItem('tk-lang');
+    if (LANG === 'es' && !PREFIX && saved && saved !== 'es' && LANGS.indexOf(saved) !== -1 &&
+        (location.pathname === BASE + '/' || location.pathname === BASE) &&
+        !document.referrer.match(new RegExp('/(' + LANGS.join('|') + ')/'))) {
+      location.replace(BASE + '/' + saved + '/' + location.search + location.hash);
     }
   } catch (err) {}
 
@@ -64,10 +96,12 @@
   }
 
   var STOP = {};
-  (LANG === 'en'
-    ? 'a an the and or of to in on at for from by with is are be it its this that these those my me i we you your can do does how what where which who why want need into as not'
-    : 'a al ante con contra de del desde el en entre es esta este esto la las le les lo los mas me mi no o para pero por que se si sin sobre su sus te tu un una unas unos y ya como cual cuales donde quiero puedo hacer hago necesito').split(' ')
-    .forEach(function (w) { STOP[w] = 1; });
+  ({
+    en: 'a an the and or of to in on at for from by with is are be it its this that these those my me i we you your can do does how what where which who why want need into as not',
+    it: 'a ad al allo alla ai agli alle il lo la i gli le un uno una di del dello della dei degli delle da dal dalla in nel nella con su sul sulla per tra fra e ed o che chi non si mi ti ci come cosa dove quale quali posso voglio fare devo mio mia',
+    fr: 'a au aux le la les l un une des du de d en dans sur sous pour par avec et ou ne pas que qui quoi se s je j me m tu te vous nous il elle on ce cet cette ces mon ma mes comment ou quel quelle faire puis veux dois est',
+    es: 'a al ante con contra de del desde el en entre es esta este esto la las le les lo los mas me mi no o para pero por que se si sin sobre su sus te tu un una unas unos y ya como cual cuales donde quiero puedo hacer hago necesito'
+  }[LANG]).split(' ').forEach(function (w) { STOP[w] = 1; });
 
   function tokens(s) {
     return fold(s).split(/[^a-z0-9ñ]+/).filter(function (t) { return t.length > 0; });
