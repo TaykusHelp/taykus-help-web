@@ -64,8 +64,8 @@ LOGO = ('<svg class="tk-logo-mark" viewBox="0 0 96 136" aria-hidden="true"><defs
 # Textos de la interfaz en cada idioma
 # ---------------------------------------------------------------------------
 
-LANGS = {"es": "", "en": "/en"}  # idioma -> prefijo de la dirección
-LANG_NAMES = {"es": "Español", "en": "English"}
+LANGS = {"es": "", "en": "/en", "it": "/it", "fr": "/fr"}  # idioma -> prefijo de la dirección
+LANG_NAMES = {"es": "Español", "en": "English", "it": "Italiano", "fr": "Français"}
 
 STR = {
     "es": {
@@ -92,7 +92,7 @@ STR = {
         "nf_title": "Página no encontrada", "nf_h": "No encontramos esta página",
         "nf_p": "Puede que el artículo haya cambiado de sitio. Prueba a buscarlo:", "nf_back": "Volver al inicio",
         "play_aria": "Reproducir el vídeo tutorial", "video_label": "Vídeo tutorial", "download": "Descargar archivo",
-        "external": "Enlace externo", "fallback": "",
+        "external": "Enlace externo", "fallback": "", "filter_aria": "Filtrar resultados", "screens": "",
     },
     "en": {
         "site_title": "Taykus Help Center", "brand_aria": "Taykus Help Center, home", "brand_sub": "Help Center",
@@ -120,6 +120,63 @@ STR = {
         "play_aria": "Play the video tutorial", "video_label": "Video tutorial", "download": "Download file",
         "external": "External link",
         "fallback": "This article isn't available in English yet, so we're showing the Spanish version.",
+        "filter_aria": "Filter results", "screens": "The screenshots show the panel in Spanish.",
+    },
+    "it": {
+        "site_title": "Centro assistenza Taykus", "brand_aria": "Centro assistenza Taykus, home", "brand_sub": "Centro assistenza",
+        "search_big_ph": "Es.: come chiudere un giorno, incassare una prenotazione…", "search_ph": "Cerca nel centro assistenza…",
+        "search_btn": "Cerca", "search_label": "Cerca la tua domanda", "app_btn": "Accedi a Taykus",
+        "nav_aria": "Principale", "nav_guides": "Guide", "nav_videos": "Video", "nav_contact": "Contatti",
+        "lang_aria": "Lingua", "contact_h": "Non trovi quello che cerchi?", "contact_p": "Il team di assistenza di Taykus è a tua disposizione.",
+        "contact_btn": "Scrivi all'assistenza", "footer": "© Taykus · Centro assistenza", "skip": "Vai al contenuto",
+        "home": "Home", "crumbs_aria": "Ti trovi in", "side_index": "Indice di {m}", "all_modules": "← Tutti i moduli",
+        "video_tag": "Video", "start_here": "Inizia da qui", "feature_text": "Tutto il necessario per preparare il tuo club a iniziare con Taykus.",
+        "see_guide": "Leggi la guida", "popular": "Articoli più consultati", "club_guides": "Guide per il tuo club",
+        "club_guides_p": "Scegli il modulo di Taykus su cui hai un dubbio.", "n_guides": "{n} guide", "one_guide": "1 guida",
+        "soon": "Prossimamente:", "players": "Per i tuoi giocatori", "players_p": "Guide da inviare ai tuoi clienti perché prenotino da soli.",
+        "videos_h": "Video tutorial", "videos_p": "Impara guardando come si fa, in pochi minuti.", "see_videos": "Guarda tutti i {n} video",
+        "hero_h": "Come possiamo aiutarti?", "most_searched": "I più cercati:", "guides": "Guide",
+        "empty_h": "Stiamo preparando queste guide", "empty_p": "Nel frattempo scrivici e ti aiutiamo con quello che ti serve.",
+        "section_lead": "Guide su {s} nel modulo {m}.", "minutes": "{n} min di lettura", "with_video": "Con video",
+        "in_section": "In questa sezione", "related": "Articoli correlati", "fb_aria": "Valutazione",
+        "fb_q": "Questo articolo ti è stato utile?", "yes": "Sì", "no": "No", "fb_thanks": "Grazie per la tua risposta!",
+        "toc": "In questo articolo", "search_title": "Cerca", "search_h": "Cerca nel centro assistenza",
+        "noscript": "Attiva JavaScript per usare la ricerca.", "videos_crumb": "Video",
+        "videos_band": "{n} video passo passo. Ognuno ha la sua guida scritta.",
+        "nf_title": "Pagina non trovata", "nf_h": "Non troviamo questa pagina",
+        "nf_p": "Forse l'articolo è stato spostato. Prova a cercarlo:", "nf_back": "Torna alla home",
+        "play_aria": "Riproduci il video tutorial", "video_label": "Video tutorial", "download": "Scarica il file",
+        "external": "Link esterno",
+        "fallback": "Questo articolo non è ancora disponibile in italiano, quindi lo mostriamo in spagnolo.",
+        "filter_aria": "Filtra i risultati", "screens": "Le schermate mostrano il pannello in spagnolo.",
+    },
+    "fr": {
+        "site_title": "Centre d'aide Taykus", "brand_aria": "Centre d'aide Taykus, accueil", "brand_sub": "Centre d'aide",
+        "search_big_ph": "Ex. : fermer une journée, encaisser une réservation…", "search_ph": "Rechercher dans le centre d'aide…",
+        "search_btn": "Rechercher", "search_label": "Recherchez votre question", "app_btn": "Accéder à Taykus",
+        "nav_aria": "Principal", "nav_guides": "Guides", "nav_videos": "Vidéos", "nav_contact": "Contact",
+        "lang_aria": "Langue", "contact_h": "Vous ne trouvez pas ce que vous cherchez ?", "contact_p": "L'équipe support de Taykus se fera un plaisir de vous aider.",
+        "contact_btn": "Écrire au support", "footer": "© Taykus · Centre d'aide", "skip": "Aller au contenu",
+        "home": "Accueil", "crumbs_aria": "Vous êtes ici", "side_index": "Sommaire : {m}", "all_modules": "← Tous les modules",
+        "video_tag": "Vidéo", "start_here": "Commencez ici", "feature_text": "L'essentiel pour que votre club soit prêt à démarrer avec Taykus.",
+        "see_guide": "Lire le guide", "popular": "Articles les plus consultés", "club_guides": "Guides pour votre club",
+        "club_guides_p": "Choisissez le module de Taykus sur lequel porte votre question.", "n_guides": "{n} guides", "one_guide": "1 guide",
+        "soon": "Bientôt :", "players": "Pour vos joueurs", "players_p": "Des guides à envoyer à vos clients pour qu'ils réservent eux-mêmes.",
+        "videos_h": "Tutoriels vidéo", "videos_p": "Apprenez en regardant, en quelques minutes.", "see_videos": "Voir les {n} vidéos",
+        "hero_h": "Comment pouvons-nous vous aider ?", "most_searched": "Les plus recherchés :", "guides": "Guides",
+        "empty_h": "Nous préparons ces guides", "empty_p": "En attendant, écrivez-nous et nous vous aiderons.",
+        "section_lead": "Guides « {s} » du module {m}.", "minutes": "{n} min de lecture", "with_video": "Avec vidéo",
+        "in_section": "Dans cette section", "related": "Articles associés", "fb_aria": "Avis",
+        "fb_q": "Cet article vous a-t-il été utile ?", "yes": "Oui", "no": "Non", "fb_thanks": "Merci pour votre réponse !",
+        "toc": "Dans cet article", "search_title": "Rechercher", "search_h": "Rechercher dans le centre d'aide",
+        "noscript": "Activez JavaScript pour utiliser la recherche.", "videos_crumb": "Vidéos",
+        "videos_band": "{n} vidéos pas à pas. Chacune est accompagnée de son guide écrit.",
+        "nf_title": "Page introuvable", "nf_h": "Nous ne trouvons pas cette page",
+        "nf_p": "L'article a peut-être changé de place. Essayez de le rechercher :", "nf_back": "Retour à l'accueil",
+        "play_aria": "Lire le tutoriel vidéo", "video_label": "Tutoriel vidéo", "download": "Télécharger le fichier",
+        "external": "Lien externe",
+        "fallback": "Cet article n'est pas encore disponible en français : nous affichons la version en espagnol.",
+        "filter_aria": "Filtrer les résultats", "screens": "Les captures d'écran montrent le panneau en espagnol.",
     },
 }
 
@@ -243,11 +300,14 @@ def header_search(ctx: Context, value: str = "", big: bool = False, autofocus: b
 
 
 def lang_switch(ctx: Context, path: str) -> str:
+    """Desplegable de idioma: 🌐 + nombre completo. Funciona sin JavaScript (<details>)."""
     links = []
     for lg in LANGS:
         cur = ' aria-current="true"' if lg == ctx.lang else ""
-        links.append(f'<a href="{E(ctx.lang_url(lg, path))}" hreflang="{lg}" lang="{lg}" data-lang="{lg}" title="{E(LANG_NAMES[lg])}"{cur}>{lg.upper()}</a>')
-    return f'<div class="tk-lang" role="group" aria-label="{E(ctx.t("lang_aria"))}">{"".join(links)}</div>'
+        links.append(f'<a href="{E(ctx.lang_url(lg, path))}" hreflang="{lg}" lang="{lg}" data-lang="{lg}"{cur}>{E(LANG_NAMES[lg])}</a>')
+    return (f'<details class="tk-lang"><summary aria-label="{E(ctx.t("lang_aria"))}: {E(LANG_NAMES[ctx.lang])}">'
+            f'<span aria-hidden="true">🌐</span><span class="tk-lang-name">{E(LANG_NAMES[ctx.lang])}</span>{svg("chevron", 14, "tk-lang-chev")}</summary>'
+            f'<div class="tk-lang-menu">{"".join(links)}</div></details>')
 
 
 def header(ctx: Context, variant: str = "dark", search: bool = True, path: str = "/") -> str:
@@ -285,7 +345,7 @@ def page(ctx: Context, title: str, body: str, description: str = "", path: str =
 
 def short_label(title: str) -> str:
     t = re.sub(r"^[¿¡]\s*", "", title).rstrip("?").strip()
-    t = re.sub(r"^(c[oó]mo|how (?:do i|to|can i))\s+", "", t, flags=re.I)
+    t = re.sub(r"^(c[oó]mo|how (?:do i|to|can i)|come|comment)\s+", "", t, flags=re.I)
     return t[:1].upper() + t[1:]
 
 
@@ -517,6 +577,9 @@ def article_page(ctx: Context, p) -> str:
     if getattr(p, "fallback", False):
         notice = f'<div class="tk-hint tk-hint-info tk-lang-notice"><p>{E(ctx.t("fallback"))}</p></div>'
         art_lang = ' lang="es"'
+    elif ctx.lang != "es" and re.search(r'<img(?![^>]*i\.ytimg\.com)', p.html):
+        # Versión traducida: las capturas siguen siendo del panel en español
+        notice = f'<p class="tk-screens-note">{svg("info", 16)}{E(ctx.t("screens"))}</p>'
     children = ""
     subs = [c for c in p.children]
     if subs:
@@ -546,7 +609,7 @@ def search_page(ctx: Context) -> str:
 </div></section>
 <main id="main" class="tk-wrap-narrow tk-results-page">
 <p class="tk-results-info" aria-live="polite"></p>
-<div class="tk-filters" role="group" aria-label="{E("Filter results" if ctx.lang == "en" else "Filtrar resultados")}"></div>
+<div class="tk-filters" role="group" aria-label="{E(ctx.t("filter_aria"))}"></div>
 <div class="tk-results"></div>
 <noscript><p>{E(ctx.t("noscript"))}</p></noscript>
 {contact(ctx, compact=True)}
