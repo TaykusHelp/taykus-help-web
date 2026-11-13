@@ -7,10 +7,10 @@ Uso:
 El contenido llega al repositorio taykus-help-center mediante Git Sync de GitBook.
 Este script lo lee tal cual (no lo modifica) y produce una web en la carpeta --out.
 
-Versión en inglés: las traducciones viven en traducciones/en/, con la misma ruta que el
-artículo original en taykus-help-center. Cada traducción guarda en "origen" la huella del
-artículo en español del que sale; si el original cambia, la web en inglés muestra el
-artículo en español con un aviso hasta que se actualice la traducción.
+Otros idiomas (inglés, italiano, francés): las traducciones viven en traducciones/<idioma>/,
+con la misma ruta que el artículo original en taykus-help-center. Cada traducción guarda en
+"origen" la huella del artículo en español del que sale; si el original cambia (o aún no hay
+traducción), esa versión muestra el artículo en español con un aviso.
 """
 from __future__ import annotations
 
@@ -44,7 +44,8 @@ KNOWN_SPACE_IDS = {
 }
 
 WARNINGS: list[str] = []
-PENDING: list[tuple[str, str]] = []  # (artículo, motivo) de traducciones que faltan o están desactualizadas
+PENDING: list[tuple[str, str, str]] = []  # (idioma, artículo, motivo) de traducciones que faltan o están desactualizadas
+LANG_LABEL = {"en": "inglés", "it": "italiano", "fr": "francés"}
 
 
 def warn(msg: str) -> None:
@@ -56,7 +57,7 @@ def warn(msg: str) -> None:
 # ---------------------------------------------------------------------------
 
 EMOJI_RE = re.compile(
-    "[\U0001F000-\U0001FAFF☀-➿️‍⬀-⯿⌀-⏿]+"
+    "[\\U0001F000-\\U0001FAFF☀-➿️‍⬀-⯿⌀-⏿]+"
 )
 
 
@@ -523,13 +524,13 @@ class Site:
         rel = page.src.relative_to(self.content).as_posix()
         tr_file = self.translations / rel
         if not tr_file.exists():
-            PENDING.append((rel, "falta"))
+            PENDING.append((self.lang, rel, "falta"))
             page.fallback = True
             return raw
         text = tr_file.read_text(encoding="utf-8")
         fm, _ = split_frontmatter(text)
         if str(fm.get("origen", "")) != source_hash(page.src):
-            PENDING.append((rel, "desactualizada"))
+            PENDING.append((self.lang, rel, "desactualizada"))
             page.fallback = True
             return raw
         return text
@@ -687,17 +688,29 @@ def write_extras(sites: list[Site]) -> None:
 
 
 def pending_report() -> str:
-    """Resumen de traducciones pendientes (se ve en GitHub, en la publicación)."""
-    if not PENDING:
-        return "## Traducciones al inglés\n\nTodas las traducciones están al día.\n"
-    falta = [r for r, k in PENDING if k == "falta"]
-    viejas = [r for r, k in PENDING if k == "desactualizada"]
-    out = ["## Traducciones al inglés pendientes", "",
-           "Estos artículos se ven en español dentro de la web en inglés hasta que se traduzcan.", ""]
-    if viejas:
-        out += [f"**Cambiados en español desde la última traducción ({len(viejas)}):**", ""] + [f"- `{r}`" for r in viejas] + [""]
-    if falta:
-        out += [f"**Sin traducir ({len(falta)}):**", ""] + [f"- `{r}`" for r in falta] + [""]
+    """Resumen de traducciones pendientes por idioma (se ve en GitHub, en la publicación)."""
+    out = []
+    for lang in [lg for lg in T.LANGS if lg != "es"]:
+        name = LANG_LABEL.get(lang, lang)
+        items = [(r, k) for lg, r, k in PENDING if lg == lang]
+        if not items:
+            out += [f"## Traducciones al {name}", "", "Todas las traducciones están al día.", ""]
+            continue
+        falta = [r for r, k in items if k == "falta"]
+        viejas = [r for r, k in items if k == "desactualizada"]
+        out += [f"## Traducciones al {name} pendientes ({len(items)})", "",
+                f"Estos artículos se ven en español dentro de la web en {name} hasta que se traduzcan.", ""]
+        if viejas:
+            out += [f"**Cambiados en español desde la última traducción ({len(viejas)}):**", ""] + [f"- `{r}`" for r in viejas] + [""]
+        if falta:
+            out += [f"**Sin traducir ({len(falta)}):**", ""]
+            # Agrupado por módulo para que se lea de un vistazo
+            by_mod: dict[str, list[str]] = {}
+            for r in falta:
+                parts = r.split("/")
+                by_mod.setdefault(parts[1] if len(parts) > 1 else r, []).append(r)
+            for mod, rs in by_mod.items():
+                out += [f"<details><summary>{mod} ({len(rs)})</summary>", ""] + [f"- `{r}`" for r in rs] + ["", "</details>", ""]
     return "\n".join(out)
 
 
@@ -726,8 +739,10 @@ def main() -> int:
     write_extras(sites)
     print(f"Web generada en {args.out}: {len(site.modules)} módulos, {n_art} artículos, {n_vid} con vídeo, {len(site.assets)} archivos.")
     report = pending_report()
-    pend_files = len({r for r, _ in PENDING})
-    print(f"Inglés: {pend_files} artículos pendientes de traducir o actualizar." if PENDING else "Inglés: todas las traducciones están al día.")
+    for lang in [lg for lg in T.LANGS if lg != "es"]:
+        n = len({r for lg, r, _ in PENDING if lg == lang})
+        name = LANG_LABEL.get(lang, lang).capitalize()
+        print(f"{name}: {n} artículos pendientes de traducir o actualizar." if n else f"{name}: todas las traducciones están al día.")
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as fh:
             fh.write(report)
