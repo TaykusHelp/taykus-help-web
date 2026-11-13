@@ -30,15 +30,16 @@ En `config/site.yaml`:
 - Las páginas que solo enlazan a otras se muestran como listado de guías.
 - Los enlaces entre espacios de GitBook se convierten en enlaces de la web.
 
-## Versión en inglés
+## Otros idiomas (inglés, italiano y francés)
 
-La web tiene un selector **ES / EN** arriba a la derecha. La versión en inglés está en `/en/`.
+La web tiene un selector de idioma (🌐) arriba a la derecha. Las versiones traducidas están en `/en/`, `/it/` y `/fr/`.
 
 - Los artículos se siguen escribiendo **solo en español**, en GitBook.
-- Las traducciones están en `traducciones/en/`, con la misma ruta que el artículo original.
-- Cada traducción guarda la huella del artículo en español del que sale. Si cambias un artículo en GitBook, la web en inglés muestra ese artículo en español con un aviso hasta que se actualice la traducción.
-- Para ver qué traducciones faltan: Actions › la última publicación › resumen (apartado "Traducciones al inglés").
-- Nombres de módulos y textos de portada en inglés: `config/site.yaml`, apartado `en`.
+- Las traducciones están en `traducciones/en/`, `traducciones/it/` y `traducciones/fr/`, con la misma ruta que el artículo original.
+- Cada traducción guarda la huella del artículo en español del que sale. Si cambias un artículo en GitBook (o aún no está traducido), esa versión lo muestra en español con un aviso hasta que se actualice la traducción.
+- Las capturas son del panel en español; los artículos traducidos con capturas lo avisan.
+- Para ver qué traducciones faltan: Actions › la última publicación › resumen (un apartado por idioma).
+- Nombres de módulos y textos de portada de cada idioma: `config/site.yaml`, apartados `en`, `it` y `fr`.
 
 ## Para técnicos
 
@@ -54,4 +55,4 @@ cd dist && python -m http.server 8000
 - `templates.py`: plantillas HTML.
 - `static/`: estilos, buscador (con tolerancia a faltas) y favicon.
 - `.github/workflows/publicar.yml`: publicación en GitHub Pages.
-- `traducciones/sellar.py`: marca traducciones como al día (`python traducciones/sellar.py --content ../taykus-help-center <archivos>`) y lista las pendientes (`--pendientes en`).
+- `traducciones/sellar.py`: marca traducciones como al día (`python traducciones/sellar.py --content ../taykus-help-center <archivos>`) y lista las pendientes (`--pendientes en`, `it` o `fr`).

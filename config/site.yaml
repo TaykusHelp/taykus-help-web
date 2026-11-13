@@ -63,3 +63,51 @@ en:
     app-propia:      { title: "Your own app", description: "Publish your club's app on Apple and Google Play." }
     app-taykus:      { title: "Taykus App", description: "Sign-up, bookings, matches and playing level." }
     zona-de-clientes: { title: "Customer Area", description: "Sign-up, bookings and account details from the club's website." }
+
+# Versión en italiano (/it/). Nombres de módulo según el panel en italiano.
+it:
+  site:
+    title: Centro assistenza Taykus
+    tagline: Guide passo passo e video per sfruttare al meglio Taykus nel tuo club.
+  modules:
+    calendario:      { title: "Calendario", description: "Prenotazioni, partite e prenotazioni multiple." }
+    jugadores:       { title: "Giocatori", description: "Schede giocatore, tipi di giocatore, clienti responsabili, voucher e livelli." }
+    academia:        { title: "Accademia", description: "Gruppi, alunni, quote e preiscrizioni." }
+    equipos:         { title: "Squadre", description: "Gestione delle squadre." }
+    configuracion:   { title: "Impostazioni", description: "Orari, prezzi, prodotti, utenti e ruoli.", first_group: "Primi passi" }
+    actividades:     { title: "Attività", description: "Iscrizioni, categorie e prezzi." }
+    tpv:             { title: "POS", description: "Vendite, sconti e ricariche dei voucher." }
+    ventas:          { title: "Vendite", description: "Casse, quote, fatture, debiti e Q19." }
+    marketing:       { title: "Marketing", description: "Codici promozionali." }
+    pedidos:         { title: "Ordini", description: "Ordini." }
+    almacen:         { title: "Magazzino", description: "Entrate, uscite e richieste di stock." }
+    reportes:        { title: "Report", description: "Report del club." }
+    comunicaciones:  { title: "Comunicazioni", description: "Email del club e modelli di email." }
+    veri-factu:      { title: "Veri*FACTU", description: "Fatturazione elettronica (Spagna)." }
+    app-propia:      { title: "App propria", description: "Pubblicare l'app del tuo club su Apple e Google Play." }
+    app-taykus:      { title: "App Taykus", description: "Registrazione, prenotazioni, partite e livello di gioco." }
+    zona-de-clientes: { title: "Zona clienti", description: "Registrazione, prenotazioni e dati dell'account dal sito del club." }
+
+# Versión en francés (/fr/). Nombres de módulo según el panel en francés.
+fr:
+  site:
+    title: Centre d'aide Taykus
+    tagline: Des guides pas à pas et des vidéos pour tirer le meilleur parti de Taykus dans votre club.
+  modules:
+    calendario:      { title: "Calendrier", description: "Réservations, matchs et réservations multiples." }
+    jugadores:       { title: "Joueurs", description: "Fiches joueur, types de joueur, clients responsables, bons et niveaux." }
+    academia:        { title: "Académie", description: "Groupes, élèves, cotisations et préinscriptions." }
+    equipos:         { title: "Équipes", description: "Gestion des équipes." }
+    configuracion:   { title: "Paramètres", description: "Horaires, tarifs, produits, utilisateurs et rôles.", first_group: "Premiers pas" }
+    actividades:     { title: "Activités", description: "Inscriptions, catégories et tarifs." }
+    tpv:             { title: "Point de vente", description: "Ventes, remises et recharges de bons." }
+    ventas:          { title: "Ventes", description: "Caisses, cotisations, factures, dettes et Q19." }
+    marketing:       { title: "Marketing", description: "Codes promo." }
+    pedidos:         { title: "Commandes", description: "Commandes." }
+    almacen:         { title: "Entrepôt", description: "Entrées, sorties et demandes de stock." }
+    reportes:        { title: "Reporting", description: "Rapports du club." }
+    comunicaciones:  { title: "Communications", description: "E-mail du club et modèles d'e-mails." }
+    veri-factu:      { title: "Veri*FACTU", description: "Facturation électronique (Espagne)." }
+    app-propia:      { title: "Votre propre app", description: "Publier l'app de votre club sur Apple et Google Play." }
+    app-taykus:      { title: "App Taykus", description: "Inscription, réservations, matchs et niveau de jeu." }
+    zona-de-clientes: { title: "Zone client", description: "Inscription, réservations et données du compte depuis le site du club." }
