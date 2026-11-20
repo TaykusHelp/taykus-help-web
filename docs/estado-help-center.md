@@ -22,7 +22,67 @@ Actualizado: 13 nov 2026
 - Web en /it/ y /fr/, con las mismas direcciones que en español. Selector de idioma desplegable con 🌐 y nombres completos (Español, English, Italiano, Français), sin banderas, también en móvil. La web recuerda el idioma elegido.
 - Capturas en español en todos los idiomas. En los artículos traducidos con capturas sale bajo el título "Le schermate mostrano il pannello in spagnolo" / "Les captures d'écran montrent le panneau en espagnol" (y en inglés "The screenshots show the panel in Spanish."; Valeria lo quiere también en inglés).
 - Traducciones en `taykus-help-web/traducciones/it/` y `traducciones/fr/`, mismo sistema de huella que el inglés. Sin traducir: el artículo sale en español con aviso. El resumen de Actions lista los pendientes de cada idioma. Pendientes: `python traducciones/sellar.py --content ../taykus-help-center --pendientes it` (o `fr`).
-- Tanda 1, Calendario completo (32 páginas por idioma). Siguientes tandas: Ventas y después Configuración.
+- Italiano COMPLETO (20 nov, prioridad por un club italiano): todos los módulos. Francés: Calendario, Ventas, Configuración y Academia (16-20 nov); faltan 71 artículos (TPV, Jugadores, Comunicaciones, Actividades, Marketing, Almacén, App propia, App Taykus, Zona de clientes, Veri*FACTU).
+- Valeria no conoce italiano ni francés: no preguntarle términos. Se usa lo que pone el Excel y lo demás se traduce y se anota aquí como pendiente.
+- Subida: GitHub solo admite menos de 100 archivos por subida. Claude prepara un zip por tanda; Valeria lo descomprime, abre https://github.com/TaykusHelp/taykus-help-web/upload/main, arrastra la carpeta traducciones y pulsa Commit changes. Claude comprueba después que estén todos.
+- Pendientes de confirmar de Ventas en adelante (español | italiano | francés | nota):
+  - Cancelar (botón de ventanas) | Cancellare | Annuler | En el Excel en francés sale "annulerFiltre", parece un error; he puesto Annuler
+  - Configuración (engranaje) | Impostazioni | Paramètres | Como en Calendario (el Excel dice Configurazione / Config)
+  - Inicio (fecha) | Inizio | Début | Como en Calendario (el Excel da Home / Accueil, que es el menú)
+  - Cobro Automático Tarjeta | Addebito automatico su carta | Prélèvement automatique par carte | No está en el Excel
+  - Cuotas Automaticas (bloque) | Vendite periodiche automatiche | Ventes périodiques automatiques | No está en el Excel
+  - Días Cortesía Impago | Giorni di tolleranza mancato pagamento | Jours de grâce impayé | No está en el Excel
+  - Cancelar con Impago | Annulla per mancato pagamento | Annuler en cas d'impayé | No está en el Excel
+  - Emisión Automática | Emissione automatica | Émission automatique | No está en el Excel
+  - Notificación de subscripción cancelada (plantilla) | Notifica di abbonamento annullato | Notification d'abonnement annulé | No está en el Excel
+  - Socio / No socio (tipos de cliente de ejemplo) | Socio / Non socio | Membre / Non-membre | Los pone cada club
+  - Calendario (pestaña de la cuota) | Calendario | Calendrier | El Excel da Orario / Horaire, que en Calendario vimos que es el de Configuración
+  - Venta periódica (bloque de la cuota) | Vendita periodica | Vente périodique | No está en el Excel
+  - Tipo Cliente Membresía | Tipo cliente abbonamento | Type de client adhésion | No está en el Excel
+  - Tipo Cliente Baja Membresía | Tipo cliente disdetta abbonamento | Type de client fin d'adhésion | No está en el Excel
+  - Venta online (casilla) | Vendita online | Vente en ligne | No está en el Excel
+  - Pendiente De Domiciliación (botón del TPV) | In attesa della banca | En attente bancaire | No está en el Excel; he puesto lo mismo que la pestaña Pendiente Domiciliación
+  - Notificación de deuda (plantilla) | Notifica di debito | Notification de dette | No está en el Excel
+  - Notificación de domiciliación bancaria (plantilla) | Notifica di addebito bancario | Notification de prélèvement bancaire | No está en el Excel
+  - El cliente no tiene tarjeta (aviso) | Il cliente non ha una carta | Le client n'a pas de carte | No está en el Excel
+  - Número y Fecha de emisión (columnas de Facturas) | Numero / Data di emissione | Numéro / Date d'émission | No están en el Excel
+  - ID de emisor (campo del Q19) | ID emittente | ID d'émetteur | No está en el Excel
+  - Estado del ticket (filtro del Q19) | Stato dello scontrino | État du ticket | No está en el Excel
+  - Fecha de vencimiento (filtro del Q19) | Due date | Due date | Así sale en el Excel (en inglés)
+  - Cerrado (estado del Q19) | Chiuso | Fermé | No está en el Excel
+  - Cuotas Socio (tipo de producto de ejemplo) | Quote Soci | Cotisations Membres | Lo pone cada club
+  - Hora cierre / Importes cierres (caja) | Ora di chiusura / Importi di chiusura | Heure de fermeture / Montants de clôture | No está en el Excel
+  - Porcentaje (impuesto) | Percentuale | Pourcentage | No está en el Excel
+  - Caja Online / Principal (cajas) | Online / Principale | Online / Principal | Online no está en el Excel
+  - Clientes / Tipo de clientes (precios especiales) | Clienti / Tipo di clienti | Clients / Type de clients | No están en el Excel
+  - Campos de la ficha de producto: Logo, Puntos de fidelización, Puede ser un extra, Tiene stock, Stock óptimo, Email notificación bajo stock, Venta en TPV | Logo, Punti fedeltà, Può essere un extra, Ha stock, Stock ottimale, Email notifica scorte basse, Vendita nel POS | Logo, Points de fidélité, Peut être un extra, A du stock, Stock optimal, E-mail alerte stock bas, Vente au point de vente | No están en el Excel
+  - Campos de la cuota: Detalle, Tendencia, Popular, Prorratear primero, Facturación bancaria | Dettaglio, Tendenza, Popolare, Ripartisci il primo, Fatturazione bancaria | Détail, Tendance, Populaire, Proratiser le premier, Facturation bancaire | No están en el Excel
+  - Inscripción (campo de la cuota) | Inscription | Inscription | El Excel tiene dos: "Iscrizione al torneo della squadra" (de torneos) e "Inscription"; he usado la segunda
+  - Campos del bono: Días de caducidad, Días validez uso, Acceso rápido en TPV | Giorni di scadenza, Giorni di validità d'uso, Accesso rapido nel POS | Jours avant expiration, Jours de validité d'utilisation, Accès rapide au point de vente | No están en el Excel
+  - Bono Dinero (tipo de bono) | Buono di denaro | Bon monétaire | No está en el Excel (tomado de "Bonos Monedero")
+  - Academias (menú de Configuración) | Accademie | Académies | No está en el Excel
+  - Roles que vienen creados (Admin Centro, Recepción, Profesor, Soporte Taykus) | se dejan en español | se dejan en español | Son datos del club, no textos del panel; no sé si salen traducidos
+  - Lenguaje preferido / Página de inicio (usuario) | Lingua preferita / Pagina iniziale | Langue préférée / Page d'accueil | No están en el Excel
+  - Campos del extra automático: Fecha de inicio, Hora de inicio, Hora de fin, Recurrencia anual | Data di inizio, Ora di inizio, Ora di fine, Ricorrenza annuale | Date de début, Heure de début, Heure de fin, Récurrence annuelle | No están en el Excel
+  - Anticipación en minutos (recordatorio) | Anticipo in minuti | Anticipation en minutes | No está en el Excel
+  - Campos del grupo de recursos y de las pistas (No Deporte, Intervalos en minutos, Modifica nivel, Alto celda calendario, Mostrar jugadores, Discontinuado, Mostrar iniciales participantes, Máximo tiempo entre reservas online, Espacio entre reservas en apertura/cierre, Tiempo mín. entre reservas admin, Hora inicio día, Tipo de pista, Suelo/pared) | traducidos por Claude | traducidos por Claude | No están en el Excel
+  - Campos del profesor (Recurso relacionado, Etiqueta, Imagen, Email notificación reserva, Online, Mostrar nombre online, Mostrar en administración, Permitir solapar reservas, Permitir solapar reservas en admin, Máximas reservas solapadas, Colores) | traducidos por Claude | traducidos por Claude | No están en el Excel (Imagen sí: immagini / Images)
+  - Excepciones: Todos los años, Tipo de excepción, Incluye fecha | Ogni anno, Tipo di eccezione, Includi data | Tous les ans, Type d'exception, Inclure la date | No están en el Excel
+  - Aplicar este precio en solapamientos / Añadir hora (precios por calendario) | Applica questo prezzo nelle sovrapposizioni / Aggiungi ora | Appliquer ce prix en cas de chevauchement / Ajouter une heure | No están en el Excel
+  - Campos del tipo de reserva (Descripción extendida, Tipo de precio, Gratis, Es público, Permite cancelar online, anticipaciones, Minutos pre reserva, Horas antes que expire, Devolver pago al anular y caducar, Número mínimo/máximo de participantes, Permitir personalizar duración, límites de reservas, Minutos bloqueados antes de la reserva, Duraciones permitidas, Recurso primario, Seleccionable online) | traducidos por Claude | traducidos por Claude | No están en el Excel
+  - Métricas del calendario de profesores (Porcentaje de ocupación, Número total de horas asignadas, Participantes totales, Vista diaria/semanal/mensual) | traducidos por Claude (Media de horas por recurso = Ore medie per risorsa) | traducidos por Claude (Heures moyennes par ressource) | Casi ninguno está en el Excel
+  - Calendario de Profesores (menú) / Grupos de Academia | Calendario degli insegnanti / Gruppi dell'accademia | Calendrier des professeurs / Groupes de l'académie | No están en el Excel
+  - Campos del grupo de academia (Máximos Participantes, Clase abierta, Producto de clase Abierta, Permitir inscripción online de clase abierta, Días de anticipación…) | traducidos por Claude | traducidos por Claude | No están en el Excel
+  - Campos de inscripciones online (Mostrar Online, Días de anticipación para mostrar online, Permitir inscripción online, Fecha de inicio/fin de inscripciones) y Número de días (precios por días) | traducidos por Claude | traducidos por Claude | No están en el Excel
+  - Campos de la preinscripción (Cartel, Inscripción desde/hasta, Registro online, Añadir Nuevo, Etiqueta, Tipo de campo, Opciones, Valor por defecto) y plantillas Confirmación/Cancelación de preinscripción | traducidos por Claude (Campo Dinámico = Campo modulo dinamico / Domaine du formulaire dynamique, según el Excel) | traducidos por Claude | No están en el Excel
+  - App Taykus Coach (Club, Usuario, Contraseña, Entrar, Cuenta, Mis clubs, Añadir un nuevo club, Inicio, Agenda, Mes) | traducidos por Claude | traducidos por Claude | La app de profesores no está en los Excel
+  - TPV (solo italiano): Venta rápida, Estatus de envío, Enviado, Sí | Vendita rapida, Stato di invio, Inviato, Sì | - | No están en el Excel
+  - Jugadores (solo italiano): Cliente Responsable, Información de Contacto Adicional, Cuerpo del mensaje, Nº Telefono, Tipo de cliente | Cliente responsabile, Informazioni di contatto aggiuntive, Corpo del messaggio, N. telefono, Tipo di cliente | - | No están en el Excel; Asociados sale en inglés (Associated)
+  - Comunicaciones (solo italiano): Tema, Añadir Plantilla Email, Detalle, campos de la cuenta de correo (Puerto, Nombre de Usuario, Dirección/Nombre de Remitente) | Argomento, Aggiungi modello e-mail, Dettaglio, Porta, Nome utente, Indirizzo/Nome del mittente | - | No están en el Excel
+  - Estados de envío (Insertado, Enviado, Fallido, Cancelado, Enviando, Entregado, Leído), Intentos, Estatus de envío | Inserito, Inviato, Fallito, Annullato, Invio in corso, Consegnato, Letto, Tentativi, Stato di invio | - | No están en el Excel
+  - Almacén (solo italiano): Almacén, Entrada Manual, Validado, Añadir productos, Cantidad Solicitada, Entradas, Añadir Cantidad Entregada, Ctd, Buscar Producto, Añadir Entrada, Tiene Stock | Magazzino, Inserimento manuale, Convalidato, Aggiungi prodotti, Quantità richiesta, Entrate, Aggiungi quantità consegnata, Qtà, Cerca prodotto, Aggiungi inserimento, Ha stock | - | No están en el Excel
+  - Marketing (solo italiano): Promociones, Usos, Códigos totales, Productos Permitidos, Tipo de descuento, Fecha de inicio/final, Empieza por, Texto exacto, Aplicar código | Promozioni, Utilizzi, Codici totali, Prodotti consentiti, Tipo di sconto, Data di inizio/fine, Inizia con, Testo esatto, Applica codice | - | No están en el Excel (Copiar productos a/desde sale en inglés: Copy products to/from)
+  - App y zona de clientes (solo italiano): Tipo de partido (app), Crea tu Partido | Tipo di partita, Crea la tua partita | - | No están en el Excel de la app / zona
 - Textos del panel: Valeria pasó tres Excel de los programadores: Taykus_Textos_Panel_Administracion.xlsx (es, es-MX, en, it, fr), Taykus_Textos_Zona_Cliente.xlsx (es, es-MX, en, it, fr) y Taykus_Textos_App.xlsx (es, en, it; sin francés). No están en el proyecto: hay que pedírselos a Valeria al empezar cada tanda. Se pone lo que sale en pantalla aunque esté en inglés o mal traducido. Lo que no está en los Excel se traduce y se marca pendiente de confirmar.
 - Trato: "tu" en italiano, "vous" en francés.
 - Glosario IT / FR: reserva = prenotazione / réservation, pista = campo / terrain, partido = partita / match, jugador = giocatore / joueur, TPV = POS / point de vente, bono monedero = buono di denaro / bon monétaire, Zona de Jugadores = Zona clienti / Zone client.
@@ -108,7 +168,7 @@ Actualizado: 13 nov 2026
 - Comprobar la web publicada: si Claude no puede abrirla, no se queda esperando; avisa a Valeria y lo comprueba ella.
 
 ## Pendiente
-- Italiano y francés, tanda 2: Ventas (después, Configuración). Pedir a Valeria los tres Excel de textos del panel al empezar. Confirmar los términos pendientes de Calendario (ver apartado de italiano y francés) si Valeria puede mirarlos en el panel.
+- Francés: faltan 71 artículos (ver apartado de italiano y francés). Pedir a Valeria los tres Excel de textos del panel al empezar. Confirmar los términos pendientes de Calendario (ver apartado de italiano y francés) si Valeria puede mirarlos en el panel.
 - Inglés: revisar los nombres de botones con el Excel del panel en inglés (por ejemplo, "Save and Pay" en los artículos frente a "Save & Pay" en el panel).
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
 - Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja".
