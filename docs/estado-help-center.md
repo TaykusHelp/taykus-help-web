@@ -22,7 +22,7 @@ Actualizado: 13 nov 2026
 - Web en /it/ y /fr/, con las mismas direcciones que en español. Selector de idioma desplegable con 🌐 y nombres completos (Español, English, Italiano, Français), sin banderas, también en móvil. La web recuerda el idioma elegido.
 - Capturas en español en todos los idiomas. En los artículos traducidos con capturas sale bajo el título "Le schermate mostrano il pannello in spagnolo" / "Les captures d'écran montrent le panneau en espagnol" (y en inglés "The screenshots show the panel in Spanish."; Valeria lo quiere también en inglés).
 - Traducciones en `taykus-help-web/traducciones/it/` y `traducciones/fr/`, mismo sistema de huella que el inglés. Sin traducir: el artículo sale en español con aviso. El resumen de Actions lista los pendientes de cada idioma. Pendientes: `python traducciones/sellar.py --content ../taykus-help-center --pendientes it` (o `fr`).
-- Italiano COMPLETO (20 nov, prioridad por un club italiano): todos los módulos. Francés: Calendario, Ventas, Configuración y Academia (16-20 nov); faltan 71 artículos (TPV, Jugadores, Comunicaciones, Actividades, Marketing, Almacén, App propia, App Taykus, Zona de clientes, Veri*FACTU).
+- Italiano y francés COMPLETOS (20 nov): todos los módulos. El italiano se hizo primero por un club italiano. El Excel de la app (Taykus_Textos_App) no tiene francés: los textos de la app en francés los ha traducido Claude.
 - Valeria no conoce italiano ni francés: no preguntarle términos. Se usa lo que pone el Excel y lo demás se traduce y se anota aquí como pendiente.
 - Subida: GitHub solo admite menos de 100 archivos por subida. Claude prepara un zip por tanda; Valeria lo descomprime, abre https://github.com/TaykusHelp/taykus-help-web/upload/main, arrastra la carpeta traducciones y pulsa Commit changes. Claude comprueba después que estén todos.
 - Pendientes de confirmar de Ventas en adelante (español | italiano | francés | nota):
@@ -153,6 +153,7 @@ Actualizado: 13 nov 2026
 - Aviso de reservas: campo "Email Notificación Reserva" de cada pista (Configuración › Reservas › Id del deporte › Recursos). Pista por pista, un solo correo por pista. Llega con cualquier reserva (club, web o app) y al cancelar; los jugadores no pueden modificar sus reservas. No hay otro tipo de aviso, solo correo. Desde el listado se escribe en la columna y se guarda con Enter; desde la ficha, con Guardar. Profesores: mismo campo y mismo camino (grupo Profesores); el profesor va relacionado con la pista, así que si los dos tienen correo avisa a los dos. Clases con profesor: desde el club; por web solo si el club lo activa (casi nadie); por app no. Avisa con cualquier tipo de reserva del recurso.
 - Cerrar entre dos fechas: horario aparte (no el "Cerrado" de días sueltos: si se le ponen fechas, sus Excepciones dejan de valer fuera de ellas; probado por Valeria). Prioridad 100, Inicio, Fin, todos los días, sin horas de apertura. Fin = día siguiente al último a las 00:00. Cierra todo el club. Vuelve solo al horario normal. Las reservas ya hechas se cancelan a mano.
 - Actividades y preinscripciones: "Participantes" y "Número máximo de participantes" sirven para lo mismo. Restar stock no tiene campo de motivo. No hay vídeos de Cajas. "Calendario de alumnos" se llama así en el programa.
+- Capturas: en "Display" (Calendario) se difuminaron los apellidos de los jugadores (image (25) e image (26)), 20 nov.
 - Idiomas (13 nov): en italiano y francés, el menú lateral es Calendario / Calendrier (Orario / Horaire es de Configuración). El campo Jugador de la ficha de reserva es "Player". Cuando el Excel tiene varias traducciones, ceñirse a lo que pone el Excel. Los tipos de reserva (Partido, Escuela…) los pone cada club: en los artículos traducidos se explica así ("el nombre lo decide cada club; en la imagen es Partido").
 
 ## Criterios de redacción (acordados)
@@ -168,7 +169,7 @@ Actualizado: 13 nov 2026
 - Comprobar la web publicada: si Claude no puede abrirla, no se queda esperando; avisa a Valeria y lo comprueba ella.
 
 ## Pendiente
-- Francés: faltan 71 artículos (ver apartado de italiano y francés). Pedir a Valeria los tres Excel de textos del panel al empezar. Confirmar los términos pendientes de Calendario (ver apartado de italiano y francés) si Valeria puede mirarlos en el panel.
+- Italiano y francés: si los programadores pueden, confirmar en el panel los términos pendientes (ver apartado de italiano y francés). Al cambiar un artículo en español, el resumen de Actions lista qué traducciones quedan desfasadas en cada idioma.
 - Inglés: revisar los nombres de botones con el Excel del panel en inglés (por ejemplo, "Save and Pay" en los artículos frente a "Save & Pay" en el panel).
 - Siguiente módulo a revisar (por decidir): Ventas, TPV, Academia, Jugadores…
 - Erratas en español: "Cómo recargar un bono desde el TPV" dice en la intro "venta con un producto abierto"; "Cómo modificar precio a una couta" solo tiene una nota interna; "Cómo hgacer un recuento de caja" en la pestaña de Cajas; el recuento dice "confirmar el cierre de caja".
