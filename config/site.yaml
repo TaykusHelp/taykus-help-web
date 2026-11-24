@@ -34,6 +34,7 @@ modules:
   comunicaciones:  { description: "Correo del club y plantillas de email.", icon: mail }
   veri-factu:      { description: "Facturación electrónica.", icon: invoice }
   app-propia:      { title: "App propia", description: "Publicar la app de tu club en Apple y Google Play.", icon: phone }
+  taykus-pro:      { title: "Taykus Pro", description: "La app para el equipo del club: calendario, agenda, chat y ajustes.", icon: phone }
   app-taykus:      { description: "Registro, reservas, partidos y nivel de juego.", icon: phone }
   zona-de-clientes: { title: "Zona de clientes", description: "Registro, reservas y datos de la cuenta desde la web del club.", icon: monitor }
 
@@ -61,6 +62,7 @@ en:
     comunicaciones:  { title: "Communications", description: "Club email and email templates." }
     veri-factu:      { title: "Veri*FACTU", description: "Electronic invoicing." }
     app-propia:      { title: "Your own app", description: "Publish your club's app on Apple and Google Play." }
+    taykus-pro:      { title: "Taykus Pro", description: "The app for the club's staff: calendar, schedule, chat and settings." }
     app-taykus:      { title: "Taykus App", description: "Sign-up, bookings, matches and playing level." }
     zona-de-clientes: { title: "Customer Area", description: "Sign-up, bookings and account details from the club's website." }
 
@@ -85,6 +87,7 @@ it:
     comunicaciones:  { title: "Comunicazioni", description: "Email del club e modelli di email." }
     veri-factu:      { title: "Veri*FACTU", description: "Fatturazione elettronica (Spagna)." }
     app-propia:      { title: "App propria", description: "Pubblicare l'app del tuo club su Apple e Google Play." }
+    taykus-pro:      { title: "Taykus Pro", description: "L'app per lo staff del club: calendario, agenda, chat e impostazioni." }
     app-taykus:      { title: "App Taykus", description: "Registrazione, prenotazioni, partite e livello di gioco." }
     zona-de-clientes: { title: "Zona clienti", description: "Registrazione, prenotazioni e dati dell'account dal sito del club." }
 
@@ -109,5 +112,6 @@ fr:
     comunicaciones:  { title: "Communications", description: "E-mail du club et modèles d'e-mails." }
     veri-factu:      { title: "Veri*FACTU", description: "Facturation électronique (Espagne)." }
     app-propia:      { title: "Votre propre app", description: "Publier l'app de votre club sur Apple et Google Play." }
+    taykus-pro:      { title: "Taykus Pro", description: "L'application pour l'équipe du club : calendrier, agenda, chat et réglages." }
     app-taykus:      { title: "App Taykus", description: "Inscription, réservations, matchs et niveau de jeu." }
     zona-de-clientes: { title: "Zone client", description: "Inscription, réservations et données du compte depuis le site du club." }
